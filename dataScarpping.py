@@ -3,20 +3,13 @@ import json
 import time
 from pathlib import Path
 
-# Base URL for the DSpace API
 BASE_URL = "https://repository.najah.edu/server/api"
 
-# Create output directory for data files
 OUTPUT_DIR = Path("scraped_data")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 
 def fetch_collections():
-    """
-    Fetch all collections from the DSpace repository
-    Handles pagination to get all collections
-    Returns a list of collections with their metadata
-    """
     print("Fetching collections...")
     url = f"{BASE_URL}/core/collections"
 
@@ -61,32 +54,11 @@ def fetch_collections():
     return all_collections
 
 
-def save_collections_to_file(collections):
-    """
-    Save collections metadata to a JSON file
-    """
-    output_file = OUTPUT_DIR / "collections_metadata.json"
-
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(collections, f, indent=2, ensure_ascii=False)
-
-    print(f"Collections metadata saved to {output_file}")
-    return output_file
-
-
 def fetch_items_from_collection(collection_id, collection_name):
-    """
-    Fetch all items from a specific collection
-    Handles pagination to get all items
-    """
     print(f"\nFetching items from collection: {collection_name} (ID: {collection_id})")
 
     url = f"{BASE_URL}/discover/search/objects"
-    params = {
-        "scope": collection_id,
-        "page": 0,
-        "size": 100,  # Fetch 100 items per page
-    }
+    params = {"scope": collection_id, "page": 0, "size": 100}
 
     all_items = []
     page = 0
@@ -133,32 +105,126 @@ def fetch_items_from_collection(collection_id, collection_name):
     return all_items
 
 
-def save_items_to_file(collection_id, collection_name, items):
-    """
-    Save items from a collection to a JSON file
-    """
-    # Create a safe filename from collection name
-    safe_name = "".join(
-        c if c.isalnum() or c in (" ", "-", "_") else "_" for c in collection_name
-    )
-    safe_name = safe_name[:50]  # Limit filename length
+def fetch_item_metadata(item_uuid):
+    url = f"{BASE_URL}/core/items/{item_uuid}/bundles"
+    try:
+        resp = requests.get(url)
+        resp.raise_for_status()
+        return resp.json()
+    except requests.exceptions.RequestException as e:
+        print(f"  Error fetching bundles for item {item_uuid}: {e}")
+        return None
 
-    output_file = OUTPUT_DIR / f"items_{collection_id}_{safe_name}.json"
 
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(
-            {
-                "collection_id": collection_id,
-                "collection_name": collection_name,
-                "total_items": len(items),
-                "items": items,
-            },
-            f,
-            indent=2,
-            ensure_ascii=False,
-        )
+def fetch_bundle_item(bundle_id):
+    if not bundle_id:
+        return None
 
-    print(f"  Items saved to {output_file}")
+    url = f"{BASE_URL}/core/bundles/{bundle_id}/item"
+    try:
+        resp = requests.get(url)
+        resp.raise_for_status()
+        return resp.json()
+    except requests.exceptions.RequestException as e:
+        print(f"  Error fetching item for bundle {bundle_id}: {e}")
+        return None
+
+
+def fetch_bundle_bitstreams(bundle_id):
+    if not bundle_id:
+        return []
+
+    url = f"{BASE_URL}/core/bundles/{bundle_id}/bitstreams"
+    try:
+        resp = requests.get(url)
+        resp.raise_for_status()
+        data = resp.json()
+        return data.get("_embedded", {}).get("bitstreams", [])
+    except requests.exceptions.RequestException as e:
+        print(f"  Error fetching bitstreams for bundle {bundle_id}: {e}")
+        return []
+
+
+def build_document_from_item(collection, item_obj):
+    # discover/search result wraps the real item under _embedded.indexableObject
+    item = item_obj.get("_embedded", {}).get("indexableObject", {})
+    item_uuid = item.get("id")
+    collection_name = collection.get("name", "")
+
+    # metadata is usually under "metadata" for core item responses
+    # but here we come from discover/search, so we will re-fetch via bundles->item
+    bundles = fetch_item_metadata(item_uuid) or {}
+    bundles_list = bundles.get("_embedded", {}).get("bundles", [])
+
+    # Find ORIGINAL bundle and get its first bitstream UUID via /bitstreams
+    bitstream_uuid = None
+    for b in bundles_list:
+        if b.get("type") == "bundle" and b.get("name") == "ORIGINAL":
+            original_id = b.get("uuid") or b.get("id")
+            for bs in fetch_bundle_bitstreams(original_id):
+                bitstream_uuid = bs.get("uuid") or bs.get("id")
+                if bitstream_uuid:
+                    break
+            break
+
+    # Call bundles/{id}/item to get full item metadata (title, authors, abstract, etc.)
+    full_item = None
+    if bundles_list:
+        first_bundle_id = bundles_list[0].get("uuid") or bundles_list[0].get("id")
+        if first_bundle_id is not None:
+            full_item = fetch_bundle_item(first_bundle_id) or {}
+
+    # Prefer metadata from the full item; if unavailable, fall back to indexableObject
+    metadata = (full_item or {}).get("metadata") or item.get("metadata", {})
+
+    def all_lang_values(key):
+        out = {"en": [], "ar": []}
+        for v in metadata.get(key, []):
+            lang = (v.get("language") or "").lower()
+            val = v.get("value") or ""
+            if not val:
+                continue
+            if lang.startswith("ar"):
+                out["ar"].append(val)
+            else:
+                out["en"].append(val)
+        return out
+
+    def first_value(key):
+        values = metadata.get(key) or []
+        if values:
+            return values[0].get("value")
+        return None
+
+    titles = all_lang_values("dc.title")
+    abstracts = all_lang_values("dc.description.abstract")
+
+    # authors as array of strings
+    authors = [v.get("value") for v in metadata.get("dc.contributor.author", [])]
+
+    publication_date = first_value("dc.date.issued") or None
+
+    doc = {
+        "collection": collection_name,
+        "bitstream_uuid": bitstream_uuid,
+        "chunk_id": None,
+        "title": {
+            "en": titles["en"],
+            "ar": titles["ar"],
+        },
+        "author": authors,
+        "abstract": {
+            "en": abstracts["en"],
+            "ar": abstracts["ar"],
+        },
+        "hasFiles": bool(bitstream_uuid),
+        "publicationDate": publication_date,
+        "reportLocation": None,
+        "geoReferences": [],
+        "temporalExpressions": [],
+    }
+
+    return item_uuid, doc
 
 
 def main():
@@ -176,30 +242,30 @@ def main():
         print("No collections to process. Exiting.")
         return
 
-    # Step 2: Save collections metadata
-    save_collections_to_file(collections)
-
-    # Step 3: Fetch and save items from each collection
     print("\n" + "=" * 60)
-    print("Fetching items from each collection...")
+    print("Fetching items from each collection and building bulk documents...")
     print("=" * 60)
 
-    for idx, collection in enumerate(collections, 1):
-        collection_id = collection.get("id", "unknown")
-        collection_name = collection.get("name", "Unnamed Collection")
+    bulk_path = OUTPUT_DIR / "bulk_opensearch.jsonl"
+    with open(bulk_path, "w", encoding="utf-8") as f:
+        for idx, collection in enumerate(collections, 1):
+            collection_id = collection.get("id", "unknown")
+            collection_name = collection.get("name", "Unnamed Collection")
 
-        print(f"\n[{idx}/{len(collections)}] Processing: {collection_name}")
+            print(f"\n[{idx}/{len(collections)}] Processing: {collection_name}")
 
-        items = fetch_items_from_collection(collection_id, collection_name)
+            items = fetch_items_from_collection(collection_id, collection_name)
 
-        if items:
-            save_items_to_file(collection_id, collection_name, items)
-        else:
-            print(f"  No items found in collection: {collection_name}")
+            for item in items:
+                item_uuid, doc = build_document_from_item(collection, item)
+                if not item_uuid:
+                    continue
+                # Write each document as a standalone JSON line (no bulk header)
+                f.write(json.dumps(doc, ensure_ascii=False) + "\n")
 
     print("\n" + "=" * 60)
-    print("Data scraping completed!")
-    print(f"All data saved in: {OUTPUT_DIR.absolute()}")
+    print("Document JSONL generation completed!")
+    print(f"File written to: {bulk_path.absolute()}")
     print("=" * 60)
 
 
