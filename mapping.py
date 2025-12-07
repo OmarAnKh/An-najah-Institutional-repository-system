@@ -18,6 +18,7 @@ class ProjectMapping:
     def create_configurations(self):
         configurations = {
             "settings": {
+                "index": {"knn": True},
                 "analysis": {
                     "tokenizer": {
                         "autocomplete_tokenizer": {
@@ -32,64 +33,185 @@ class ProjectMapping:
                             "type": "stop",
                             "stopwords": "_english_",
                         },
+                        "english_stemmer": {
+                            "type": "stemmer",
+                            "language": "english",
+                        },
+                        "english_possessive_stemmer": {
+                            "type": "stemmer",
+                            "language": "possessive_english",
+                        },
                         "arabic_stop": {
                             "type": "stop",
                             "stopwords": "_arabic_",
                         },
+                        "arabic_stemmer": {
+                            "type": "stemmer",
+                            "language": "arabic",
+                        },
+                        "arabic_normalization": {
+                            "type": "arabic_normalization",
+                        },
+                        "length_3_plus": {
+                            "type": "length",
+                            "min": 3,
+                        },
                     },
                     "analyzer": {
-                        "autocomplete": {
+                        "en_autocomplete": {
                             "type": "custom",
                             "tokenizer": "autocomplete_tokenizer",
-                            "filter": ["lowercase"],
+                            "char_filter": ["html_strip_cf"],
+                            "filter": [
+                                "lowercase",
+                                "english_possessive_stemmer",
+                                "english_stop",
+                                "english_stemmer",
+                            ],
                         },
-                        "autocomplete_search": {
+                        "en_autocomplete_search": {
                             "type": "custom",
                             "tokenizer": "standard",
-                            "filter": ["lowercase"],
+                            "char_filter": ["html_strip_cf"],
+                            "filter": [
+                                "lowercase",
+                                "english_possessive_stemmer",
+                                "english_stop",
+                                "english_stemmer",
+                                "length_3_plus",
+                            ],
                         },
-                        "my_default_text_analyzer": {
+                        "en_content": {
                             "type": "custom",
                             "tokenizer": "standard",
-                            "filter": ["lowercase", "english_stop", "arabic_stop"],
+                            "char_filter": ["html_strip_cf"],
+                            "filter": [
+                                "lowercase",
+                                "english_possessive_stemmer",
+                                "english_stop",
+                                "english_stemmer",
+                            ],
                         },
+                        "ar_autocomplete": {
+                            "type": "custom",
+                            "tokenizer": "autocomplete_tokenizer",
+                            "char_filter": ["html_strip_cf"],
+                            "filter": [
+                                "arabic_normalization",
+                                "arabic_stop",
+                                "arabic_stemmer",
+                            ],
+                        },
+                        "ar_autocomplete_search": {
+                            "type": "custom",
+                            "tokenizer": "standard",
+                            "char_filter": ["html_strip_cf"],
+                            "filter": [
+                                "arabic_normalization",
+                                "arabic_stop",
+                                "arabic_stemmer",
+                            ],
+                        },
+                        "ar_content": {
+                            "type": "custom",
+                            "tokenizer": "standard",
+                            "char_filter": ["html_strip_cf"],
+                            "filter": [
+                                "arabic_normalization",
+                                "arabic_stop",
+                                "arabic_stemmer",
+                            ],
+                        },
+                    },
+                    "normalizer": {
+                        "keyword_lowercase": {"type": "custom", "filter": ["lowercase"]}
                     },
                 },
             },
             "mappings": {
                 "properties": {
-                    "collection": {"type": "keyword"},
-                    "uuid": {"type": "keyword"},
-                    "title": {
-                        "type": "text",
-                        "analyzer": "autocomplete",
-                        "search_analyzer": "autocomplete_search",
+                    "collection": {
+                        "type": "keyword",
+                        "doc_values": True,  # add it to enable sorting and aggregations default is true
                     },
-                    "author": {"type": "keyword"},
-                    "abstract": {
+                    "bitstream_uuid": {
+                        "type": "keyword",
+                        "index": False,  # to disable indexing on it (we cant search on it but it will be stored and takes less disk space)
+                    },
+                    "chunk_id": {
+                        "type": "keyword",
+                        "index": False,  # to disable indexing on it (we cant search on it but it will be stored and takes less disk space)
+                    },
+                    "title": {
+                        "type": "object",
+                        "properties": {
+                            "en": {
+                                "type": "text",
+                                "analyzer": "en_autocomplete",
+                                "search_analyzer": "en_autocomplete_search",
+                            },
+                            "ar": {
+                                "type": "text",
+                                "analyzer": "ar_autocomplete",
+                                "search_analyzer": "ar_autocomplete_search",
+                            },
+                        },
+                        "dynamic": False,
+                    },
+                    "author": {
                         "type": "text",
-                        "analyzer": "my_default_text_analyzer",
+                        "analyzer": "en_autocomplete",
+                        "search_analyzer": "en_autocomplete_search",
+                    },
+                    "abstract": {
+                        "type": "object",
+                        "properties": {
+                            "en": {
+                                "type": "text",
+                                "analyzer": "en_content",
+                            },
+                            "ar": {
+                                "type": "text",
+                                "analyzer": "ar_content",
+                            },
+                        },
+                        "dynamic": False,
                     },
                     "abstract_vector": {
                         "type": "knn_vector",  # can be changed to ANN
                         "dimension": self.model_dimension,
-                        "space_type": "l2",  # can be changed
+                        "space_type": "cosinesimil",  # can be changed
                         "method": {
                             "name": "hnsw",
-                            "space_type": "l2",
+                            "space_type": "cosinesimil",
                             "engine": "faiss",
-                            "parameters": {"ef_construction": 100, "m": 16},
+                            "parameters": {
+                                "ef_construction": 150,
+                                "m": 32,
+                            },
                         },
                     },
-                    "hasFiles": {"type": "boolean"},
-                    "publicationDate": {"type": "date"},
-                    "reportLocation": {"type": "geo_point"},
-                    "ContentGeoPoint": {"type": "geo_point"},
-                    "contentTemporalExpression": {
-                        "type": "text",
-                        "analyzer": "my_default_text_analyzer",
+                    "hasFiles": {
+                        "type": "boolean",
+                        "boost": 3.0,  # gives more importance to documents with files
                     },
-                }
+                    "publicationDate": {"type": "date"},
+                    "reportLocation": {
+                        "type": "geo_point",
+                        "ignore_malformed": True,
+                    },
+                    "geoReferences": {
+                        "type": "nested",
+                        "properties": {
+                            "placeName": {"type": "text", "analyzer": "en_content"},
+                            "coordinates": {
+                                "type": "geo_point",
+                                "ignore_malformed": True,
+                            },
+                        },
+                    },
+                    "temporalExpressions": {"type": "keyword"},
+                },
             },
         }
         return configurations
