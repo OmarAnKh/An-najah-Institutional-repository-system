@@ -1,30 +1,7 @@
-import re
-import time
-from typing import Any, Dict, List, Tuple, Optional
-
-import requests
+from typing import Any, Dict, Optional
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
-import json
 
-
-# ==============================
-# CONFIG
-# ==============================
-
-BASE_URL = "https://repository.najah.edu/server/api"
-ES_BASE_URL = "http://localhost:9200"
-ES_INDEX = "najah-docs-es"
-
-MAX_COLLECTIONS = 5
-MAX_ITEMS_PER_COLLECTION = 5
-
-# DSpace session
-dspace_session = requests.Session()
-dspace_session.headers.update({"Accept": "application/json"})
-
-# ES session
-es_session = requests.Session()
 
 # Geopy geocoder (Nominatim)
 geolocator = Nominatim(user_agent="najah_ir_project")
@@ -32,9 +9,6 @@ geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1, max_retries=2)
 
 # Fallback geopoint (An-Najah University / Nablus approx coords)
 AL_NAJAH_POINT = {"lat": 32.221, "lon": 35.254}
-
-TAG_RE = re.compile(r"<[^>]+>")
-
 
 def geocode_place(name: str) -> Optional[Dict[str, Any]]:
     """
@@ -60,8 +34,6 @@ def geocode_place(name: str) -> Optional[Dict[str, Any]]:
     return {
         "name": name,
         "country": country,
-        "lat": float(loc.latitude),
-        "lon": float(loc.longitude),
         # this `location` field is the geo_point we store per reference
         "location": {
             "lat": float(loc.latitude),
@@ -71,7 +43,7 @@ def geocode_place(name: str) -> Optional[Dict[str, Any]]:
     }
 
 
-def build_geopoint_from_origin(metadata: Dict[str, Any]) -> Dict[str, float]:
+def build_geopoint_from_origin() -> Dict[str, float]:
     """
     Build the single `geopoint` field used as the document's origin/affiliation
     location.
