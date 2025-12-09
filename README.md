@@ -64,10 +64,10 @@ pip install -r requirements.txt
 Create a `.env` file in the root folder (or set environment variables) with the connection details and model configuration:
 
 ```ini
-EMBEDDING_MODEL_NAME="the name of the model you want to use for embedding"
-OPENSEARCH_HOST="the host (default is locally)"
-OPENSEARCH_PORT="The port to be used"
-INDEX_NAME="the name of the index you want to create"
+EMBEDDING_MODEL_NAME=<the name of the model you want to use for embedding>
+OPENSEARCH_HOST=<the host (default is locally)>
+OPENSEARCH_PORT=<The port to be used>
+INDEX_NAME=<the name of the index you want to create>
 ```
 
 #### 4. Start OpenSearch services
