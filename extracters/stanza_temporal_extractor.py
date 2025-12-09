@@ -33,8 +33,6 @@ class MultiLangTemporalExtractor(ABCExtractor):
             result = search_dates(text, languages=['ar'])
             if result:
                 temporal_set = {match[0] for match in result}
-        else:
-            raise ValueError(f"Language '{lang}' is not supported.")
 
         return temporal_set
 
