@@ -11,7 +11,9 @@ from geopy.exc import (
     GeocoderServiceError,
 )
 
-from extracters.abc_Geo_Location_Extractor import ABCGeoLocationExtractor
+from extracters.abstract_classes.abc_geo_location_finder import (
+    ABCGeoLocationFinder,
+)
 
 
 logger = logging.getLogger(__name__)
@@ -27,7 +29,7 @@ geocode = RateLimiter(
 )
 
 
-class GeopyGeoLocationExtractor(ABCGeoLocationExtractor):
+class GeopyGeoLocationFinder(ABCGeoLocationFinder):
     """
     Concrete geolocation extractor using Geopy + Nominatim.
     """
@@ -35,7 +37,7 @@ class GeopyGeoLocationExtractor(ABCGeoLocationExtractor):
     def _geocode_single_place(self, place_name: str) -> Dict[str, Any] | None:
 
         try:
-            
+
             loc = geocode(
                 place_name,
             )

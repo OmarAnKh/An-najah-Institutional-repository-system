@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 from typing import Any, Dict, List
 
 
-class ABCGeoLocationExtractor(ABC):
+class ABCGeoLocationFinder(ABC):
     """
     Abstract base class for geolocation extraction.
 
@@ -69,5 +69,3 @@ class ABCGeoLocationExtractor(ABC):
                 geo_refs.append(result)
 
         return geo_refs
-
-    
