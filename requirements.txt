@@ -3,3 +3,4 @@ opensearch-py
 pydantic-settings
 stanza
 langdetect
+geopy==2.4.1
