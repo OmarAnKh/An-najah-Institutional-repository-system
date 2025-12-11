@@ -39,4 +39,4 @@ jobs:
 
       - name: Run docstring check (Pydocstyle)
         run: |
-          pydocstyle my_package --select=D101,D102,D103,D106
+          pydocstyle src/ --select=D101,D102,D103,D106
