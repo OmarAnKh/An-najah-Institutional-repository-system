@@ -13,16 +13,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.13
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
+          python-version: '3.11'
           cache: 'pip'
+
+      - name: Install CPU PyTorch wheel
+        run: |
+          python -m pip install --upgrade pip
+          # pick the torch version that works with your Python; example below uses 2.2 CPU wheel:
+          pip install --no-cache-dir torch==2.2.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install --no-cache-dir -r requirements.txt
           pip install black ruff mypy pydocstyle
 
       - name: Format check (Black)
@@ -33,4 +39,4 @@ jobs:
 
       - name: Run docstring check (Pydocstyle)
         run: |
-          pydocstyle src/ --select=D101,D102,D106
+          pydocstyle my_package --select=D101,D102,D103,D106
