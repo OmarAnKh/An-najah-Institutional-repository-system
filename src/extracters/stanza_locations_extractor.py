@@ -1,12 +1,14 @@
-from extracters.abc_extractor import ABCExtractor
+from abstract_classes.abc_extractor import ABCExtractor
 from models.stanza_models import get_model
+
 
 class StanzaLocationsExtractor(ABCExtractor):
     """
     Extracts location names from text using Stanza NLP library.
     Locations include geopolitical entities, facilities, and organizations.
     """
-    def extract(self, text, lang = 'en'):
+
+    def extract(self, text, lang="en"):
         """
         extract location names from a given text.
 
@@ -22,6 +24,11 @@ class StanzaLocationsExtractor(ABCExtractor):
         doc = nlp(text)
         locations = set()
         for ent in doc.ents:
-            if ent.type in {'GPE', 'LOC', 'FAC', 'ORG'}:  # GPE stands for Geo-Political Entity, LOC for Location, FAC for Facility, ORG for Organization
+            if ent.type in {
+                "GPE",
+                "LOC",
+                "FAC",
+                "ORG",
+            }:  # GPE stands for Geo-Political Entity, LOC for Location, FAC for Facility, ORG for Organization
                 locations.add(ent.text)
         return locations

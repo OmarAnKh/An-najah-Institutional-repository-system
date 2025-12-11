@@ -1,5 +1,6 @@
 from pydantic import BaseSettings
 
+
 class GlobalConfig(BaseSettings):
     opensearch_host: str = "localhost"
     opensearch_port: int = 9200

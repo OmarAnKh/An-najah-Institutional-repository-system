@@ -3,7 +3,21 @@ from opensearchpy import OpenSearch
 
 
 class ProjectMapping:
+    """Configure OpenSearch mappings and encode text with a sentence-transformer.
+
+    This class owns the sentence-transformer model, the OpenSearch client,
+    and the index settings/mappings used for the institutional repository.
+    """
+
     def __init__(self, model_name: str, opensearch_host: str, opensearch_port: int):
+        """Initialize the model and OpenSearch client.
+
+        Args:
+            model_name: Name of the sentence-transformer model to load.
+            opensearch_host: Hostname or IP address of the OpenSearch node.
+            opensearch_port: Port on which OpenSearch is listening.
+        """
+
         self.model = SentenceTransformer(model_name)
         self.model_dimension = self.model.get_sentence_embedding_dimension()
         self.client = OpenSearch(
@@ -13,9 +27,20 @@ class ProjectMapping:
         )
 
     def encode_text(self, text: str):
+        """Encode a piece of text into a dense vector using the model."""
+
         return self.model.encode([text])[0]
 
+    def create_index(self, index_name: str):
+        """Create the OpenSearch index with the configured mappings/settings if needed."""
+
+        configurations = self.create_configurations()
+        if not self.client.indices.exists(index=index_name):
+            self.client.indices.create(index=index_name, body=configurations)
+
     def create_configurations(self):
+        """Return the OpenSearch index settings and mappings dictionary."""
+
         configurations = {
             "settings": {
                 "index": {"knn": True},
@@ -217,6 +242,12 @@ class ProjectMapping:
         return configurations
 
     def index_document(self, index_name: str, doc_id: str, text: str):
+        """Index a single text document into the given index.
+
+        A vector representation of the text is computed and stored alongside
+        the raw text under the ``vector`` field.
+        """
+
         vector = self.encode_text(text)
         document = {"text": text, "vector": vector.tolist()}
         self.client.index(index=index_name, id=doc_id, body=document)
