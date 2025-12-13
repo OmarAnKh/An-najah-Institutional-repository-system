@@ -1,5 +1,3 @@
-# geopy_geolocation_extractor.py
-
 import logging
 from typing import Any, Dict
 
@@ -11,7 +9,7 @@ from geopy.exc import (
     GeocoderServiceError,
 )
 
-from extracters.abstract_classes.abc_geo_location_finder import (
+from src.extracters.abstract_classes.abc_geo_location_finder import (
     ABCGeoLocationFinder,
 )
 

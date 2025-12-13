@@ -1,5 +1,5 @@
-from abstract_classes.abc_extractor import ABCExtractor
-from models.stanza_models import get_model
+from src.extracters.abstract_classes.abc_extractor import ABCExtractor
+from src.models.stanza_models import get_model
 
 
 class StanzaLocationsExtractor(ABCExtractor):
