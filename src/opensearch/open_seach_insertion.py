@@ -41,19 +41,16 @@ class OpenSearchInsertion(ABCSearchInsertion):
 
     def preproccesing(
         self,
-        doc,
         jsonl_path: str = "scraped_data/bulk_opensearch.jsonl",
     ):
         """placeholder for preproccesing function"""
-        if index_name is None:
-            index_name = self.index_name
 
         jsonl_file = Path(jsonl_path)
         if not jsonl_file.exists():
             raise FileNotFoundError(f"JSONL file not found: {jsonl_file}")
 
         # Ensure index exists with the configured mappings/settings
-        self.project_mapping.create_index(index_name)
+        self.project_mapping.create_index(self.index_name)
 
         with jsonl_file.open("r", encoding="utf-8") as f:
             for line in f:
@@ -62,20 +59,19 @@ class OpenSearchInsertion(ABCSearchInsertion):
                     continue
 
                 try:
-                    doc = json.loads(line)
+                    json.loads(line)
                 except json.JSONDecodeError:
                     # Skip malformed lines but continue processing the rest
                     continue
 
                 # Compute embedding for the abstract fields
-                abstract = doc.get("abstract", {}) or {}
-                abstract_en = " ".join(abstract.get("en", []) or [])
-                abstract_ar = " ".join(abstract.get("ar", []) or [])
+                # abstract = doc.get("abstract", {}) or {}
+                # abstract_en = " ".join(abstract.get("en", []) or [])
+                # abstract_ar = " ".join(abstract.get("ar", []) or [])
 
     def extract_and_insert(
         self,
-        index_name: str | None = None,
-        jsonl_path: str = "scraped_data/bulk_opensearch.jsonl",
     ):
         """placeholder for extract_and_insert function"""
-        self.opensearch_client.index(index=index_name, body=doc)
+        # self.opensearch_client.index(index=index_name, body=doc)
+        pass
