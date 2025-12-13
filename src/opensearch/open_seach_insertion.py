@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
 
-from extracters.abstract_classes.abc_extractor import ABCExtractor
-from opensearch.abstract_classes.search_insertion import ABCSearchInsertion
-from opensearch.mapping import ProjectMapping
+from src.extracters.abstract_classes.abc_extractor import ABCExtractor
+from src.opensearch.abstract_classes.search_insertion import ABCSearchInsertion
+from src.opensearch.mapping import ProjectMapping
 
 
 class OpenSearchInsertion(ABCSearchInsertion):
@@ -39,18 +39,12 @@ class OpenSearchInsertion(ABCSearchInsertion):
         self.temporal_extractor: ABCExtractor = temporal_extractor
         self.index_name = index_name
 
-    def extract_and_insert(
+    def preproccesing(
         self,
-        index_name: str | None = None,
+        doc,
         jsonl_path: str = "scraped_data/bulk_opensearch.jsonl",
     ):
-        """Read documents from a JSONL file and insert them into OpenSearch.
-
-        This uses the ``ProjectMapping`` instance to ensure the index is
-        created with the correct mappings and to compute the knn vector
-        for the abstract text.
-        """
-
+        """placeholder for preproccesing function"""
         if index_name is None:
             index_name = self.index_name
 
@@ -77,15 +71,11 @@ class OpenSearchInsertion(ABCSearchInsertion):
                 abstract = doc.get("abstract", {}) or {}
                 abstract_en = " ".join(abstract.get("en", []) or [])
                 abstract_ar = " ".join(abstract.get("ar", []) or [])
-                text_for_embedding = " ".join(
-                    part for part in [abstract_en, abstract_ar] if part
-                )
 
-                if text_for_embedding:
-                    vector = self.project_mapping.encode_text(text_for_embedding)
-                    doc["abstract_vector"] = vector.tolist()
-
-                # Optionally, temporal/location extractors could be applied here
-                # to enrich the document further before indexing.
-
-                self.opensearch_client.index(index=index_name, body=doc)
+    def extract_and_insert(
+        self,
+        index_name: str | None = None,
+        jsonl_path: str = "scraped_data/bulk_opensearch.jsonl",
+    ):
+        """placeholder for extract_and_insert function"""
+        self.opensearch_client.index(index=index_name, body=doc)
