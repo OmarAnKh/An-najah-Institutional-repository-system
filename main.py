@@ -2,6 +2,7 @@ from src.services.article_search_service import ArticleSearchService
 from src.opensearch.open_search_client import OpenSearchClient
 
 
+
 # Initialize your OpenSearch client here (not shown)
 client = OpenSearchClient(True, True)
 
