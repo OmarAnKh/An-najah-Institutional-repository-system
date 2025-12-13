@@ -1,5 +1,8 @@
 import json
 from pathlib import Path
+import re
+import html
+from bs4 import BeautifulSoup  
 
 from extracters.abstract_classes.abc_extractor import ABCExtractor
 from opensearch.abstract_classes.search_insertion import ABCSearchInsertion
@@ -38,6 +41,36 @@ class OpenSearchInsertion(ABCSearchInsertion):
         self.location_extractor: ABCExtractor = location_extractor
         self.temporal_extractor: ABCExtractor = temporal_extractor
         self.index_name = index_name
+        
+    def sanitize_text(raw: str) -> str:
+        """Minimal cleaning before embedding: strip HTML, unescape entities,
+        remove control characters, collapse whitespace. Keep stopwords and natural grammar."""
+        if not raw:
+            return ""
+
+        # 1) Remove script/style blocks & tags using BeautifulSoup
+        soup = BeautifulSoup(raw, "html.parser")
+        for tag in soup(["script", "style"]):
+            tag.decompose()
+        text = soup.get_text(separator=" ")
+
+        # 2) Unescape HTML entities
+        text = html.unescape(text)
+
+        # 3) Remove non-printable/control characters
+        text = re.sub(r"[\x00-\x1f\x7f-\x9f]", " ", text)
+
+        # 4) Optionally remove long code blocks fenced by backticks (common in scraped HTML)
+        # Keep this if you frequently index pages with code you don't want embedded.
+        text = re.sub(r"```[\s\S]*?```", " ", text)
+        text = re.sub(r"`[^`]{30,}`", " ", text)  # single-line long inline code
+
+        # 5) Collapse repeated whitespace/newlines to single spaces
+        text = re.sub(r"\s+", " ", text).strip()
+
+
+        return text
+
 
     def extract_and_insert(
         self,
