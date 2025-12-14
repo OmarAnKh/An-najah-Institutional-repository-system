@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Any, Dict, List
 
+from dtos.geo_reference import GeoReference
+
 
 class ABCGeoLocationFinder(ABC):
     """
@@ -21,7 +23,7 @@ class ABCGeoLocationFinder(ABC):
     """
 
     @abstractmethod
-    def _geocode_single_place(self, place_name: str) -> Dict[str, Any] | None:
+    def _geocode_single_place(self, place_name: str) -> GeoReference | None:
         """
         Geocode a single place name into a structured geolocation object.
 
@@ -50,7 +52,7 @@ class ABCGeoLocationFinder(ABC):
         """
         pass
 
-    def extract_from_places(self, places: List[str]) -> List[Dict[str, Any]]:
+    def extract_from_places(self, places: List[str]) -> List[GeoReference]:
         """
         Template method:
         - loops over place names

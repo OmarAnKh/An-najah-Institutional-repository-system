@@ -59,7 +59,7 @@ class ProjectMapping:
             start += step
             
         return chunks
-
+    
     def create_index(self, index_name: str):
         """Create the OpenSearch index with the configured mappings/settings if needed."""
 
@@ -232,28 +232,44 @@ class ProjectMapping:
                         "dynamic": False,
                     },
                     "abstract_vector": {
-                        "type": "knn_vector",  # can be changed to ANN
-                        "dimension": self.model_dimension,
-                        "space_type": "cosinesimil",  # can be changed
-                        "method": {
-                            "name": "hnsw",
-                            "space_type": "cosinesimil",
-                            "engine": "faiss",
-                            "parameters": {
-                                "ef_construction": 150,
-                                "m": 32,
+                        "type": "object",
+                        "properties": {
+                            "en": {
+                                "type": "knn_vector",
+                                "dimension": self.model_dimension,
+                                "space_type": "cosinesimil",
+                                "method": {
+                                    "name": "hnsw",
+                                    "space_type": "cosinesimil",
+                                    "engine": "faiss",
+                                    "parameters": {
+                                        "ef_construction": 150,
+                                        "m": 32,
+                                    },
+                                },
+                            },
+                            "ar": {
+                                "type": "knn_vector",
+                                "dimension": self.model_dimension,
+                                "space_type": "cosinesimil",
+                                "method": {
+                                    "name": "hnsw",
+                                    "space_type": "cosinesimil",
+                                    "engine": "faiss",
+                                    "parameters": {
+                                        "ef_construction": 150,
+                                        "m": 32,
+                                    },
+                                },
                             },
                         },
+                        "dynamic": False,
                     },
                     "hasFiles": {
                         "type": "boolean",
                         "boost": 3.0,  # gives more importance to documents with files
                     },
                     "publicationDate": {"type": "date"},
-                    "reportLocation": {
-                        "type": "geo_point",
-                        "ignore_malformed": True,
-                    },
                     "geoReferences": {
                         "type": "nested",
                         "properties": {
