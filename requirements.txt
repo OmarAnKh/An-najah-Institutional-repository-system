@@ -7,3 +7,5 @@ geopy==2.4.1
 ijson
 beautifulsoup4
 dateparser
+langchain-text-splitters 
+transformers

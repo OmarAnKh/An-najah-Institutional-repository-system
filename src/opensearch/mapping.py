@@ -1,5 +1,8 @@
-from src.opensearch.abstract_classes.ABC_client import ABCClient
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from transformers import AutoTokenizer
 from sentence_transformers import SentenceTransformer
+
+from src.opensearch.abstract_classes.ABC_client import ABCClient
 
 
 class ProjectMapping:
@@ -19,7 +22,7 @@ class ProjectMapping:
 
         self.model = SentenceTransformer(model_name)
         self.model_dimension = self.model.get_sentence_embedding_dimension()
-        self.tokenizer = self.model.tokenizer
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.client = opensearch_client.get_client()
 
     def encode_text(self, text: str):
@@ -43,16 +46,14 @@ class ProjectMapping:
             return []
 
         chunks = []
-        token_ids = self.tokenizer.encode(text, add_special_tokens=False)
-        start = 0
-        step = max_tokens - overlap
-        while start < len(token_ids):
-            end = min(start + max_tokens, len(token_ids))
-            chunk_tokens = token_ids[start:end]
-            chunk_text = self.tokenizer.decode(chunk_tokens)
-            chunks.append(chunk_text)
-            start += step
+        text_splitter = RecursiveCharacterTextSplitter.from_huggingface_tokenizer(
+            tokenizer=self.tokenizer,
+            chunk_size=max_tokens,
+            chunk_overlap=overlap,
+            separators=["\n\n", "\n", ". ", "؟ ", "!", "، ", " ", ""],
+        )
 
+        chunks = text_splitter.split_text(text)
         return chunks
 
     def create_index(self, index_name: str):
