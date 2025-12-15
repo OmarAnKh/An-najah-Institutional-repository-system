@@ -11,19 +11,20 @@ from geopy.exc import (
 from src.extracters.abstract_classes.abc_geo_location_finder import (
     ABCGeoLocationFinder,
 )
-from dtos.geo_reference import GeoReference
-from dtos.geo_coordinates import GeoCoordinates
+from src.dtos.geo_reference import GeoReference
+from src.dtos.geo_coordinates import GeoCoordinates
 
 logger = logging.getLogger(__name__)
 
 
 # Geocoder setup (module-level, reusable & rate-limited)
-geolocator = Nominatim(user_agent="najah_ir_project")
+geolocator = Nominatim(user_agent="najah_ir_project", timeout=5)
 geocode = RateLimiter(
     geolocator.geocode,
     min_delay_seconds=1,
-    max_retries=2,
-    swallow_exceptions=False,
+    max_retries=1,
+    swallow_exceptions=True,  # do not break ingestion on geocode failures
+    error_wait_seconds=1,
 )
 
 

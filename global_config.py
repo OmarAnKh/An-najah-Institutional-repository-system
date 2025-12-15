@@ -8,7 +8,7 @@ class GlobalConfig(BaseSettings):
     opensearch_username: str
     opensearch_password: str
     index_name: str = "documents"
-    embedding_model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
+    embedding_model_name: str
 
 
 global_config = GlobalConfig()

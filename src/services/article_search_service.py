@@ -6,7 +6,11 @@ class ArticleSearchService:
     Service for indexing and searching articles in OpenSearch.
     """
 
-    def __init__(self, index: str, client: ABCClient):
+    def __init__(
+        self,
+        index: str,
+        client: ABCClient,
+    ):
         """
             Class constructor inject the required dependencies via the parameters
         Args:

@@ -22,7 +22,7 @@ class MultiLangTemporalExtractor(ABCExtractor):
         Returns:
             set: A set of extracted temporal expressions.
         """
-        self._validate_text(text)
+        # self._validate_text(text)
         temporal_set = set()
 
         if lang == "en":

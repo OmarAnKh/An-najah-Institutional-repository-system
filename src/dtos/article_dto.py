@@ -2,9 +2,9 @@ from datetime import date
 from typing import List, Optional
 from pydantic import BaseModel, Field
 
-from dtos.geo_reference import GeoReference
-from dtos.localized_text import LocalizedText
-from dtos.localized_vector import LocalizedVector
+from src.dtos.geo_reference import GeoReference
+from src.dtos.localized_text import LocalizedText
+from src.dtos.localized_vector import LocalizedVector
 
 
 class ArticleDTO(BaseModel):

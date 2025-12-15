@@ -1,3 +1,4 @@
+from src.opensearch.abstract_classes.ABC_client import ABCClient
 from sentence_transformers import SentenceTransformer
 from opensearchpy import OpenSearch
 
@@ -9,23 +10,18 @@ class ProjectMapping:
     and the index settings/mappings used for the institutional repository.
     """
 
-    def __init__(self, model_name: str, opensearch_host: str, opensearch_port: int):
+    def __init__(self, model_name: str, opensearch_client: ABCClient):
         """Initialize the model and OpenSearch client.
 
         Args:
             model_name: Name of the sentence-transformer model to load.
-            opensearch_host: Hostname or IP address of the OpenSearch node.
-            opensearch_port: Port on which OpenSearch is listening.
+            opensearch_client: An instance of ABCClient to interact with OpenSearch.
         """
 
         self.model = SentenceTransformer(model_name)
         self.model_dimension = self.model.get_sentence_embedding_dimension()
         self.tokenizer = self.model.tokenizer
-        self.client = OpenSearch(
-            hosts=[{"host": opensearch_host, "port": opensearch_port}],
-            use_ssl=False,
-            verify_certs=False,
-        )
+        self.client = opensearch_client.get_client()
 
     def encode_text(self, text: str):
         """Encode a piece of text into a dense vector using the model."""
@@ -177,6 +173,7 @@ class ProjectMapping:
                             ],
                         },
                     },
+                    "char_filter": {"html_strip_cf": {"type": "html_strip"}},
                     "normalizer": {
                         "keyword_lowercase": {"type": "custom", "filter": ["lowercase"]}
                     },

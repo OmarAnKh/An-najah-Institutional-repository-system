@@ -1,29 +1,30 @@
-import ijson
-import re
 import html
-from bs4 import BeautifulSoup
-from langdetect import detect, LangDetectException
+import json
+import re
 from itertools import zip_longest
-from opensearchpy import helpers
 from typing import Any
 
+from bs4 import BeautifulSoup
+from langdetect import LangDetectException, detect
+from opensearchpy import helpers
+
 from src.extracters.abstract_classes.abc_extractor import ABCExtractor
-from src.opensearch.abstract_classes.search_insertion import ABCSearchInsertion
 from src.extracters.abstract_classes.abc_geo_location_finder import ABCGeoLocationFinder
 from src.opensearch.mapping import ProjectMapping
-from dtos.article_dto import ArticleDTO
-from dtos.localized_text import LocalizedText
-from dtos.localized_vector import LocalizedVector
-from dtos.geo_coordinates import GeoCoordinates
-from dtos.geo_reference import GeoReference
+from src.dtos.article_dto import ArticleDTO
+from src.dtos.localized_text import LocalizedText
+from src.dtos.localized_vector import LocalizedVector
+from src.dtos.geo_coordinates import GeoCoordinates
+from src.dtos.geo_reference import GeoReference
 
 
-class OpenSearchInsertion(ABCSearchInsertion):
+class OpenSearchInsertion:
     """Insert repository documents into OpenSearch using configured mappings.
 
     This class ties together the OpenSearch mapping configuration, the
     sentence-transformer model (via ``ProjectMapping``), and the optional
     location/temporal extractors used to enrich documents before indexing.
+
     """
 
     def __init__(
@@ -43,6 +44,8 @@ class OpenSearchInsertion(ABCSearchInsertion):
                 from document text, if desired.
             temporal_extractor: Extractor used to derive temporal
                 expressions from document text, if desired.
+            geo_location_finder: Geolocation finder to get coordinates
+                for extracted location names.
             index_name: Name of the OpenSearch index to insert into.
         """
 
@@ -52,6 +55,7 @@ class OpenSearchInsertion(ABCSearchInsertion):
         self.temporal_extractor: ABCExtractor = temporal_extractor
         self.geo_location_finder: ABCGeoLocationFinder = geo_location_finder
         self.index_name = index_name
+        self.project_mapping.create_index(index_name)
 
     def sanitize_text(self, raw: str) -> str:
         """Minimal cleaning before embedding: strip HTML, unescape entities,
@@ -251,40 +255,89 @@ class OpenSearchInsertion(ABCSearchInsertion):
 
         return docs
 
-    def generate_documents_from_json_stream(self, index_name: str, jsonl_path: str):
-        """Generate documents from a JSON stream file for bulk insertion.
-        Args:
-            jsonl_path (str): Path to the JSON stream file.
-        Yields:
-            dict: Document ready for OpenSearch bulk insertion.
+    def generate_documents_from_json_stream(self, jsonl_path: str):
+        """Generate documents from a JSON Lines file for bulk insertion.
+
+        Each line is expected to be a standalone JSON object, not a single
+        top-level JSON array. This avoids ijson's trailing-garbage errors on
+        non-array payloads.
         """
         with open(jsonl_path, "r", encoding="utf-8") as f:
-            # ijson.items returns a generator over objects in the top-level array
-            # ijson reads the file incrementally, so memory usage is low
-            for obj in ijson.items(f, "item"):
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    obj = json.loads(line)
+                except json.JSONDecodeError:
+                    # Skip malformed lines but continue processing the rest
+                    continue
+                if obj["abstract"]["en"] == [] and obj["abstract"]["ar"] == []:
+                    continue
                 dtos = self.indexing_pipeline(obj)  # returns list[ArticleDTO]
                 for dto in dtos:
+                    source = dto.model_dump()
+
+                    # Drop empty or dimension-mismatched vectors to avoid KNN errors
+                    vec = source.get("abstract_vector")
+                    if vec is not None:
+                        if (
+                            not vec.get("en")
+                            or len(vec.get("en", []))
+                            != self.project_mapping.model_dimension
+                        ):
+                            vec.pop("en", None)
+                        if (
+                            not vec.get("ar")
+                            or len(vec.get("ar", []))
+                            != self.project_mapping.model_dimension
+                        ):
+                            vec.pop("ar", None)
+                        if not vec:
+                            source.pop("abstract_vector", None)
+
                     yield {
                         "_op_type": "index",
-                        "_index": index_name,
+                        "_index": self.index_name,
                         "_id": f"{dto.bitstream_uuid}_{dto.chunk_id}",
-                        "_source": dto.model_dump(),
+                        "_source": source,
                     }
 
     def extract_and_insert(
         self,
-        index_name: str,
+        chunk_size: int = 500,
         jsonl_path: str = "scraped_data/bulk_opensearch.jsonl",
     ) -> Any:
         """Perform bulk insertion of documents from a JSON stream file.
         Args:
             file_path: Path to the JSON stream file containing raw records.
         """
-        self.index_name = index_name
         try:
-            documents = self.generate_documents_from_json_stream(index_name, jsonl_path)
-            helpers.bulk(self.opensearch_client, documents, chunk_size=500)
+            print("Starting bulk insertion...")
+            documents = self.generate_documents_from_json_stream(jsonl_path)
+            print("Generated documents for bulk insertion.")
+
+            success, errors = helpers.bulk(
+                self.opensearch_client,
+                documents,
+                chunk_size=chunk_size,
+                raise_on_error=False,
+                request_timeout=120,
+            )
+
+            if errors:
+                print(
+                    f"Bulk completed with {len(errors)} errors and {success} successes."
+                )
+                # Show a few sample errors to diagnose (avoid huge dumps)
+                for err in errors[:5]:
+                    print("Sample bulk error:", err)
+            else:
+                print(f"Bulk completed successfully. Indexed {success} documents.")
+
         except ImportError:
             print(
                 "opensearchpy is not installed. Please install it to use bulk_insert."
             )
+        except Exception as exc:
+            print(f"Bulk ingestion failed: {exc}")

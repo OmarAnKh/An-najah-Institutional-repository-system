@@ -1,33 +1,24 @@
 from abc import ABC, abstractmethod
-from typing import Any
+from typing import Any, Dict, Iterable
 
 
-class ABCSearchInsertion(ABC):
-    """
-    An abstract base class for search insertion operations.
-    so that any subclass must implement the extract_and_insert method.
-    so if the user wants to change the extraction or insertion logic, or
-    the service like switching from OpenSearch to another search engine,
-    they can do so by creating a new subclass that implements this method.
-
-    Args:
-        ABC (_type_): _description_
-
-    Raises:
-        NotImplementedError: _description_
-    """
+class AbstractDocumentIngestionService(ABC):
+    """Contract for services that transform raw records and ingest them into search."""
 
     @abstractmethod
-    def extract_and_insert(
+    def stream_documents(
         self,
+        *,
         index_name: str,
-        jsonl_path: str = "scraped_data/bulk_opensearch.jsonl",
-    ) -> Any:
-        """Insert documents from a JSONL file into an OpenSearch index.
+        jsonl_path: str,
+    ) -> Iterable[Dict[str, Any]]:
+        """Yield search documents ready for bulk indexing."""
 
-        Implementations should read JSON objects line-by-line from the
-        provided file, apply any required extraction/augmentation logic,
-        and index the resulting documents into the given index.
-        """
-
-        raise NotImplementedError
+    @abstractmethod
+    def ingest(
+        self,
+        *,
+        index_name: str | None = None,
+        jsonl_path: str | None = None,
+    ) -> None:
+        """Perform ingestion using the configured search backend."""

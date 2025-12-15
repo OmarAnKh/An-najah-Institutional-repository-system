@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Any, Dict, List
 
-from dtos.geo_reference import GeoReference
+from src.dtos.geo_reference import GeoReference
 
 
 class ABCGeoLocationFinder(ABC):

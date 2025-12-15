@@ -1,4 +1,4 @@
 from .ABC_client import ABCClient
-from .search_insertion import ABCSearchInsertion
+from .search_insertion import AbstractDocumentIngestionService
 
-__all__ = ["ABCClient", "ABCSearchInsertion"]
+__all__ = ["ABCClient", "AbstractDocumentIngestionService"]

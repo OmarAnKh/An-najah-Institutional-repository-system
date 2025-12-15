@@ -19,7 +19,7 @@ class StanzaLocationsExtractor(ABCExtractor):
         Returns:
             set: A set of extracted location names.
         """
-        self._validate_text(text)
+        # self._validate_text(text)
         nlp = get_model(lang)
         doc = nlp(text)
         locations = set()
