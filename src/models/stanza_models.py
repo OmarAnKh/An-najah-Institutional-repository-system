@@ -6,9 +6,10 @@ _models = {}
 # Supported languages
 _languages = ["en", "ar"]
 
-# Download models for supported languages
-for lang_code in _languages:
-    stanza.download(lang_code)
+
+def _ensure_model(lang: str) -> None:
+    """Download model for lang if missing; no-op when already present."""
+    stanza.download(lang, verbose=False)
 
 
 def get_model(lang):
@@ -26,5 +27,6 @@ def get_model(lang):
     if lang not in _languages:
         raise ValueError(f"Language '{lang}' is not supported.")
     if lang not in _models:
+        _ensure_model(lang)
         _models[lang] = stanza.Pipeline(lang=lang, processors="tokenize,mwt,ner")
     return _models[lang]

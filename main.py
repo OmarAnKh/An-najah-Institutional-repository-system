@@ -19,5 +19,6 @@ article_service = ArticleSearchService(index="articles", client=client)
 # )
 # print(results)
 
+
 result = article_service.client_health()
 print(result)

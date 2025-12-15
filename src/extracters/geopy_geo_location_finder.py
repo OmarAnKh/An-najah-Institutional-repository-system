@@ -45,23 +45,13 @@ class GeopyGeoLocationFinder(ABCGeoLocationFinder):
                 logger.debug(f"No geocode result for '{place_name}'")
                 return None
 
-            # return {
-            #     "placeName": place_name,
-            #     "coordinates": {
-            #         "lat": float(loc.latitude),
-            #         "lon": float(loc.longitude),
-            #     },
-            # }
-            
             return GeoReference(
-                placeName=place_name,   
+                placeName=place_name,
                 coordinates=GeoCoordinates(
                     lat=float(loc.latitude),
                     lon=float(loc.longitude),
                 ),
             )
-            
-            
 
         except GeocoderTimedOut:
             logger.warning(f"Timeout while geocoding '{place_name}'")

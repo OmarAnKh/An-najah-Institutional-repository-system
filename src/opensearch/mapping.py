@@ -31,7 +31,7 @@ class ProjectMapping:
         """Encode a piece of text into a dense vector using the model."""
 
         return self.model.encode([text])[0]
-    
+
     def chunk_text(self, text: str, max_tokens: int = 450, overlap: int = 50):
         """Chunk the input text into smaller pieces based on token count.
 
@@ -46,7 +46,7 @@ class ProjectMapping:
 
         if not text:
             return []
-        
+
         chunks = []
         token_ids = self.tokenizer.encode(text, add_special_tokens=False)
         start = 0
@@ -57,9 +57,9 @@ class ProjectMapping:
             chunk_text = self.tokenizer.decode(chunk_tokens)
             chunks.append(chunk_text)
             start += step
-            
+
         return chunks
-    
+
     def create_index(self, index_name: str):
         """Create the OpenSearch index with the configured mappings/settings if needed."""
 

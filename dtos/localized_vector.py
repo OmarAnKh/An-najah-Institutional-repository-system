@@ -1,5 +1,8 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+
 
 class LocalizedVector(BaseModel):
-    en: list[float] = []
-    ar: list[float] = []
+    """A DTO for localized vector representations."""
+
+    en: list[float] = Field(default_factory=list)
+    ar: list[float] = Field(default_factory=list)
