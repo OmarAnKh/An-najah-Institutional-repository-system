@@ -1,5 +1,4 @@
 import logging
-from typing import Any, Dict
 
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
@@ -12,7 +11,8 @@ from geopy.exc import (
 from src.extracters.abstract_classes.abc_geo_location_finder import (
     ABCGeoLocationFinder,
 )
-
+from dtos.geo_reference import GeoReference
+from dtos.geo_coordinates import GeoCoordinates
 
 logger = logging.getLogger(__name__)
 
@@ -32,7 +32,7 @@ class GeopyGeoLocationFinder(ABCGeoLocationFinder):
     Concrete geolocation extractor using Geopy + Nominatim.
     """
 
-    def _geocode_single_place(self, place_name: str) -> Dict[str, Any] | None:
+    def _geocode_single_place(self, place_name: str) -> GeoReference | None:
 
         try:
 
@@ -44,13 +44,13 @@ class GeopyGeoLocationFinder(ABCGeoLocationFinder):
                 logger.debug(f"No geocode result for '{place_name}'")
                 return None
 
-            return {
-                "placeName": place_name,
-                "coordinates": {
-                    "lat": float(loc.latitude),
-                    "lon": float(loc.longitude),
-                },
-            }
+            return GeoReference(
+                placeName=place_name,
+                coordinates=GeoCoordinates(
+                    lat=float(loc.latitude),
+                    lon=float(loc.longitude),
+                ),
+            )
 
         except GeocoderTimedOut:
             logger.warning(f"Timeout while geocoding '{place_name}'")

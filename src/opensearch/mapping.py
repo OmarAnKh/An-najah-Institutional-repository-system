@@ -20,6 +20,7 @@ class ProjectMapping:
 
         self.model = SentenceTransformer(model_name)
         self.model_dimension = self.model.get_sentence_embedding_dimension()
+        self.tokenizer = self.model.tokenizer
         self.client = OpenSearch(
             hosts=[{"host": opensearch_host, "port": opensearch_port}],
             use_ssl=False,
@@ -30,6 +31,34 @@ class ProjectMapping:
         """Encode a piece of text into a dense vector using the model."""
 
         return self.model.encode([text])[0]
+
+    def chunk_text(self, text: str, max_tokens: int = 450, overlap: int = 50):
+        """Chunk the input text into smaller pieces based on token count.
+
+        Args:
+            text (str): _input text to be chunked.
+            max_tokens (int, optional): Maximum number of tokens per chunk. Defaults to 450.
+            overlap (int, optional): Number of tokens to overlap between chunks. Defaults to 50.
+
+        Returns:
+            List[str]: List of text chunks.
+        """
+
+        if not text:
+            return []
+
+        chunks = []
+        token_ids = self.tokenizer.encode(text, add_special_tokens=False)
+        start = 0
+        step = max_tokens - overlap
+        while start < len(token_ids):
+            end = min(start + max_tokens, len(token_ids))
+            chunk_tokens = token_ids[start:end]
+            chunk_text = self.tokenizer.decode(chunk_tokens)
+            chunks.append(chunk_text)
+            start += step
+
+        return chunks
 
     def create_index(self, index_name: str):
         """Create the OpenSearch index with the configured mappings/settings if needed."""
@@ -203,28 +232,44 @@ class ProjectMapping:
                         "dynamic": False,
                     },
                     "abstract_vector": {
-                        "type": "knn_vector",  # can be changed to ANN
-                        "dimension": self.model_dimension,
-                        "space_type": "cosinesimil",  # can be changed
-                        "method": {
-                            "name": "hnsw",
-                            "space_type": "cosinesimil",
-                            "engine": "faiss",
-                            "parameters": {
-                                "ef_construction": 150,
-                                "m": 32,
+                        "type": "object",
+                        "properties": {
+                            "en": {
+                                "type": "knn_vector",
+                                "dimension": self.model_dimension,
+                                "space_type": "cosinesimil",
+                                "method": {
+                                    "name": "hnsw",
+                                    "space_type": "cosinesimil",
+                                    "engine": "faiss",
+                                    "parameters": {
+                                        "ef_construction": 150,
+                                        "m": 32,
+                                    },
+                                },
+                            },
+                            "ar": {
+                                "type": "knn_vector",
+                                "dimension": self.model_dimension,
+                                "space_type": "cosinesimil",
+                                "method": {
+                                    "name": "hnsw",
+                                    "space_type": "cosinesimil",
+                                    "engine": "faiss",
+                                    "parameters": {
+                                        "ef_construction": 150,
+                                        "m": 32,
+                                    },
+                                },
                             },
                         },
+                        "dynamic": False,
                     },
                     "hasFiles": {
                         "type": "boolean",
                         "boost": 3.0,  # gives more importance to documents with files
                     },
                     "publicationDate": {"type": "date"},
-                    "reportLocation": {
-                        "type": "geo_point",
-                        "ignore_malformed": True,
-                    },
                     "geoReferences": {
                         "type": "nested",
                         "properties": {

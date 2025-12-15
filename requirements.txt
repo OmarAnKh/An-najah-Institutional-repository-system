@@ -4,3 +4,6 @@ pydantic-settings
 stanza
 langdetect
 geopy==2.4.1
+ijson
+beautifulsoup4
+dateparser
