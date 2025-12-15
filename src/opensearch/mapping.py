@@ -1,6 +1,5 @@
 from src.opensearch.abstract_classes.ABC_client import ABCClient
 from sentence_transformers import SentenceTransformer
-from opensearchpy import OpenSearch
 
 
 class ProjectMapping:
