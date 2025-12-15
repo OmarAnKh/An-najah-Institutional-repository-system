@@ -1,6 +1,7 @@
 import html
 import json
 import re
+from datetime import date
 from itertools import zip_longest
 from typing import Any
 
@@ -167,6 +168,37 @@ class OpenSearchInsertion:
         geo_refs = self.geo_location_finder.extract_from_places(place_names)
         return geo_refs
 
+    def _parse_publication_date(self, value) -> date | None:
+        """Normalize publicationDate to a date or None.
+
+        - Accepts date directly.
+        - If int or numeric string (year), converts to Jan 1 of that year.
+        - If full ISO date string, lets pydantic coerce it later.
+        - Otherwise returns None.
+        """
+
+        if value is None:
+            return None
+
+        if isinstance(value, date):
+            return value
+
+        # Year as int or numeric string
+        if isinstance(value, int):
+            return date(value, 1, 1)
+
+        if isinstance(value, str):
+            v = value.strip()
+            if v.isdigit() and len(v) == 4:
+                try:
+                    return date(int(v), 1, 1)
+                except ValueError:
+                    return None
+            # Leave other strings for pydantic to parse if valid ISO, else None
+            return v or None
+
+        return None
+
     def encode_text(self, text: str) -> list[float]:
         """Encode text using the project mapping's model.
         args:
@@ -246,7 +278,9 @@ class OpenSearchInsertion:
                 abstract_vector=abstract_vector,
                 author=obj.get("author", []),
                 hasFiles=obj.get("hasFiles", False),
-                publicationDate=obj.get("publicationDate", None),
+                publicationDate=self._parse_publication_date(
+                    obj.get("publicationDate")
+                ),
                 geoReferences=geo_references,
                 temporalExpressions=temporal_expressions,
             )

@@ -1,7 +1,7 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from transformers import AutoTokenizer
 from sentence_transformers import SentenceTransformer
-
+import torch
 from src.opensearch.abstract_classes.ABC_client import ABCClient
 
 
@@ -19,8 +19,8 @@ class ProjectMapping:
             model_name: Name of the sentence-transformer model to load.
             opensearch_client: An instance of ABCClient to interact with OpenSearch.
         """
-
-        self.model = SentenceTransformer(model_name)
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.model = SentenceTransformer(model_name, device=device)
         self.model_dimension = self.model.get_sentence_embedding_dimension()
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.client = opensearch_client.get_client()
