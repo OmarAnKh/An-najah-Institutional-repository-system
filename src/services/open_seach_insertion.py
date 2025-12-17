@@ -1,7 +1,7 @@
 import html
 import json
 import re
-from datetime import date
+from datetime import date, datetime
 from itertools import zip_longest
 from typing import Any
 
@@ -189,15 +189,36 @@ class OpenSearchInsertion:
 
         if isinstance(value, str):
             v = value.strip()
+
+            # Pure year, e.g. "2016"
             if v.isdigit() and len(v) == 4:
                 try:
                     return date(int(v), 1, 1)
                 except ValueError:
                     return None
-            # Leave other strings for pydantic to parse if valid ISO, else None
-            return v or None
+
+            # Try full ISO date or datetime; if parsing fails, treat as missing
+            try:
+                # datetime covers both date and datetime strings
+                dt = datetime.fromisoformat(v)
+                return dt.date()
+            except ValueError:
+                try:
+                    return date.fromisoformat(v)
+                except ValueError:
+                    return None
 
         return None
+
+    @staticmethod
+    def _safe_str(value: Any) -> str:
+        """Coerce a potentially None or non-string value into a safe string."""
+
+        if value is None:
+            return ""
+        if isinstance(value, str):
+            return value
+        return str(value)
 
     def encode_text(self, text: str) -> list[float]:
         """Encode text using the project mapping's model.
@@ -270,8 +291,8 @@ class OpenSearchInsertion:
             )
 
             article_dto = ArticleDTO(
-                collection=obj.get("collection", ""),
-                bitstream_uuid=obj.get("bitstream_uuid", ""),
+                collection=self._safe_str(obj.get("collection")),
+                bitstream_uuid=self._safe_str(obj.get("bitstream_uuid")),
                 chunk_id=chunk_id,
                 title=title_dto,
                 abstract=chunk,

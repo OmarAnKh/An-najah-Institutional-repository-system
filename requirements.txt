@@ -9,3 +9,5 @@ beautifulsoup4
 dateparser
 langchain-text-splitters 
 transformers
+requests-aws4auth
+boto3

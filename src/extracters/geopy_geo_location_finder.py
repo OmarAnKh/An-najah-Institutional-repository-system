@@ -16,6 +16,9 @@ from src.dtos.geo_coordinates import GeoCoordinates
 
 logger = logging.getLogger(__name__)
 
+# Quiet down noisy internal logging from geopy's RateLimiter during bulk runs
+logging.getLogger("geopy").setLevel(logging.ERROR)
+
 
 # Geocoder setup (module-level, reusable & rate-limited)
 geolocator = Nominatim(user_agent="najah_ir_project", timeout=5)
