@@ -4,7 +4,9 @@ from typing import Dict, List, Tuple
 
 from global_config import global_config
 from src.opensearch.open_search_client import OpenSearchClient
-from src.services.article_search_service import ArticleSearchService
+from src.services.an_najah_repository_search_service import (
+    AnNajahRepositorySearchService,
+)
 
 
 @dataclass
@@ -103,7 +105,7 @@ def evaluate_ir(*, k: int = 10, csv_path: str) -> Tuple[float, float, float]:
 
     # Initialize OpenSearch-backed search service
     client = OpenSearchClient(use_ssl=True, verify_certs=True)
-    search_service = ArticleSearchService(
+    search_service = AnNajahRepositorySearchService(
         index=global_config.index_name,
         client=client,
     )

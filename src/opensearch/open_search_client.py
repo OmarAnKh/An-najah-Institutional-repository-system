@@ -50,9 +50,6 @@ class OpenSearchClient(ABCClient):
 
             session = boto3.Session()
 
-            sts = session.client("sts")
-            print("STS identity:", sts.get_caller_identity())
-
             credentials = session.get_credentials()
             region = global_config.aws_region
             service = "es"
