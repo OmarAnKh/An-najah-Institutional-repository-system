@@ -27,5 +27,3 @@ opensearch = OpenSearchInsertion(
 # )
 
 # ollama_model = OllamaGenerativeModel(model_name=global_config.generative_model_name)
-
-
