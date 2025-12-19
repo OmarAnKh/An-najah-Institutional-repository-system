@@ -4,6 +4,9 @@ from src.opensearch.mapping import ProjectMapping
 from src.extracters.stanza_temporal_extractor import MultiLangTemporalExtractor
 from src.extracters.stanza_locations_extractor import StanzaLocationsExtractor
 from src.extracters.geopy_geo_location_finder import GeopyGeoLocationFinder
+from src.services.an_najah_repository_search_service import (
+    AnNajahRepositorySearchService,
+)
 from global_config import global_config
 
 client = OpenSearchClient(True, True)
@@ -13,7 +16,7 @@ project_mapping = ProjectMapping(
     opensearch_client=client,
 )
 
-opensearch = OpenSearchInsertion(
+opensearch_insertion_client = OpenSearchInsertion(
     project_mapping,
     location_extractor=StanzaLocationsExtractor(),
     temporal_extractor=MultiLangTemporalExtractor(),
@@ -21,7 +24,9 @@ opensearch = OpenSearchInsertion(
     index_name=global_config.index_name,
 )
 
+opensearch_search_service = AnNajahRepositorySearchService(
+    index=global_config.index_name,
+    client=client,
+)
 
-client_test = client.get_client()
-if client_test.ping():
-    print("Connected to OpenSearch successfully!")
+print(opensearch_search_service.client_health())
