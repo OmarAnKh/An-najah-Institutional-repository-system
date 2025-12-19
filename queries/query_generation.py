@@ -100,10 +100,3 @@ class QueryGeneration(Query):
         return response.response
 
 
-# Usage
-query_generator = QueryGeneration()
-prompt = "give me all the documents from 2018"
-result = query_generator.generate_opensearch_query(prompt)
-
-print("Response from Ollama:")
-print(result)
