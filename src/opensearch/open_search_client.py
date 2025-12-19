@@ -6,6 +6,10 @@ import boto3
 
 
 class OpenSearchClient(ABCClient):
+    """Singleton OpenSearch client for connecting to an OpenSearch cluster.
+    Implements the singleton pattern to ensure only one instance of the client exists.
+    """
+
     _instance = None
     _client: OpenSearch | None = None
     _initialized = False
