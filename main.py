@@ -20,3 +20,8 @@ opensearch = OpenSearchInsertion(
     geo_location_finder=GeopyGeoLocationFinder(),
     index_name=global_config.index_name,
 )
+
+
+client_test =client.get_client()
+if client_test.ping():
+    print("Connected to OpenSearch successfully!")
