@@ -1,7 +1,7 @@
 from src.opensearch.abstract_classes.ABC_client import ABCClient
 
 
-class ArticleSearchService:
+class AnNajahRepositorySearchService:
     """
     Service for indexing and searching articles in OpenSearch.
     """
@@ -19,18 +19,6 @@ class ArticleSearchService:
         """
         self._client = client
         self._index = index
-
-    def index_article(self, id: str, body: dict):
-        """
-        Docstring for index_article
-
-        param:
-        index: the name of the index
-        id: the document id
-        body: the document body as a dictionary
-        """
-        es = self._client.get_client()
-        es.index(index=self._index, id=id, body=body)
 
     def search_articles(self, query: dict):
         """simple search function for custom queries
