@@ -89,14 +89,11 @@ class QueryGeneration(Query):
             The generated OpenSearch query as a string.
         """
         # Combine system and user messages
-        combined_prompt = f"System: {prompt_function()}\nUser: {user_prompt}\nAssistant:"
-
-        # Send the combined prompt to the Ollama model for query generation
-        response = self.client.generate(
-            model=self.model,
-            prompt=combined_prompt
+        combined_prompt = (
+            f"System: {prompt_function()}\nUser: {user_prompt}\nAssistant:"
         )
 
+        # Send the combined prompt to the Ollama model for query generation
+        response = self.client.generate(model=self.model, prompt=combined_prompt)
+
         return response.response
-
-
