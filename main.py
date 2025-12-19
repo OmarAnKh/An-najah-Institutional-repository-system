@@ -22,6 +22,10 @@ opensearch = OpenSearchInsertion(
 )
 
 
-opensearch.extract_and_insert(
-    jsonl_path="src/data/bulk_opensearch.jsonl",
-)
+# opensearch.extract_and_insert(
+#     jsonl_path="src/data/bulk_opensearch.jsonl",
+# )
+
+# ollama_model = OllamaGenerativeModel(model_name=global_config.generative_model_name)
+
+

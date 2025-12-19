@@ -13,6 +13,7 @@ class GlobalConfig(BaseSettings):
     aws_region: str
     aws_secret_access_key: str
     aws_access_key_id: str
+    generative_model_name: str
 
 
 global_config = GlobalConfig()
@@ -28,4 +29,3 @@ boto3.setup_default_session(
     aws_secret_access_key=global_config.aws_secret_access_key,
     region_name=global_config.aws_region,
 )
-
