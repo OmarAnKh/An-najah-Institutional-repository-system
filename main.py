@@ -18,12 +18,10 @@ opensearch = OpenSearchInsertion(
     location_extractor=StanzaLocationsExtractor(),
     temporal_extractor=MultiLangTemporalExtractor(),
     geo_location_finder=GeopyGeoLocationFinder(),
-    index_name="an_najah_repository",
+    index_name=global_config.index_name,
 )
 
 
-# opensearch.extract_and_insert(
-#     jsonl_path="src/data/bulk_opensearch.jsonl",
-# )
-
-# ollama_model = OllamaGenerativeModel(model_name=global_config.generative_model_name)
+client_test = client.get_client()
+if client_test.ping():
+    print("Connected to OpenSearch successfully!")
