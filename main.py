@@ -22,6 +22,6 @@ opensearch = OpenSearchInsertion(
 )
 
 
-client_test =client.get_client()
+client_test = client.get_client()
 if client_test.ping():
     print("Connected to OpenSearch successfully!")
