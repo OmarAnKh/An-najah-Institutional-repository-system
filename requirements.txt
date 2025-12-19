@@ -12,3 +12,5 @@ transformers
 requests-aws4auth
 boto3
 pandas
+langchain
+langchain-ollama

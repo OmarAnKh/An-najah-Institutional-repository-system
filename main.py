@@ -20,4 +20,3 @@ opensearch = OpenSearchInsertion(
     geo_location_finder=GeopyGeoLocationFinder(),
     index_name=global_config.index_name,
 )
-
