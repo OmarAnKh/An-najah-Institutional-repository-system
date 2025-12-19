@@ -1,0 +1,1015 @@
+{
+  "collection_id": "b413d370-5abb-4878-9642-cdf5aa2f924b",
+  "collection_name": "1st International Conference on Urban Planning in Palestine: Current Challenges & Future Prospects",
+  "total_items": 7,
+  "items": [
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/7c954180-c090-4bcd-847e-72628aa457a0"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "7c954180-c090-4bcd-847e-72628aa457a0",
+          "uuid": "7c954180-c090-4bcd-847e-72628aa457a0",
+          "name": "The Implications for Public Land Management on Building and Developing the Palestinian State",
+          "handle": "20.500.11888/9939",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Estephan Salameh",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:39:15Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:39:15Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2008-10-21",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9939",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "The Implications for Public Land Management on Building and Developing the Palestinian State",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "The Implications for Public Land Management on Building and Developing the Palestinian State",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:46:39.020+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/7c954180-c090-4bcd-847e-72628aa457a0/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/7c954180-c090-4bcd-847e-72628aa457a0/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/7c954180-c090-4bcd-847e-72628aa457a0/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/7c954180-c090-4bcd-847e-72628aa457a0/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/7c954180-c090-4bcd-847e-72628aa457a0/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/7c954180-c090-4bcd-847e-72628aa457a0/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/7c954180-c090-4bcd-847e-72628aa457a0/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/7c954180-c090-4bcd-847e-72628aa457a0/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/7c954180-c090-4bcd-847e-72628aa457a0"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/89134542-0d1d-41df-8a0f-7e278a1ed2be"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "89134542-0d1d-41df-8a0f-7e278a1ed2be",
+          "uuid": "89134542-0d1d-41df-8a0f-7e278a1ed2be",
+          "name": "Strategy for Urban Development: Case Study from the City of Nablus",
+          "handle": "20.500.11888/9942",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Eng. Ibraheem Hamoz",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:39:16Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:39:16Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2008-10-21",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9942",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Strategy for Urban Development: Case Study from the City of Nablus",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Strategy for Urban Development: Case Study from the City of Nablus",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:55:45.152+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/89134542-0d1d-41df-8a0f-7e278a1ed2be/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/89134542-0d1d-41df-8a0f-7e278a1ed2be/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/89134542-0d1d-41df-8a0f-7e278a1ed2be/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/89134542-0d1d-41df-8a0f-7e278a1ed2be/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/89134542-0d1d-41df-8a0f-7e278a1ed2be/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/89134542-0d1d-41df-8a0f-7e278a1ed2be/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/89134542-0d1d-41df-8a0f-7e278a1ed2be/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/89134542-0d1d-41df-8a0f-7e278a1ed2be/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/89134542-0d1d-41df-8a0f-7e278a1ed2be"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/98cd5a42-7c38-47ac-81f2-d6ccde4b433d"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "98cd5a42-7c38-47ac-81f2-d6ccde4b433d",
+          "uuid": "98cd5a42-7c38-47ac-81f2-d6ccde4b433d",
+          "name": "Housing as a threatened tool for Arab in East Jerusalem",
+          "handle": "20.500.11888/9936",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Ruba Awwad",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:39:15Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:39:15Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2008-10-21",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9936",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Housing as a threatened tool for Arab in East Jerusalem",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Housing as a threatened tool for Arab in East Jerusalem",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T01:06:22.384+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/98cd5a42-7c38-47ac-81f2-d6ccde4b433d/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/98cd5a42-7c38-47ac-81f2-d6ccde4b433d/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/98cd5a42-7c38-47ac-81f2-d6ccde4b433d/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/98cd5a42-7c38-47ac-81f2-d6ccde4b433d/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/98cd5a42-7c38-47ac-81f2-d6ccde4b433d/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/98cd5a42-7c38-47ac-81f2-d6ccde4b433d/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/98cd5a42-7c38-47ac-81f2-d6ccde4b433d/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/98cd5a42-7c38-47ac-81f2-d6ccde4b433d/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/98cd5a42-7c38-47ac-81f2-d6ccde4b433d"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/116e8d9d-cb19-46ce-a4be-0d3870bf405b"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "116e8d9d-cb19-46ce-a4be-0d3870bf405b",
+          "uuid": "116e8d9d-cb19-46ce-a4be-0d3870bf405b",
+          "name": "Planning Capacities within the Palestinian Municipalities",
+          "handle": "20.500.11888/9938",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Iyad Rammal",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Eng. Samah Abuoun Hamad",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:39:15Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:39:15Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2008-10-21",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>Municipalities in Palestine are responsible for the planning and organization of cities and public services based on the Local Council Law No. (1) for the year 1997.The capacities within the municipalities vary tremendously throughout their different types, depending on availability of resources in addition to other factors. The study that was conducted on 17 municipalities representing the different types and sizes of municipalities in West Bank and Gaza Strip, in which a questionnaire was developed and focused on the following dimensions: The legal framework: 1) The institutional framework. 2) Awareness (institutional and public) of the importance of planning and community participation. In addition, the study has drafted out the good and bad planning practices within municipalities; these findings will draw the framework of what is needed to enhance and develop the planning process within municipalities. Also, it will enable develop the needed policies and procedures, manual and projects for supporting this sector within municipalities. This initiative has been designed as one of the activities under the overall local government capacity building program. The results of the survey showed the weaknesses and strengths of the planning practices and arrangements within municipalities. The capacity building aspects are considered in three levels as follows: 1) the environment surrounding the physical planning practices in Palestine. 2) the system within the municipalities; this includes the manuals, tools, etc. 3) the human capacities aspects related to training and equipment. Based on this framework the study will provide the recommendations and activities needed to fulfill the reform process within municipalities in the field of physical planning.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>Municipalities in Palestine are responsible for the planning and organization of cities and public services based on the Local Council Law No. (1) for the year 1997.The capacities within the municipalities vary tremendously throughout their different types, depending on availability of resources in addition to other factors. The study that was conducted on 17 municipalities representing the different types and sizes of municipalities in West Bank and Gaza Strip, in which a questionnaire was developed and focused on the following dimensions: The legal framework: 1) The institutional framework. 2) Awareness (institutional and public) of the importance of planning and community participation. In addition, the study has drafted out the good and bad planning practices within municipalities; these findings will draw the framework of what is needed to enhance and develop the planning process within municipalities. Also, it will enable develop the needed policies and procedures, manual and projects for supporting this sector within municipalities. This initiative has been designed as one of the activities under the overall local government capacity building program. The results of the survey showed the weaknesses and strengths of the planning practices and arrangements within municipalities. The capacity building aspects are considered in three levels as follows: 1) the environment surrounding the physical planning practices in Palestine. 2) the system within the municipalities; this includes the manuals, tools, etc. 3) the human capacities aspects related to training and equipment. Based on this framework the study will provide the recommendations and activities needed to fulfill the reform process within municipalities in the field of physical planning.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9938",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Planning Capacities within the Palestinian Municipalities",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Planning Capacities within the Palestinian Municipalities",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T22:51:39.627+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/116e8d9d-cb19-46ce-a4be-0d3870bf405b/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/116e8d9d-cb19-46ce-a4be-0d3870bf405b/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/116e8d9d-cb19-46ce-a4be-0d3870bf405b/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/116e8d9d-cb19-46ce-a4be-0d3870bf405b/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/116e8d9d-cb19-46ce-a4be-0d3870bf405b/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/116e8d9d-cb19-46ce-a4be-0d3870bf405b/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/116e8d9d-cb19-46ce-a4be-0d3870bf405b/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/116e8d9d-cb19-46ce-a4be-0d3870bf405b/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/116e8d9d-cb19-46ce-a4be-0d3870bf405b"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/635f4b62-31f6-4e89-829f-244777e935b8"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "635f4b62-31f6-4e89-829f-244777e935b8",
+          "uuid": "635f4b62-31f6-4e89-829f-244777e935b8",
+          "name": "Planning in Big Cities and Metropolitan Areas in Palestine: Case Study from the City of Hebron",
+          "handle": "20.500.11888/9941",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Engs. Ismail Talhmeh",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Maher Jaber",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:39:16Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:39:16Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2008-10-21",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9941",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Planning in Big Cities and Metropolitan Areas in Palestine: Case Study from the City of Hebron",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Planning in Big Cities and Metropolitan Areas in Palestine: Case Study from the City of Hebron",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:26:20.935+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/635f4b62-31f6-4e89-829f-244777e935b8/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/635f4b62-31f6-4e89-829f-244777e935b8/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/635f4b62-31f6-4e89-829f-244777e935b8/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/635f4b62-31f6-4e89-829f-244777e935b8/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/635f4b62-31f6-4e89-829f-244777e935b8/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/635f4b62-31f6-4e89-829f-244777e935b8/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/635f4b62-31f6-4e89-829f-244777e935b8/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/635f4b62-31f6-4e89-829f-244777e935b8/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/635f4b62-31f6-4e89-829f-244777e935b8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/703f7ff1-b256-4485-b10c-a4b195be3e50"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "703f7ff1-b256-4485-b10c-a4b195be3e50",
+          "uuid": "703f7ff1-b256-4485-b10c-a4b195be3e50",
+          "name": "Geo-Demographical Outlook for Jerusalem",
+          "handle": "20.500.11888/9937",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Jad Isaac",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Suhail Khalilieh",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              },
+              {
+                "value": "Ahmad El-Atrash",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 2
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:39:15Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:39:15Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2008-10-21",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>Jerusalem is an epicenter of a series of contested confrontations and events both from the past and throughout modern history; today it is a living paradigm of distinctive apartheid that is epitomized, among many of its other forms, in the urban planning system practiced in the City, where indigenous Palestinian Jerusalemites have substandard living rights. This paper will attempt to demonstrate and expose Israeli Occupation planning and building policies and uncover the systematic discrimination adopted and practiced against Arab-Palestinians. This discrimination is mainly manifested in the prejudiced zoning classifications of occupied East Jerusalem in favor of illegal Israeli-Jewish existence there to that of the Palestinian population,which include, among others: discrimination in building permits and regulations,confiscating and razing land, erecting and expanding illegal Israeli colonies and outposts, paving Israeli designated roads, demolishing Palestinian houses, and now excluding entire Arab-Palestinian communities with the Separation Wall.Furthermore, the paper will work on the delineation of de facto Israeli administrative changes of the demarcated Jerusalem City boundary set within the United Nations partition plan of November 29, 1947, where the City of Jerusalem comes under“Corpus Seperatum” status and is to be administered by a Special International Regime. The paper will also show the ramifications of the unilaterally and illegally imposed “new municipal boundaries” post the 1967 Israeli occupation of East Jerusalem, which is currently 10 time its original size, ending with the 2005 “Jerusalem2020 Master-plan.” Jerusalem, according to the Israeli adopted Masterplan-2020, has“NO AREA” for future Arab Jerusalemite development, with more than half of its total area already considered built-up area. According to the master-plan about one-quarter of East Jerusalem is “temporarily” zoned as green areas, thus keeping the possibility for future Palestinian urban expansion to only 6%. The paper studies, analyzes, and projects the de facto Israeli planning paradigm, which results in new building style sand a manipulating land-use policy practiced on the basis of unjustified security concerns and demographic considerations in order to manipulate the demographic balance in Jerusalem in favor of the Jewish population. The Israeli presence in East Jerusalem tipped from 0% pre-1967 to 47% in 2007, whereas the Palestinian presence in West Jerusalem plummeted from 23% to 0%. Ostensibly, the carefully enacted demographic policy adopted by the Israeli Jerusalem Municipality was the cornerstone of the planning theme for Jerusalem. Under this planning theme Palestinian existences confined to a maximum of one-quarter of the city’s population with an end goal ofthe de-Palestinization of Jerusalem, jeopardizing the inevitable destiny of Palestinian statehood with Jerusalem as its sovereign capital.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>Jerusalem is an epicenter of a series of contested confrontations and events both from the past and throughout modern history; today it is a living paradigm of distinctive apartheid that is epitomized, among many of its other forms, in the urban planning system practiced in the City, where indigenous Palestinian Jerusalemites have substandard living rights. This paper will attempt to demonstrate and expose Israeli Occupation planning and building policies and uncover the systematic discrimination adopted and practiced against Arab-Palestinians. This discrimination is mainly manifested in the prejudiced zoning classifications of occupied East Jerusalem in favor of illegal Israeli-Jewish existence there to that of the Palestinian population,which include, among others: discrimination in building permits and regulations,confiscating and razing land, erecting and expanding illegal Israeli colonies and outposts, paving Israeli designated roads, demolishing Palestinian houses, and now excluding entire Arab-Palestinian communities with the Separation Wall.Furthermore, the paper will work on the delineation of de facto Israeli administrative changes of the demarcated Jerusalem City boundary set within the United Nations partition plan of November 29, 1947, where the City of Jerusalem comes under“Corpus Seperatum” status and is to be administered by a Special International Regime. The paper will also show the ramifications of the unilaterally and illegally imposed “new municipal boundaries” post the 1967 Israeli occupation of East Jerusalem, which is currently 10 time its original size, ending with the 2005 “Jerusalem2020 Master-plan.” Jerusalem, according to the Israeli adopted Masterplan-2020, has“NO AREA” for future Arab Jerusalemite development, with more than half of its total area already considered built-up area. According to the master-plan about one-quarter of East Jerusalem is “temporarily” zoned as green areas, thus keeping the possibility for future Palestinian urban expansion to only 6%. The paper studies, analyzes, and projects the de facto Israeli planning paradigm, which results in new building style sand a manipulating land-use policy practiced on the basis of unjustified security concerns and demographic considerations in order to manipulate the demographic balance in Jerusalem in favor of the Jewish population. The Israeli presence in East Jerusalem tipped from 0% pre-1967 to 47% in 2007, whereas the Palestinian presence in West Jerusalem plummeted from 23% to 0%. Ostensibly, the carefully enacted demographic policy adopted by the Israeli Jerusalem Municipality was the cornerstone of the planning theme for Jerusalem. Under this planning theme Palestinian existences confined to a maximum of one-quarter of the city’s population with an end goal ofthe de-Palestinization of Jerusalem, jeopardizing the inevitable destiny of Palestinian statehood with Jerusalem as its sovereign capital.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9937",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Geo-Demographical Outlook for Jerusalem",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Geo-Demographical Outlook for Jerusalem",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:34:12.302+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/703f7ff1-b256-4485-b10c-a4b195be3e50/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/703f7ff1-b256-4485-b10c-a4b195be3e50/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/703f7ff1-b256-4485-b10c-a4b195be3e50/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/703f7ff1-b256-4485-b10c-a4b195be3e50/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/703f7ff1-b256-4485-b10c-a4b195be3e50/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/703f7ff1-b256-4485-b10c-a4b195be3e50/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/703f7ff1-b256-4485-b10c-a4b195be3e50/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/703f7ff1-b256-4485-b10c-a4b195be3e50/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/703f7ff1-b256-4485-b10c-a4b195be3e50"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/73d5d020-4c6f-4325-a8c1-f7c0d51d83f9"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "73d5d020-4c6f-4325-a8c1-f7c0d51d83f9",
+          "uuid": "73d5d020-4c6f-4325-a8c1-f7c0d51d83f9",
+          "name": "Reshaping Palestinian Urban Structure towards Sustainable Urban Development",
+          "handle": "20.500.11888/9940",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Ahmad Saleh",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:39:16Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:39:16Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2008-10-21",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>Based on the need to develop a model for sustainable urban development that makes use of all related analysis and to overcome threats of all other proposals like the Regional Plan proposed by Palestinian Ministry of Palestine and the Arc proposed byte American corporation the RAND, the new model is to be named, \"the Leaf\". The name is referred to the shape of the proposed Palestinian urban structure and related networks. The leaf is to be based on two main concepts: balanced urban development and land resources sustainability. Moreover, the Leaf is considering also a long-term vision with regard to absorption capacity, accessibility, and urban and rural developments. The Leaf is considering the Palestinian planning arena. It goes behind the limit of other trials in more than the long-term vision and sustainability. For example, it converts some national policies for urban development into spatial issues. This is clear when the Leaf translates the proposed policy of urban corridors into new cities or urban agglomerations. The Palestinian protection plan is also considered when primary boundaries for such urban developments have been proposed within the Leaf. Some main factors the paper is discussing thoroughly based on the Leaf plan are: Balanced development, long-term vision, capacity, accessibility and coverage, rural development, Israeli settlements, existing urban centers, existing networks, national policy, the Leaf versus other proposals.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>Based on the need to develop a model for sustainable urban development that makes use of all related analysis and to overcome threats of all other proposals like the Regional Plan proposed by Palestinian Ministry of Palestine and the Arc proposed byte American corporation the RAND, the new model is to be named, \"the Leaf\". The name is referred to the shape of the proposed Palestinian urban structure and related networks. The leaf is to be based on two main concepts: balanced urban development and land resources sustainability. Moreover, the Leaf is considering also a long-term vision with regard to absorption capacity, accessibility, and urban and rural developments. The Leaf is considering the Palestinian planning arena. It goes behind the limit of other trials in more than the long-term vision and sustainability. For example, it converts some national policies for urban development into spatial issues. This is clear when the Leaf translates the proposed policy of urban corridors into new cities or urban agglomerations. The Palestinian protection plan is also considered when primary boundaries for such urban developments have been proposed within the Leaf. Some main factors the paper is discussing thoroughly based on the Leaf plan are: Balanced development, long-term vision, capacity, accessibility and coverage, rural development, Israeli settlements, existing urban centers, existing networks, national policy, the Leaf versus other proposals.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9940",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Reshaping Palestinian Urban Structure towards Sustainable Urban Development",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Reshaping Palestinian Urban Structure towards Sustainable Urban Development",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:39:23.088+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/73d5d020-4c6f-4325-a8c1-f7c0d51d83f9/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/73d5d020-4c6f-4325-a8c1-f7c0d51d83f9/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/73d5d020-4c6f-4325-a8c1-f7c0d51d83f9/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/73d5d020-4c6f-4325-a8c1-f7c0d51d83f9/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/73d5d020-4c6f-4325-a8c1-f7c0d51d83f9/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/73d5d020-4c6f-4325-a8c1-f7c0d51d83f9/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/73d5d020-4c6f-4325-a8c1-f7c0d51d83f9/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/73d5d020-4c6f-4325-a8c1-f7c0d51d83f9/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/73d5d020-4c6f-4325-a8c1-f7c0d51d83f9"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

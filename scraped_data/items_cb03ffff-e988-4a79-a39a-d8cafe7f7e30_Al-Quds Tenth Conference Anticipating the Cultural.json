@@ -1,0 +1,1974 @@
+{
+  "collection_id": "cb03ffff-e988-4a79-a39a-d8cafe7f7e30",
+  "collection_name": "Al-Quds Tenth Conference Anticipating the Cultural and Civilization Reality in Jerusalem in 2009",
+  "total_items": 14,
+  "items": [
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/82e13324-439e-458e-b933-10c35418e74d"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "82e13324-439e-458e-b933-10c35418e74d",
+          "uuid": "82e13324-439e-458e-b933-10c35418e74d",
+          "name": "الواقع واستشراف المستقبل في شعر عبد القادر الحسيني وترسله",
+          "handle": "20.500.11888/9696",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. فيصل حسين طحيمر غوادرة",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:41Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:41Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9696",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "الواقع واستشراف المستقبل في شعر عبد القادر الحسيني وترسله",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "الواقع واستشراف المستقبل في شعر عبد القادر الحسيني وترسله",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:48:45.832+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/82e13324-439e-458e-b933-10c35418e74d/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/82e13324-439e-458e-b933-10c35418e74d/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/82e13324-439e-458e-b933-10c35418e74d/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/82e13324-439e-458e-b933-10c35418e74d/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/82e13324-439e-458e-b933-10c35418e74d/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/82e13324-439e-458e-b933-10c35418e74d/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/82e13324-439e-458e-b933-10c35418e74d/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/82e13324-439e-458e-b933-10c35418e74d/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/82e13324-439e-458e-b933-10c35418e74d"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/9f2e559a-8d4e-44bf-9f3f-485d5194cea2"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "9f2e559a-8d4e-44bf-9f3f-485d5194cea2",
+          "uuid": "9f2e559a-8d4e-44bf-9f3f-485d5194cea2",
+          "name": "بيت المقدس في العهد الإسلامي",
+          "handle": "20.500.11888/9697",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ. أميمة الخرشا",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:41Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:41Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9697",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "بيت المقدس في العهد الإسلامي",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "بيت المقدس في العهد الإسلامي",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T01:14:30.773+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/9f2e559a-8d4e-44bf-9f3f-485d5194cea2/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/9f2e559a-8d4e-44bf-9f3f-485d5194cea2/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/9f2e559a-8d4e-44bf-9f3f-485d5194cea2/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/9f2e559a-8d4e-44bf-9f3f-485d5194cea2/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/9f2e559a-8d4e-44bf-9f3f-485d5194cea2/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/9f2e559a-8d4e-44bf-9f3f-485d5194cea2/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/9f2e559a-8d4e-44bf-9f3f-485d5194cea2/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/9f2e559a-8d4e-44bf-9f3f-485d5194cea2/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/9f2e559a-8d4e-44bf-9f3f-485d5194cea2"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/133f158d-b55c-4b5c-ab47-fac3fbe03b1c"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "133f158d-b55c-4b5c-ab47-fac3fbe03b1c",
+          "uuid": "133f158d-b55c-4b5c-ab47-fac3fbe03b1c",
+          "name": "المسجد الأقصى في الزمان والمكان والسنَّة والقرآن",
+          "handle": "20.500.11888/9701",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ.د. يحيى جبر",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "أ. عبير حمد",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9701",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "المسجد الأقصى في الزمان والمكان والسنَّة والقرآن",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "المسجد الأقصى في الزمان والمكان والسنَّة والقرآن",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T22:52:29.503+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/133f158d-b55c-4b5c-ab47-fac3fbe03b1c/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/133f158d-b55c-4b5c-ab47-fac3fbe03b1c/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/133f158d-b55c-4b5c-ab47-fac3fbe03b1c/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/133f158d-b55c-4b5c-ab47-fac3fbe03b1c/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/133f158d-b55c-4b5c-ab47-fac3fbe03b1c/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/133f158d-b55c-4b5c-ab47-fac3fbe03b1c/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/133f158d-b55c-4b5c-ab47-fac3fbe03b1c/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/133f158d-b55c-4b5c-ab47-fac3fbe03b1c/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/133f158d-b55c-4b5c-ab47-fac3fbe03b1c"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/24891112-7b6e-4101-b1b5-e1266ceaec65"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "24891112-7b6e-4101-b1b5-e1266ceaec65",
+          "uuid": "24891112-7b6e-4101-b1b5-e1266ceaec65",
+          "name": "اسرائيل أنهت الخطط المرحلية وبدأت في تنفيذ الخطة الاستراتيجية",
+          "handle": "20.500.11888/9702",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. ابراهيم القني",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9702",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "اسرائيل أنهت الخطط المرحلية وبدأت في تنفيذ الخطة الاستراتيجية",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "اسرائيل أنهت الخطط المرحلية وبدأت في تنفيذ الخطة الاستراتيجية",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:08:18.571+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/24891112-7b6e-4101-b1b5-e1266ceaec65/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/24891112-7b6e-4101-b1b5-e1266ceaec65/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/24891112-7b6e-4101-b1b5-e1266ceaec65/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/24891112-7b6e-4101-b1b5-e1266ceaec65/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/24891112-7b6e-4101-b1b5-e1266ceaec65/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/24891112-7b6e-4101-b1b5-e1266ceaec65/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/24891112-7b6e-4101-b1b5-e1266ceaec65/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/24891112-7b6e-4101-b1b5-e1266ceaec65/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/24891112-7b6e-4101-b1b5-e1266ceaec65"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/4eba5390-d996-4475-81be-027d7c47fcea"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "4eba5390-d996-4475-81be-027d7c47fcea",
+          "uuid": "4eba5390-d996-4475-81be-027d7c47fcea",
+          "name": "مستقبل القدس الشرقية وفق الرؤية الإسرائيلية",
+          "handle": "20.500.11888/9699",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "عليان الهندي",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:41Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:41Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9699",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "مستقبل القدس الشرقية وفق الرؤية الإسرائيلية",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "مستقبل القدس الشرقية وفق الرؤية الإسرائيلية",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:48:10.819+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/4eba5390-d996-4475-81be-027d7c47fcea/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/4eba5390-d996-4475-81be-027d7c47fcea/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/4eba5390-d996-4475-81be-027d7c47fcea/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/4eba5390-d996-4475-81be-027d7c47fcea/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/4eba5390-d996-4475-81be-027d7c47fcea/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/4eba5390-d996-4475-81be-027d7c47fcea/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/4eba5390-d996-4475-81be-027d7c47fcea/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/4eba5390-d996-4475-81be-027d7c47fcea/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/4eba5390-d996-4475-81be-027d7c47fcea"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/428c50b4-c29c-4de6-9147-b550eb347b54"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "428c50b4-c29c-4de6-9147-b550eb347b54",
+          "uuid": "428c50b4-c29c-4de6-9147-b550eb347b54",
+          "name": "مستقبل المقدسات الاسلامية",
+          "handle": "20.500.11888/9704",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ. عباس نمر",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9704",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "مستقبل المقدسات الاسلامية",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "مستقبل المقدسات الاسلامية",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:37:25.014+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/428c50b4-c29c-4de6-9147-b550eb347b54/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/428c50b4-c29c-4de6-9147-b550eb347b54/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/428c50b4-c29c-4de6-9147-b550eb347b54/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/428c50b4-c29c-4de6-9147-b550eb347b54/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/428c50b4-c29c-4de6-9147-b550eb347b54/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/428c50b4-c29c-4de6-9147-b550eb347b54/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/428c50b4-c29c-4de6-9147-b550eb347b54/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/428c50b4-c29c-4de6-9147-b550eb347b54/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/428c50b4-c29c-4de6-9147-b550eb347b54"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/53c51b59-fc06-4873-aaff-6a8b3f94edb7"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "53c51b59-fc06-4873-aaff-6a8b3f94edb7",
+          "uuid": "53c51b59-fc06-4873-aaff-6a8b3f94edb7",
+          "name": "مكانة القدس الدينية",
+          "handle": "20.500.11888/9700",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "مكانة القدس الدينية",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:41Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:41Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9700",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "مكانة القدس الدينية",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "مكانة القدس الدينية",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:52:20.293+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/53c51b59-fc06-4873-aaff-6a8b3f94edb7/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/53c51b59-fc06-4873-aaff-6a8b3f94edb7/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/53c51b59-fc06-4873-aaff-6a8b3f94edb7/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/53c51b59-fc06-4873-aaff-6a8b3f94edb7/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/53c51b59-fc06-4873-aaff-6a8b3f94edb7/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/53c51b59-fc06-4873-aaff-6a8b3f94edb7/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/53c51b59-fc06-4873-aaff-6a8b3f94edb7/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/53c51b59-fc06-4873-aaff-6a8b3f94edb7/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/53c51b59-fc06-4873-aaff-6a8b3f94edb7"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/b8200cc8-6aee-41be-9d0e-80a01a14c31c"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "b8200cc8-6aee-41be-9d0e-80a01a14c31c",
+          "uuid": "b8200cc8-6aee-41be-9d0e-80a01a14c31c",
+          "name": "كلمة أ.د. رامي حمدالله",
+          "handle": "20.500.11888/9708",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ.د. رامي حمدالله",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9708",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "كلمة أ.د. رامي حمدالله",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "كلمة أ.د. رامي حمدالله",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T01:43:29.642+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/b8200cc8-6aee-41be-9d0e-80a01a14c31c/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/b8200cc8-6aee-41be-9d0e-80a01a14c31c/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/b8200cc8-6aee-41be-9d0e-80a01a14c31c/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/b8200cc8-6aee-41be-9d0e-80a01a14c31c/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/b8200cc8-6aee-41be-9d0e-80a01a14c31c/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/b8200cc8-6aee-41be-9d0e-80a01a14c31c/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/b8200cc8-6aee-41be-9d0e-80a01a14c31c/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/b8200cc8-6aee-41be-9d0e-80a01a14c31c/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/b8200cc8-6aee-41be-9d0e-80a01a14c31c"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/575fe20f-83e2-4c9e-bd03-d680d35247a4"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "575fe20f-83e2-4c9e-bd03-d680d35247a4",
+          "uuid": "575fe20f-83e2-4c9e-bd03-d680d35247a4",
+          "name": "نحو مكتبة رقمية لتراث القدس",
+          "handle": "20.500.11888/9705",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أحمد السعيدي",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9705",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "نحو مكتبة رقمية لتراث القدس",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "نحو مكتبة رقمية لتراث القدس",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:17:12.953+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/575fe20f-83e2-4c9e-bd03-d680d35247a4/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/575fe20f-83e2-4c9e-bd03-d680d35247a4/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/575fe20f-83e2-4c9e-bd03-d680d35247a4/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/575fe20f-83e2-4c9e-bd03-d680d35247a4/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/575fe20f-83e2-4c9e-bd03-d680d35247a4/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/575fe20f-83e2-4c9e-bd03-d680d35247a4/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/575fe20f-83e2-4c9e-bd03-d680d35247a4/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/575fe20f-83e2-4c9e-bd03-d680d35247a4/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/575fe20f-83e2-4c9e-bd03-d680d35247a4"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/80493162-0a47-4602-855e-af6962e5ac0b"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "80493162-0a47-4602-855e-af6962e5ac0b",
+          "uuid": "80493162-0a47-4602-855e-af6962e5ac0b",
+          "name": "الخزر لا بنو إسرائيل العاصمة إتل لا القدس الشريف",
+          "handle": "20.500.11888/9706",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ. غسان عاطف بدران",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9706",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "الخزر لا بنو إسرائيل العاصمة إتل لا القدس الشريف",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "الخزر لا بنو إسرائيل العاصمة إتل لا القدس الشريف",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:47:49.502+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/80493162-0a47-4602-855e-af6962e5ac0b/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/80493162-0a47-4602-855e-af6962e5ac0b/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/80493162-0a47-4602-855e-af6962e5ac0b/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/80493162-0a47-4602-855e-af6962e5ac0b/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/80493162-0a47-4602-855e-af6962e5ac0b/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/80493162-0a47-4602-855e-af6962e5ac0b/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/80493162-0a47-4602-855e-af6962e5ac0b/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/80493162-0a47-4602-855e-af6962e5ac0b/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/80493162-0a47-4602-855e-af6962e5ac0b"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/ec396227-f3d5-4111-999a-d34c1800ca8f"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "ec396227-f3d5-4111-999a-d34c1800ca8f",
+          "uuid": "ec396227-f3d5-4111-999a-d34c1800ca8f",
+          "name": "خصائص العمارة والزخرفة الإسلامية في بيت المقدس",
+          "handle": "20.500.11888/9703",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. حسن محمد نعيرات",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>إن أكثر القضايا تأثيراً في المجتمعات الإسلامية المعاصرة فقدان الهوية الفنية والمعمارية حيث يجب الرجوع إلى العقيدة الإسلامية التي هي الأصل وتطهيرها من العناصر الخارجية التي أدخلها الغرب عبر التاريخ فيجب علينا فهم التاريخ الماضي مع تحليل لغته ومضمونه في منطلق المعاصرة التي تستطيع أن تفاضل بين الثمين الباقي والقديم البالي من تراثنا ويتناول هذا البحث بالدراسة والتحليل عدداً من المسائل المهمة ذات الصلة بهذا الجانب منها: الأصل الديني للمدينة المقدسة، ووصف للأنماط والأساليب التي استخدمت في عمارتها وزخرفتها، بالإضافة إلى نتائج وتوصيات يمكن من خلالها أن تعمل على حماية وصيانة وترميم العمارة والفنون الإسلامية في بيت المقدس وأكناف بيت المقدس.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>إن أكثر القضايا تأثيراً في المجتمعات الإسلامية المعاصرة فقدان الهوية الفنية والمعمارية حيث يجب الرجوع إلى العقيدة الإسلامية التي هي الأصل وتطهيرها من العناصر الخارجية التي أدخلها الغرب عبر التاريخ فيجب علينا فهم التاريخ الماضي مع تحليل لغته ومضمونه في منطلق المعاصرة التي تستطيع أن تفاضل بين الثمين الباقي والقديم البالي من تراثنا ويتناول هذا البحث بالدراسة والتحليل عدداً من المسائل المهمة ذات الصلة بهذا الجانب منها: الأصل الديني للمدينة المقدسة، ووصف للأنماط والأساليب التي استخدمت في عمارتها وزخرفتها، بالإضافة إلى نتائج وتوصيات يمكن من خلالها أن تعمل على حماية وصيانة وترميم العمارة والفنون الإسلامية في بيت المقدس وأكناف بيت المقدس.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9703",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "خصائص العمارة والزخرفة الإسلامية في بيت المقدس",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "خصائص العمارة والزخرفة الإسلامية في بيت المقدس",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T02:50:05.437+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/ec396227-f3d5-4111-999a-d34c1800ca8f/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/ec396227-f3d5-4111-999a-d34c1800ca8f/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/ec396227-f3d5-4111-999a-d34c1800ca8f/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/ec396227-f3d5-4111-999a-d34c1800ca8f/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/ec396227-f3d5-4111-999a-d34c1800ca8f/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/ec396227-f3d5-4111-999a-d34c1800ca8f/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/ec396227-f3d5-4111-999a-d34c1800ca8f/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/ec396227-f3d5-4111-999a-d34c1800ca8f/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/ec396227-f3d5-4111-999a-d34c1800ca8f"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/f702c9c1-da95-406c-9e23-effb62a35e4d"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "f702c9c1-da95-406c-9e23-effb62a35e4d",
+          "uuid": "f702c9c1-da95-406c-9e23-effb62a35e4d",
+          "name": "الإرث العربي المسيحي في القدس",
+          "handle": "20.500.11888/9698",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "الإرث العربي المسيحي في القدس",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:41Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:41Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9698",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "الإرث العربي المسيحي في القدس",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "الإرث العربي المسيحي في القدس",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T03:04:22.854+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/f702c9c1-da95-406c-9e23-effb62a35e4d/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/f702c9c1-da95-406c-9e23-effb62a35e4d/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/f702c9c1-da95-406c-9e23-effb62a35e4d/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/f702c9c1-da95-406c-9e23-effb62a35e4d/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/f702c9c1-da95-406c-9e23-effb62a35e4d/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/f702c9c1-da95-406c-9e23-effb62a35e4d/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/f702c9c1-da95-406c-9e23-effb62a35e4d/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/f702c9c1-da95-406c-9e23-effb62a35e4d/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/f702c9c1-da95-406c-9e23-effb62a35e4d"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/e22bb721-277f-4d6a-9074-b74a7630b07e"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "e22bb721-277f-4d6a-9074-b74a7630b07e",
+          "uuid": "e22bb721-277f-4d6a-9074-b74a7630b07e",
+          "name": "استشراف مستقبل القدس وشروط حمايتها",
+          "handle": "20.500.11888/9709",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ. زهير الدبعي",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9709",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "استشراف مستقبل القدس وشروط حمايتها",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "استشراف مستقبل القدس وشروط حمايتها",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T02:37:41.152+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/e22bb721-277f-4d6a-9074-b74a7630b07e/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/e22bb721-277f-4d6a-9074-b74a7630b07e/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/e22bb721-277f-4d6a-9074-b74a7630b07e/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/e22bb721-277f-4d6a-9074-b74a7630b07e/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/e22bb721-277f-4d6a-9074-b74a7630b07e/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/e22bb721-277f-4d6a-9074-b74a7630b07e/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/e22bb721-277f-4d6a-9074-b74a7630b07e/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/e22bb721-277f-4d6a-9074-b74a7630b07e/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/e22bb721-277f-4d6a-9074-b74a7630b07e"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/fc06d200-d365-4297-a2e1-b66d7d5f0152"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "fc06d200-d365-4297-a2e1-b66d7d5f0152",
+          "uuid": "fc06d200-d365-4297-a2e1-b66d7d5f0152",
+          "name": "الواقع العمراني والحفريات حول الحرم القدسي الشريف والآثار الاسلامية عامة حول الأقصى",
+          "handle": "20.500.11888/9707",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ.  صباح سليمان الصباح",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:42Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-02-25",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9707",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "الواقع العمراني والحفريات حول الحرم القدسي الشريف والآثار الاسلامية عامة حول الأقصى",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "الواقع العمراني والحفريات حول الحرم القدسي الشريف والآثار الاسلامية عامة حول الأقصى",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T03:15:00.226+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/fc06d200-d365-4297-a2e1-b66d7d5f0152/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/fc06d200-d365-4297-a2e1-b66d7d5f0152/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/fc06d200-d365-4297-a2e1-b66d7d5f0152/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/fc06d200-d365-4297-a2e1-b66d7d5f0152/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/fc06d200-d365-4297-a2e1-b66d7d5f0152/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/fc06d200-d365-4297-a2e1-b66d7d5f0152/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/fc06d200-d365-4297-a2e1-b66d7d5f0152/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/fc06d200-d365-4297-a2e1-b66d7d5f0152/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/fc06d200-d365-4297-a2e1-b66d7d5f0152"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

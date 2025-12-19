@@ -1,0 +1,1418 @@
+{
+  "collection_id": "fa04c1e8-d3ef-4bd4-ad0a-e2d9ec408d69",
+  "collection_name": "1st International Conference on: \"Current Academic Research\"",
+  "total_items": 10,
+  "items": [
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/433b6759-8c00-4556-9da8-ba5c8b66172b"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "433b6759-8c00-4556-9da8-ba5c8b66172b",
+          "uuid": "433b6759-8c00-4556-9da8-ba5c8b66172b",
+          "name": "Difficulties and Problems that Face English Students of Al Quds Open University in Scientific Translation process from English to Arabic and Vice Versa and  the solutions for the Same",
+          "handle": "20.500.11888/8828",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Unknown",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2012-05-05",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>The study aims at exploring the difficulties  that face the students of Al Quds Open University in Scientific translation process from English to Arabic and vice versa. The researcher attempted to find suitable solutions for such difficulties and problems. The researcher will follow an experimental descriptive method in the study. He also will design  a test in order to explore the difficulties and problems that face such students. The test will be  composed of four questions. Such study will be  applied on English students of Al Quds Open University in Gaza Region during the second course of the academic year 2011/2012 . The researcher will choose and select a random sample of students. The researcher will follow a suitable statistical methods for such study. At the end of the study ,the researcher will adopt a group recommendations and suggestion.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>The study aims at exploring the difficulties  that face the students of Al Quds Open University in Scientific translation process from English to Arabic and vice versa. The researcher attempted to find suitable solutions for such difficulties and problems. The researcher will follow an experimental descriptive method in the study. He also will design  a test in order to explore the difficulties and problems that face such students. The test will be  composed of four questions. Such study will be  applied on English students of Al Quds Open University in Gaza Region during the second course of the academic year 2011/2012 . The researcher will choose and select a random sample of students. The researcher will follow a suitable statistical methods for such study. At the end of the study ,the researcher will adopt a group recommendations and suggestion.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/8828",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Difficulties and Problems that Face English Students of Al Quds Open University in Scientific Translation process from English to Arabic and Vice Versa and  the solutions for the Same",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Difficulties and Problems that Face English Students of Al Quds Open University in Scientific Translation process from English to Arabic and Vice Versa and  the solutions for the Same",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:38:35.115+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/433b6759-8c00-4556-9da8-ba5c8b66172b/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/433b6759-8c00-4556-9da8-ba5c8b66172b/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/433b6759-8c00-4556-9da8-ba5c8b66172b/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/433b6759-8c00-4556-9da8-ba5c8b66172b/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/433b6759-8c00-4556-9da8-ba5c8b66172b/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/433b6759-8c00-4556-9da8-ba5c8b66172b/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/433b6759-8c00-4556-9da8-ba5c8b66172b/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/433b6759-8c00-4556-9da8-ba5c8b66172b/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/433b6759-8c00-4556-9da8-ba5c8b66172b"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/d8e7522e-b2ea-4456-8e79-b27935178ec4"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "d8e7522e-b2ea-4456-8e79-b27935178ec4",
+          "uuid": "d8e7522e-b2ea-4456-8e79-b27935178ec4",
+          "name": "Students' Perceptions of the Effectiveness of Using Non-Traditional Techniques to Improve Oral Communication Skills",
+          "handle": "20.500.11888/8833",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr.Khaled A.Dweikat",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Dr.Fayez T. Aqel",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2012-05-05",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>Speaking is considered a major skill of any language. Some linguists, in this regard, define language as nothing but a system of vocal symbols used to communicate ideas and thoughts among the members of a certain social society. This shows that language is mainly an oral activity and writing is considered a secondary system derived form the spoken language.  As a result, students who learn English either as a foreign or a second language should be encouraged to speak the language to a certain extent that enables them to communicate with other speakers of the language. To produce students who are proficient in a foreign language, educators should ensure that their students are participating in a variety of performance-based tasks based upon authentic use of language for communication (Fuller, 2011). Foreign language teachers, then, should design assessment practices using a variety of communicative contexts, thus providing a way to document students’ progress in language ability as they continue in a foreign language program of study. Moreover, students who study English either as a foreign language or a second language are assumed to be provided with more and more opportunities to practice oral communication skills inside and outside the classroom in natural and meaningful situations. This can be done by using different types of activities and practices that motivate the students to use the language naturally and purposefully in meaningful situations. Contextualization of language, in this regard, has been shown to increase students’ motivation, engagement in learning, the amount of information learned, and their self-perception of competence in the target language (Cordova &amp; Lepper, 1996). Based on this assumption, students' perspectives should be investigated and taken into account when they are involved in the teaching –learning process especially at higher education levels as they represent the first beneficiaries of the teaching-learning process. Moreover, university students are to be given more chances to actively participate in selecting some teaching materials which are hoped to suit their needs and interests especially when talking about learning languages and English in particular. Undoubtedly, students nowadays seem to be mature enough and more self –confident to give their own opinions as they are open to various types of technological advancements including computers, the Internet, social networks, YouTubes, up-to-date mobiles, high-technology ….etc. </p>\n<p>Students who are registered in the so-called Oral Communication Course were involved in various types of activities, such as presentations, games, YouTube materials, acting, puzzles, poetry recitation, summaries, jokes, dramatization, improvisation, PowerPoint presentations and so on. Oral Communication course plan includes different forms of evaluation procedures such as writing exams based on language use activities and situations, in-class participation and oral presentations, oral exam, on-going assessment, fluency-based observation and so on.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>Speaking is considered a major skill of any language. Some linguists, in this regard, define language as nothing but a system of vocal symbols used to communicate ideas and thoughts among the members of a certain social society. This shows that language is mainly an oral activity and writing is considered a secondary system derived form the spoken language.  As a result, students who learn English either as a foreign or a second language should be encouraged to speak the language to a certain extent that enables them to communicate with other speakers of the language. To produce students who are proficient in a foreign language, educators should ensure that their students are participating in a variety of performance-based tasks based upon authentic use of language for communication (Fuller, 2011). Foreign language teachers, then, should design assessment practices using a variety of communicative contexts, thus providing a way to document students’ progress in language ability as they continue in a foreign language program of study. Moreover, students who study English either as a foreign language or a second language are assumed to be provided with more and more opportunities to practice oral communication skills inside and outside the classroom in natural and meaningful situations. This can be done by using different types of activities and practices that motivate the students to use the language naturally and purposefully in meaningful situations. Contextualization of language, in this regard, has been shown to increase students’ motivation, engagement in learning, the amount of information learned, and their self-perception of competence in the target language (Cordova &amp; Lepper, 1996). Based on this assumption, students' perspectives should be investigated and taken into account when they are involved in the teaching –learning process especially at higher education levels as they represent the first beneficiaries of the teaching-learning process. Moreover, university students are to be given more chances to actively participate in selecting some teaching materials which are hoped to suit their needs and interests especially when talking about learning languages and English in particular. Undoubtedly, students nowadays seem to be mature enough and more self –confident to give their own opinions as they are open to various types of technological advancements including computers, the Internet, social networks, YouTubes, up-to-date mobiles, high-technology ….etc. </p>\n<p>Students who are registered in the so-called Oral Communication Course were involved in various types of activities, such as presentations, games, YouTube materials, acting, puzzles, poetry recitation, summaries, jokes, dramatization, improvisation, PowerPoint presentations and so on. Oral Communication course plan includes different forms of evaluation procedures such as writing exams based on language use activities and situations, in-class participation and oral presentations, oral exam, on-going assessment, fluency-based observation and so on.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/8833",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Students' Perceptions of the Effectiveness of Using Non-Traditional Techniques to Improve Oral Communication Skills",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Students' Perceptions of the Effectiveness of Using Non-Traditional Techniques to Improve Oral Communication Skills",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T02:18:15.683+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/d8e7522e-b2ea-4456-8e79-b27935178ec4/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/d8e7522e-b2ea-4456-8e79-b27935178ec4/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/d8e7522e-b2ea-4456-8e79-b27935178ec4/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/d8e7522e-b2ea-4456-8e79-b27935178ec4/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/d8e7522e-b2ea-4456-8e79-b27935178ec4/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/d8e7522e-b2ea-4456-8e79-b27935178ec4/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/d8e7522e-b2ea-4456-8e79-b27935178ec4/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/d8e7522e-b2ea-4456-8e79-b27935178ec4/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/d8e7522e-b2ea-4456-8e79-b27935178ec4"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/d240f925-c632-4c39-a0b5-ef4d5e4951b0"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "d240f925-c632-4c39-a0b5-ef4d5e4951b0",
+          "uuid": "d240f925-c632-4c39-a0b5-ef4d5e4951b0",
+          "name": "Developing Teaching English as a Foreign Language in Blended Learning Environment",
+          "handle": "20.500.11888/8832",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Ayda Bakir and Dana Adas",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2012-05-05",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>Obviously, every caring teacher wants to do a good job for his or her students by looking for new methods to improve his/ her students' performance. Technological advances and widespread access to information and communication technologies have facilitated the rapid growth of blended learning approaches in both higher education and corporate training contexts. The American Society for Training and Development identified blended learning as one of the top 10 emergent trends in the knowledge delivery industry (Finn, 2002). Since then, the visibility of blended learning environments has increased dramatically in both formal education and corporate training settings. There is increasing interest in the concept of blended learning as evidenced by greater numbers of books, journal articles, and trade magazine articles that directly address issues related to blended learning. This research will investigate the effect of implementing blended learning and its appropriateness in developing students' language skills at An-Najah National University.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>من الواضح أن كل مدرس مثالي يسعى إلى عمل كل ما هو جيد و مفيد لطلابه بهدف تطوير أدائهم الأكاديمي. ومما جعل ذلك ممكنا, ما يشهده العالم من تطور تكنولوجي وانتشار سهولة الحصول على المعلومات  وتكنولوجيا الاتصالات التي سهلت و ساعدت على النمو السريع لأسلوب التعليم المدمج على المستوى الجامعي وبيئة التدريب المشترك. وقد تم تصنيف التعلبم المدمج من قبل الجمعية الأمريكية للتدريب و التطوير على أنه واحد من 10 مجالات حديثة  من حيث صناعة إيصال المعرفة (Finn, 2002) . ومنذ ذلك الحين ازدادت بيئة التعليم بشكل واسع في مجالي التعليم الرسمي وبيئة التدريب المشترك. وهنالك اهتمام متزايد بمفهوم التعليم المدمج وما دل على ذلك زيادة عدد الكتب و المقالات العلمية و التجارية  و التي تتطرق بشكل مباشر إلى  التعليم المدمج و القضايا المتعلقة  به . ومن هذا المنطلق فإن الدراسة الحالية تبحث أثر تطبيق منهج التعليم المدمج و مدى ملائمة المنهج في تطوير مهارات الطلاب اللغوية في جامعة النجاح الوطنية .</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/8832",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Developing Teaching English as a Foreign Language in Blended Learning Environment",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Developing Teaching English as a Foreign Language in Blended Learning Environment",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T02:15:25.848+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/d240f925-c632-4c39-a0b5-ef4d5e4951b0/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/d240f925-c632-4c39-a0b5-ef4d5e4951b0/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/d240f925-c632-4c39-a0b5-ef4d5e4951b0/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/d240f925-c632-4c39-a0b5-ef4d5e4951b0/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/d240f925-c632-4c39-a0b5-ef4d5e4951b0/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/d240f925-c632-4c39-a0b5-ef4d5e4951b0/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/d240f925-c632-4c39-a0b5-ef4d5e4951b0/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/d240f925-c632-4c39-a0b5-ef4d5e4951b0/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/d240f925-c632-4c39-a0b5-ef4d5e4951b0"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/d215e42e-c6da-4b0a-b430-be89bab56d97"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "d215e42e-c6da-4b0a-b430-be89bab56d97",
+          "uuid": "d215e42e-c6da-4b0a-b430-be89bab56d97",
+          "name": "Reinstating Oscar Wilde within the Literary Canon of Post Modernity: Re-visioning Salome",
+          "handle": "20.500.11888/8835",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Mahmoud Arjoon",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:34:06Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:34:06Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2012-05-05",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>Oscar Wilde has always been a paradigm of opposites and contradictoriness and far beyond his literary age as far as his narratology goes. Drawing reflective sustenance from Pater and Ruskin, he moved much beyond the Victorian aesthetics into the fractured dichotomies of post-modernist functionalities and inter-texualities. Be it his first volume of poems (1881) or his first play Vera (1883) or the fairy tales (1888)or his only novel The Picture of Dorian Gray he showed a predilection for varied forms and structures disregarding the usual determinants of generic affiliation. In Salome (1893) Wilde chose to exploit a Biblical legend without dwelling on the Christian nuances and connotations and instills into the story an avant-garde and asocial viewpoint typical of his own bohemian lifestyle recasting and re-visioning the pristine tale into a modernist exposition of repressed psychological desires. The paper proposes to analyze the verbal arabesques of Salome's speeches to investigate her inexorable capacity to fly into surrealistic distortions evincing her own fractured selfhood verging on the mythically demonic, transcending the spatio-temporality of human circumstances, creating an exclusivity of being and becoming.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>Oscar Wilde has always been a paradigm of opposites and contradictoriness and far beyond his literary age as far as his narratology goes. Drawing reflective sustenance from Pater and Ruskin, he moved much beyond the Victorian aesthetics into the fractured dichotomies of post-modernist functionalities and inter-texualities. Be it his first volume of poems (1881) or his first play Vera (1883) or the fairy tales (1888)or his only novel The Picture of Dorian Gray he showed a predilection for varied forms and structures disregarding the usual determinants of generic affiliation. In Salome (1893) Wilde chose to exploit a Biblical legend without dwelling on the Christian nuances and connotations and instills into the story an avant-garde and asocial viewpoint typical of his own bohemian lifestyle recasting and re-visioning the pristine tale into a modernist exposition of repressed psychological desires. The paper proposes to analyze the verbal arabesques of Salome's speeches to investigate her inexorable capacity to fly into surrealistic distortions evincing her own fractured selfhood verging on the mythically demonic, transcending the spatio-temporality of human circumstances, creating an exclusivity of being and becoming.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/8835",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Reinstating Oscar Wilde within the Literary Canon of Post Modernity: Re-visioning Salome",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Reinstating Oscar Wilde within the Literary Canon of Post Modernity: Re-visioning Salome",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T02:15:24.186+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/d215e42e-c6da-4b0a-b430-be89bab56d97/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/d215e42e-c6da-4b0a-b430-be89bab56d97/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/d215e42e-c6da-4b0a-b430-be89bab56d97/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/d215e42e-c6da-4b0a-b430-be89bab56d97/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/d215e42e-c6da-4b0a-b430-be89bab56d97/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/d215e42e-c6da-4b0a-b430-be89bab56d97/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/d215e42e-c6da-4b0a-b430-be89bab56d97/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/d215e42e-c6da-4b0a-b430-be89bab56d97/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/d215e42e-c6da-4b0a-b430-be89bab56d97"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/b4daec13-0f15-44ea-9974-76218918209f"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "b4daec13-0f15-44ea-9974-76218918209f",
+          "uuid": "b4daec13-0f15-44ea-9974-76218918209f",
+          "name": "Investigating The Cultural Aspects in EFL Textbooks A Case Study of the NorthStar Intermediate Textbook",
+          "handle": "20.500.11888/8829",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Mrs. Ghada Shbeitah",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2012-05-05",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>This study investigated the cultural aspects in the NorthStar  textbook which has been taught since 2008 at An-Najah University  as a compulsory course . The study addressed the following questions:<br />\n1-What are the Western cultural aspects that are implied in the NorthStar , Intermediate Textbooks?<br />\n2-To what extent is the foreign culture included in the NorthStar Intermediate level?<br />\n3- To what extent are the Arab-Islamic cultural aspects included in the NorthStar Intermediate level ?</p>\n<p>The study revealed that the textbook involved different types of cultural aspects and that the frequency of some cultural aspects was higher in some units depending on the main theme of the unit. These frequencies ranged between 22 and 274 and the religious aspect had the lowest frequency, while the social aspect had the highest frequency. Moreover, it was found that the textbook did not only focus on different aspects of a foreign culture but it also dealt with different cultures. The content analysis  revealed that the most frequent cultural aspects  were related the American culture which indicated an obvious bias towards the foreign cultural aspects in general and the American cultural aspects in particular at the expense of the Arabic –Islamic culture as no unit that talks about Arabs or Muslims or any Arab or Islamic country  except the mentioning of the word “Arab” which was mentioned only once in the textbook and in a way that even displeases the Arabs.</p>\n<p>In the light of the results, the researchers recommended analyzing and evaluating the content of EFL textbooks of foreign authors to be sure that they do not include cultural aspects that might go against our Arab-Islamic culture. Therefore, careful attention should be paid  to how the others are presented and how to filter the undesirable cultural aspects that in a textbook. Finally, the researchers called  for EFL national curricula at the Palestinian universities.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>هدفت الدراسة إلى استكشاف الأبعاد الثقافية في كتاب NorthStar الذي يدرس منذ عام 2008 في جامعة النجاح كمساق إجباري.<br />\nتناولت الدراسة  الأسئلة التالية:<br />\n1- ما هي الجوانب الثقافية الغربية التي تضمنها كتاب NorthStar<br />\n2– ما هو مدى احتواء  كتاب NorthStar للثقافة الأجنبية ؟<br />\n3- ما هو مدى احتواء كتاب NorthStar للأبعاد الثقافية العربية والإسلامية ؟<br />\nأظهرت الدراسة أن الكتاب المدرسي تضمن أنواعا مختلفة من الجوانب الثقافية بنسب وتكرارات متفاوتة حيث كان أعلى في بعض الوحدات حسب  الموضوع الرئيسي للوحدة. وتراوحت هذه التكرارات  بين 22 و 274 حيث سجل البعد الديني أدنى تكرار،بينما سجل البعد الاجتماعي أعلى تكرار. كما ظهر أن الكتاب المدرسي لم يركز فقط على الأبعاد المختلفة للثقافة الأجنبية, وإنما تضمن ثقافات مختلفة. وقد كشف تحليل المحتوى ان معظم الأبعاد الثقافية الأجنبية في الكتاب لها علاقة بالثقافة الأميركية حيث ظهر انحياز واضح نحو الجوانب الثقافية الاجنبية بشكل عام والجوانب الثقافية الأميركية على وجه الخصوص وذلك على حساب الثقافة العربية الإسلامية, حيث لم تتحدث أي وحدة  في الكتاب عن العرب أو المسلمين أو أي دولة عربية أو إسلامية، باستثناء كلمة Arab \" التي ذكرت مرة واحدة في الكتاب، وبطريقة غير مقبولة . وفي ضوء هذه النتائج، أوصى الباحثون بتحليل وتقييم مضمون كتب تدريس اللغة الإنجليزية كلغة أجنبية التي يؤلفها مؤلفون أجانب للتأكد من عدم احتوائها على تضمينات وأبعادلثقافية قد تتعارض مع الثقافة العربية الإسلامية. كذلك ينبغي الاهتمام بدراسة كيف يتم عرض وتقديم \"الآخر\" في مثل هذه الكتب، والعمل على غربلة وتنقية الجوانب الثقافية غير المرغوب فيها. وأخيرا، دعا الباحثون الى استخدام مناهج وطنية في الجامعات الفلسطينية تستخدم لتدريس اللغة الانجليزية كلغة أجنبية.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/8829",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Investigating The Cultural Aspects in EFL Textbooks A Case Study of the NorthStar Intermediate Textbook",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Investigating The Cultural Aspects in EFL Textbooks A Case Study of the NorthStar Intermediate Textbook",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T01:35:58.452+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/b4daec13-0f15-44ea-9974-76218918209f/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/b4daec13-0f15-44ea-9974-76218918209f/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/b4daec13-0f15-44ea-9974-76218918209f/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/b4daec13-0f15-44ea-9974-76218918209f/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/b4daec13-0f15-44ea-9974-76218918209f/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/b4daec13-0f15-44ea-9974-76218918209f/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/b4daec13-0f15-44ea-9974-76218918209f/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/b4daec13-0f15-44ea-9974-76218918209f/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/b4daec13-0f15-44ea-9974-76218918209f"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/67f0ba2f-a1f1-4156-bd16-7513a086d683"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "67f0ba2f-a1f1-4156-bd16-7513a086d683",
+          "uuid": "67f0ba2f-a1f1-4156-bd16-7513a086d683",
+          "name": "The Psychology of Language and Power in the Middle east: a Comparative Discourse Analysis of Legitmation using Pronouns, Modality and Lexicalization in News Reporting of the Gaza War",
+          "handle": "20.500.11888/8830",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Ahmad Atawneh",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2012-05-05",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>This paper has shown how war language is dependent on elements like the just war theory, the choice of the lexical items, the modality of the speaker in expressing self-confidence about his commitment to the truth of what he believes as true or tentatively true. The Israelis driven by their power and strong allies use a political language that serves their purposes in ways ignoring the cause of attacks against Israel while stressing only the results of such attacks that causes panic and some damage to their citizens. The Palestinians take some pride in their fight by standing against the giant power of Israel and its allies though they bear heavy losses in deaths and damage in properties.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>This paper has shown how war language is dependent on elements like the just war theory, the choice of the lexical items, the modality of the speaker in expressing self-confidence about his commitment to the truth of what he believes as true or tentatively true. The Israelis driven by their power and strong allies use a political language that serves their purposes in ways ignoring the cause of attacks against Israel while stressing only the results of such attacks that causes panic and some damage to their citizens. The Palestinians take some pride in their fight by standing against the giant power of Israel and its allies though they bear heavy losses in deaths and damage in properties.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/8830",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "The Psychology of Language and Power in the Middle east: a Comparative Discourse Analysis of Legitmation using Pronouns, Modality and Lexicalization in News Reporting of the Gaza War",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "The Psychology of Language and Power in the Middle east: a Comparative Discourse Analysis of Legitmation using Pronouns, Modality and Lexicalization in News Reporting of the Gaza War",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:27:59.313+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/67f0ba2f-a1f1-4156-bd16-7513a086d683/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/67f0ba2f-a1f1-4156-bd16-7513a086d683/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/67f0ba2f-a1f1-4156-bd16-7513a086d683/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/67f0ba2f-a1f1-4156-bd16-7513a086d683/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/67f0ba2f-a1f1-4156-bd16-7513a086d683/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/67f0ba2f-a1f1-4156-bd16-7513a086d683/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/67f0ba2f-a1f1-4156-bd16-7513a086d683/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/67f0ba2f-a1f1-4156-bd16-7513a086d683/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/67f0ba2f-a1f1-4156-bd16-7513a086d683"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/3ac34773-c907-44ea-93f9-12ceaebc0199"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "3ac34773-c907-44ea-93f9-12ceaebc0199",
+          "uuid": "3ac34773-c907-44ea-93f9-12ceaebc0199",
+          "name": "Learner’s Milestones in Acquiring Higher Level Language Proficiency",
+          "handle": "20.500.11888/8831",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Samir Nimri",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:34:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2012-05-05",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>Learning language at the higher ends of the proficiency scale differs in a number of ways from beginning and intermediate language learning. For advanced learners, linguistic factors change with increasing proficiency. So do the learners’ interests. This paper will focus on each of these two areas important to the teaching of higher levels of proficiency.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>Learning language at the higher ends of the proficiency scale differs in a number of ways from beginning and intermediate language learning. For advanced learners, linguistic factors change with increasing proficiency. So do the learners’ interests. This paper will focus on each of these two areas important to the teaching of higher levels of proficiency.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/8831",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Learner’s Milestones in Acquiring Higher Level Language Proficiency",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Learner’s Milestones in Acquiring Higher Level Language Proficiency",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:33:11.266+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ac34773-c907-44ea-93f9-12ceaebc0199/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ac34773-c907-44ea-93f9-12ceaebc0199/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ac34773-c907-44ea-93f9-12ceaebc0199/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ac34773-c907-44ea-93f9-12ceaebc0199/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ac34773-c907-44ea-93f9-12ceaebc0199/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ac34773-c907-44ea-93f9-12ceaebc0199/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ac34773-c907-44ea-93f9-12ceaebc0199/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ac34773-c907-44ea-93f9-12ceaebc0199/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ac34773-c907-44ea-93f9-12ceaebc0199"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f",
+          "uuid": "79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f",
+          "name": "The Adventures of Kirby Allbee in  Saul Bellow’s The Victim",
+          "handle": "20.500.11888/8836",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Jamal Assadi",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:34:06Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:34:06Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2012-05-05",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>With the appearance of Ravelstein, Bellow’s most recent novel, we again encounter a familiar character in Chick, who, in more ways than one, functions as a “mentor”, a “brain truster”, a “reality instructor” or a “Machiavellian”, thereby indicating a trend and a tradition in Bellow’s fiction. Despite individual differences, these figures are often presented as actors replete with constantly changing situations, schemes, plots strategies and roles, who through the power of words, try to reinterpret reality and to convince themselves and others to accept their revision of it. However, it is in the nature of such characters to pretend they are good actors; each endorses a conception of life that relies on a strong belief confirming that there are solid systems, rules, codes and values that underlie all social and cultural practices. One of the pioneers of such figures is Kirby Allbee, whose conduct (associated with strong sense of acting) savours of possession and exorcism.<br />\nHe is both a Jinni who haunts the soul of Asa Leventhal, the protagonist of the novel, and, in consequence, accelerates his deterioration and confusion, and paradoxically the exorcist who helps Asa regain his spirit and expel the devil.  While this paper closely examines the roles of Kirby Allbee, his impact on Asa Leventhal and on the narrative aspect, it aims to present Allbee as a typical representative of such figures and, hence, to call for a deeper examination of the tradition.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>With the appearance of Ravelstein, Bellow’s most recent novel, we again encounter a familiar character in Chick, who, in more ways than one, functions as a “mentor”, a “brain truster”, a “reality instructor” or a “Machiavellian”, thereby indicating a trend and a tradition in Bellow’s fiction. Despite individual differences, these figures are often presented as actors replete with constantly changing situations, schemes, plots strategies and roles, who through the power of words, try to reinterpret reality and to convince themselves and others to accept their revision of it. However, it is in the nature of such characters to pretend they are good actors; each endorses a conception of life that relies on a strong belief confirming that there are solid systems, rules, codes and values that underlie all social and cultural practices. One of the pioneers of such figures is Kirby Allbee, whose conduct (associated with strong sense of acting) savours of possession and exorcism.<br />\nHe is both a Jinni who haunts the soul of Asa Leventhal, the protagonist of the novel, and, in consequence, accelerates his deterioration and confusion, and paradoxically the exorcist who helps Asa regain his spirit and expel the devil.  While this paper closely examines the roles of Kirby Allbee, his impact on Asa Leventhal and on the narrative aspect, it aims to present Allbee as a typical representative of such figures and, hence, to call for a deeper examination of the tradition.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/8836",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "The Adventures of Kirby Allbee in  Saul Bellow’s The Victim",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "The Adventures of Kirby Allbee in  Saul Bellow’s The Victim",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:41:36.709+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/79a5c4c6-8fd2-4fab-9638-b7ece30a6b3f"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/95997d18-4a22-40d0-8e73-a671ec40e3e1"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "95997d18-4a22-40d0-8e73-a671ec40e3e1",
+          "uuid": "95997d18-4a22-40d0-8e73-a671ec40e3e1",
+          "name": "test2",
+          "handle": "20.500.11888/18201",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "test2",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2023-03-15T11:58:16Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2023-03-15T11:58:16Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2023-03-15",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description": [
+              {
+                "value": "test2",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "test2",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.sponsorship": [
+              {
+                "value": "test2",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/18201",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "test2",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "test2",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2023-03-15T11:58:18.034+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/95997d18-4a22-40d0-8e73-a671ec40e3e1/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/95997d18-4a22-40d0-8e73-a671ec40e3e1/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/95997d18-4a22-40d0-8e73-a671ec40e3e1/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/95997d18-4a22-40d0-8e73-a671ec40e3e1/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/95997d18-4a22-40d0-8e73-a671ec40e3e1/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/95997d18-4a22-40d0-8e73-a671ec40e3e1/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/95997d18-4a22-40d0-8e73-a671ec40e3e1/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/95997d18-4a22-40d0-8e73-a671ec40e3e1/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/95997d18-4a22-40d0-8e73-a671ec40e3e1"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/f4816bd5-6aa7-4c9a-a370-21b1f269f283"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "f4816bd5-6aa7-4c9a-a370-21b1f269f283",
+          "uuid": "f4816bd5-6aa7-4c9a-a370-21b1f269f283",
+          "name": "Symbolic Implications of the Moon and Sky in Coleridge’s  Poems with Special Reference to “Dejection: An Ode” and the Trio",
+          "handle": "20.500.11888/8834",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr.Mutasem Tawfiq Al-Khader",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:34:06Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:34:06Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2012-05-05",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "<p>This study explores the fundamental associations and symbolic implications of images of the moon and sky in Coleridge’s poems, particularly “Dejection: An Ode” and the Trio. Images of the moon in Coleridge’s poetry, particularly in “Dejection” and the Trio, are used to reflect the poet’s two ambivalent spiritual states, that is, dejection and gladness, which are manifestations of the poet’s sterility and creativity, respectively. Images of the moon and the sky are taken from observable nature, but Coleridge connects them with the poet’s inner self. These images are also used to form beautiful, romantic natural scenery. In addition, Coleridge links the image of the hidden and half-hidden moon with either of his two spiritual states, depending on the context. In contrast, he connects the image of the sky with happiness and fruitful contact with nature, which fulfills his poetic vision and inspiration.</p>",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "<p>هذه الدراسة هي محاولة لاستكشاف وفهم الترابطات المتعددة والمضامين الرمزية للقمر والسماء في أشعار س. ت. كوليريج، وخاصة في قصائده ”أغنية الكَرْب“ وثلاثيته. إن صورة القمر في أشعار كوليرج بشكل عام، وفي القصائد المنتقاة والمشار إليها بشكل خاص، تعكس حالتين روحانيتين متناقضتين لدواخل الشاعر وهما الكآبة والفرح، وهما تجليّات لعقم الشاعر أو نشاطه الإبداعي. هذا الفرح ليس بمعنى أن يكون الشخص جذلاً، بل هو فرح يعبّر عن حالة مرتبطة بنشوة الإبداع ونشاط الخيال. أما الاكتئاب والحزن، فسببهما إدراك الشاعر على أنه غير قادر على التعبير عما يجول في نفسه، وأن قواه الشعرية لا تسعفه. صحيح أن الصور الشعرية للقمر والسماء مأخوذة من الطبيعة، ولكنها في نفس الوقت مرتبطة بدواخل الشاعر وذاتيته وهو اعتقاد راسخ لدى كوليرج والشعراء الرومانسيين. لقد استعمل الشاعر صور القمر والسماء لأغراض رمزية متعددة وكجزء من جمال الطبيعة. وقد أتت الدراسة على ذكر دلالات صورة القمر المختفي والنصف الظاهر والذي ربطه كوليرج مع حالاته الروحية والنفسية على حسب السياق. من جهة أخرى فإن نظرة كوليرج للسماء تختلف عن نظرته إلى القمر، لأن صورة السماء استعملت لتعكس أفراح الشاعر وعلاقته المثمرة مع الطبيعة، لذا فهي صورة تدل على رضا الشاعر من ناحية روحية وإبداعية.</p>",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/8834",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Symbolic Implications of the Moon and Sky in Coleridge’s  Poems with Special Reference to “Dejection: An Ode” and the Trio",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Symbolic Implications of the Moon and Sky in Coleridge’s  Poems with Special Reference to “Dejection: An Ode” and the Trio",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T03:03:12.118+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/f4816bd5-6aa7-4c9a-a370-21b1f269f283/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/f4816bd5-6aa7-4c9a-a370-21b1f269f283/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/f4816bd5-6aa7-4c9a-a370-21b1f269f283/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/f4816bd5-6aa7-4c9a-a370-21b1f269f283/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/f4816bd5-6aa7-4c9a-a370-21b1f269f283/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/f4816bd5-6aa7-4c9a-a370-21b1f269f283/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/f4816bd5-6aa7-4c9a-a370-21b1f269f283/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/f4816bd5-6aa7-4c9a-a370-21b1f269f283/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/f4816bd5-6aa7-4c9a-a370-21b1f269f283"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

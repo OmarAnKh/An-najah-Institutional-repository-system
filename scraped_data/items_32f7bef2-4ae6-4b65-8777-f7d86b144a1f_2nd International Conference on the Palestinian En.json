@@ -1,0 +1,5089 @@
+{
+  "collection_id": "32f7bef2-4ae6-4b65-8777-f7d86b144a1f",
+  "collection_name": "2nd International Conference on the Palestinian Environment",
+  "total_items": 35,
+  "items": [
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/6f7761c7-d5c3-401a-ba37-4888f8405955"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "6f7761c7-d5c3-401a-ba37-4888f8405955",
+          "uuid": "6f7761c7-d5c3-401a-ba37-4888f8405955",
+          "name": "Evaluation of Economical and Social Aspects of Municipal Solid Waste Management in Rafah City - Palestine",
+          "handle": "20.500.11888/9663",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Samer Afifi",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Ali Barhom",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:35Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:35Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9663",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Evaluation of Economical and Social Aspects of Municipal Solid Waste Management in Rafah City - Palestine",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Evaluation of Economical and Social Aspects of Municipal Solid Waste Management in Rafah City - Palestine",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:33:56.370+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/6f7761c7-d5c3-401a-ba37-4888f8405955/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/6f7761c7-d5c3-401a-ba37-4888f8405955/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/6f7761c7-d5c3-401a-ba37-4888f8405955/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/6f7761c7-d5c3-401a-ba37-4888f8405955/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/6f7761c7-d5c3-401a-ba37-4888f8405955/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/6f7761c7-d5c3-401a-ba37-4888f8405955/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/6f7761c7-d5c3-401a-ba37-4888f8405955/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/6f7761c7-d5c3-401a-ba37-4888f8405955/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/6f7761c7-d5c3-401a-ba37-4888f8405955"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/a776e65b-9bfc-4ec8-8fdd-4afb2486b794"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "a776e65b-9bfc-4ec8-8fdd-4afb2486b794",
+          "uuid": "a776e65b-9bfc-4ec8-8fdd-4afb2486b794",
+          "name": "Toward Sustainable Agriculture: Soil Management and Hydraulic Prosperities",
+          "handle": "20.500.11888/9694",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Omar Daraghme",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:38Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:38Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9694",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Toward Sustainable Agriculture: Soil Management and Hydraulic Prosperities",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Toward Sustainable Agriculture: Soil Management and Hydraulic Prosperities",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T01:23:57.055+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/a776e65b-9bfc-4ec8-8fdd-4afb2486b794/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/a776e65b-9bfc-4ec8-8fdd-4afb2486b794/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/a776e65b-9bfc-4ec8-8fdd-4afb2486b794/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/a776e65b-9bfc-4ec8-8fdd-4afb2486b794/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/a776e65b-9bfc-4ec8-8fdd-4afb2486b794/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/a776e65b-9bfc-4ec8-8fdd-4afb2486b794/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/a776e65b-9bfc-4ec8-8fdd-4afb2486b794/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/a776e65b-9bfc-4ec8-8fdd-4afb2486b794/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/a776e65b-9bfc-4ec8-8fdd-4afb2486b794"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/8cdd6d4d-5afe-498e-9bcb-e7601ff117e3"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "8cdd6d4d-5afe-498e-9bcb-e7601ff117e3",
+          "uuid": "8cdd6d4d-5afe-498e-9bcb-e7601ff117e3",
+          "name": "أثر الازدحام المروري ومواصلات النقل العام على التلوث الجوي في المدن الفلسطينية – حالة دراسية: شارع الارسال في رام الله",
+          "handle": "20.500.11888/9674",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. خالد الساحلي",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "د. أسامه أباظه",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9674",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "أثر الازدحام المروري ومواصلات النقل العام على التلوث الجوي في المدن الفلسطينية – حالة دراسية: شارع الارسال في رام الله",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "أثر الازدحام المروري ومواصلات النقل العام على التلوث الجوي في المدن الفلسطينية – حالة دراسية: شارع الارسال في رام الله",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:57:03.697+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/8cdd6d4d-5afe-498e-9bcb-e7601ff117e3/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/8cdd6d4d-5afe-498e-9bcb-e7601ff117e3/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/8cdd6d4d-5afe-498e-9bcb-e7601ff117e3/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/8cdd6d4d-5afe-498e-9bcb-e7601ff117e3/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/8cdd6d4d-5afe-498e-9bcb-e7601ff117e3/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/8cdd6d4d-5afe-498e-9bcb-e7601ff117e3/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/8cdd6d4d-5afe-498e-9bcb-e7601ff117e3/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/8cdd6d4d-5afe-498e-9bcb-e7601ff117e3/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/8cdd6d4d-5afe-498e-9bcb-e7601ff117e3"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/9909a64d-a9b8-4c2a-a3fa-91095dfcf08e"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "9909a64d-a9b8-4c2a-a3fa-91095dfcf08e",
+          "uuid": "9909a64d-a9b8-4c2a-a3fa-91095dfcf08e",
+          "name": "Towards an Efficient Management of Ein Sultan Spring in Jericho",
+          "handle": "20.500.11888/9685",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Abd Hameed Bargouthi",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9685",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Towards an Efficient Management of Ein Sultan Spring in Jericho",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Towards an Efficient Management of Ein Sultan Spring in Jericho",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T01:06:35.956+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/9909a64d-a9b8-4c2a-a3fa-91095dfcf08e/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/9909a64d-a9b8-4c2a-a3fa-91095dfcf08e/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/9909a64d-a9b8-4c2a-a3fa-91095dfcf08e/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/9909a64d-a9b8-4c2a-a3fa-91095dfcf08e/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/9909a64d-a9b8-4c2a-a3fa-91095dfcf08e/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/9909a64d-a9b8-4c2a-a3fa-91095dfcf08e/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/9909a64d-a9b8-4c2a-a3fa-91095dfcf08e/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/9909a64d-a9b8-4c2a-a3fa-91095dfcf08e/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/9909a64d-a9b8-4c2a-a3fa-91095dfcf08e"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/96684c68-7fbd-48d0-9c04-739376833d84"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "96684c68-7fbd-48d0-9c04-739376833d84",
+          "uuid": "96684c68-7fbd-48d0-9c04-739376833d84",
+          "name": "Evaluation of Technical Performance of Beit-Lahia Wastewater Treatment Plant in the Northern Gaza Strip- Palestine",
+          "handle": "20.500.11888/9662",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Samir Afifi",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:35Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:35Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9662",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Evaluation of Technical Performance of Beit-Lahia Wastewater Treatment Plant in the Northern Gaza Strip- Palestine",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Evaluation of Technical Performance of Beit-Lahia Wastewater Treatment Plant in the Northern Gaza Strip- Palestine",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T01:05:06.635+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/96684c68-7fbd-48d0-9c04-739376833d84/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/96684c68-7fbd-48d0-9c04-739376833d84/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/96684c68-7fbd-48d0-9c04-739376833d84/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/96684c68-7fbd-48d0-9c04-739376833d84/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/96684c68-7fbd-48d0-9c04-739376833d84/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/96684c68-7fbd-48d0-9c04-739376833d84/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/96684c68-7fbd-48d0-9c04-739376833d84/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/96684c68-7fbd-48d0-9c04-739376833d84/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/96684c68-7fbd-48d0-9c04-739376833d84"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/87880bde-4580-423c-97f3-7060eab6670a"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "87880bde-4580-423c-97f3-7060eab6670a",
+          "uuid": "87880bde-4580-423c-97f3-7060eab6670a",
+          "name": "Awareness of Electromagnetic Pollution at Homes",
+          "handle": "20.500.11888/9671",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Alam Mosah",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Eng. Rana Salameh",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              },
+              {
+                "value": "Eng. Rawan Abu Shams",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 2
+              },
+              {
+                "value": "Khaled Hijjeh",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 3
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9671",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Awareness of Electromagnetic Pollution at Homes",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Awareness of Electromagnetic Pollution at Homes",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:55:10.952+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/87880bde-4580-423c-97f3-7060eab6670a/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/87880bde-4580-423c-97f3-7060eab6670a/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/87880bde-4580-423c-97f3-7060eab6670a/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/87880bde-4580-423c-97f3-7060eab6670a/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/87880bde-4580-423c-97f3-7060eab6670a/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/87880bde-4580-423c-97f3-7060eab6670a/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/87880bde-4580-423c-97f3-7060eab6670a/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/87880bde-4580-423c-97f3-7060eab6670a/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/87880bde-4580-423c-97f3-7060eab6670a"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572",
+          "uuid": "1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572",
+          "name": "Impact of Urban Decay on the Environmental: The case of QalqilyaCityin OPT",
+          "handle": "20.500.11888/9683",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Ameen Nawahdah",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Eng. Samar Shante",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9683",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Impact of Urban Decay on the Environmental: The case of QalqilyaCityin OPT",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Impact of Urban Decay on the Environmental: The case of QalqilyaCityin OPT",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:00:46.961+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/1cb8bf21-1a5d-4f0d-8e82-cc2d5bca9572"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/085bc52e-a084-4982-ba13-a6082362c39e"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "085bc52e-a084-4982-ba13-a6082362c39e",
+          "uuid": "085bc52e-a084-4982-ba13-a6082362c39e",
+          "name": "التشريعات والقوانين الخاصة بحماية البيئة في فلسطين",
+          "handle": "20.500.11888/9689",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ. سامر العقروق",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9689",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "التشريعات والقوانين الخاصة بحماية البيئة في فلسطين",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "التشريعات والقوانين الخاصة بحماية البيئة في فلسطين",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T22:43:39.908+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/085bc52e-a084-4982-ba13-a6082362c39e/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/085bc52e-a084-4982-ba13-a6082362c39e/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/085bc52e-a084-4982-ba13-a6082362c39e/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/085bc52e-a084-4982-ba13-a6082362c39e/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/085bc52e-a084-4982-ba13-a6082362c39e/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/085bc52e-a084-4982-ba13-a6082362c39e/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/085bc52e-a084-4982-ba13-a6082362c39e/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/085bc52e-a084-4982-ba13-a6082362c39e/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/085bc52e-a084-4982-ba13-a6082362c39e"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/2981fd4f-4cd4-484b-90fc-5f9f8345077f"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "2981fd4f-4cd4-484b-90fc-5f9f8345077f",
+          "uuid": "2981fd4f-4cd4-484b-90fc-5f9f8345077f",
+          "name": "إدارة النفايات الطبية في الضفة الغربية وقطاع غزه: معوقات وحلول",
+          "handle": "20.500.11888/9684",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. عصام الخطيب",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9684",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "إدارة النفايات الطبية في الضفة الغربية وقطاع غزه: معوقات وحلول",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "إدارة النفايات الطبية في الضفة الغربية وقطاع غزه: معوقات وحلول",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:13:02.120+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/2981fd4f-4cd4-484b-90fc-5f9f8345077f/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/2981fd4f-4cd4-484b-90fc-5f9f8345077f/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/2981fd4f-4cd4-484b-90fc-5f9f8345077f/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/2981fd4f-4cd4-484b-90fc-5f9f8345077f/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/2981fd4f-4cd4-484b-90fc-5f9f8345077f/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/2981fd4f-4cd4-484b-90fc-5f9f8345077f/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/2981fd4f-4cd4-484b-90fc-5f9f8345077f/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/2981fd4f-4cd4-484b-90fc-5f9f8345077f/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/2981fd4f-4cd4-484b-90fc-5f9f8345077f"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/1d5a0b0a-edbd-4b8e-9744-909a90cc8cab"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "1d5a0b0a-edbd-4b8e-9744-909a90cc8cab",
+          "uuid": "1d5a0b0a-edbd-4b8e-9744-909a90cc8cab",
+          "name": "A survey on Utilization of Agricultural Pesticides in Selected Palestinian District",
+          "handle": "20.500.11888/9677",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Rashed Alsaed",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Dr. As&#039;ad Ramlawi",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              },
+              {
+                "value": "Eng. Amjd Salah",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 2
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9677",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "A survey on Utilization of Agricultural Pesticides in Selected Palestinian District",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "A survey on Utilization of Agricultural Pesticides in Selected Palestinian District",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:01:28.138+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/1d5a0b0a-edbd-4b8e-9744-909a90cc8cab/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/1d5a0b0a-edbd-4b8e-9744-909a90cc8cab/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/1d5a0b0a-edbd-4b8e-9744-909a90cc8cab/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/1d5a0b0a-edbd-4b8e-9744-909a90cc8cab/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/1d5a0b0a-edbd-4b8e-9744-909a90cc8cab/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/1d5a0b0a-edbd-4b8e-9744-909a90cc8cab/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/1d5a0b0a-edbd-4b8e-9744-909a90cc8cab/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/1d5a0b0a-edbd-4b8e-9744-909a90cc8cab/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/1d5a0b0a-edbd-4b8e-9744-909a90cc8cab"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/41b2ce11-7c58-4d8b-9361-b4bea178113d"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "41b2ce11-7c58-4d8b-9361-b4bea178113d",
+          "uuid": "41b2ce11-7c58-4d8b-9361-b4bea178113d",
+          "name": "Building a participatory national consensus on wastewater reclamation and Reuse in Palestine",
+          "handle": "20.500.11888/9668",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Maher Abu Mady",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Dr. Zeyad Mimi",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              },
+              {
+                "value": "Mr. Nadeen Sonoqrot",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 2
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9668",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Building a participatory national consensus on wastewater reclamation and Reuse in Palestine",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Building a participatory national consensus on wastewater reclamation and Reuse in Palestine",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:37:02.213+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/41b2ce11-7c58-4d8b-9361-b4bea178113d/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/41b2ce11-7c58-4d8b-9361-b4bea178113d/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/41b2ce11-7c58-4d8b-9361-b4bea178113d/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/41b2ce11-7c58-4d8b-9361-b4bea178113d/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/41b2ce11-7c58-4d8b-9361-b4bea178113d/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/41b2ce11-7c58-4d8b-9361-b4bea178113d/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/41b2ce11-7c58-4d8b-9361-b4bea178113d/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/41b2ce11-7c58-4d8b-9361-b4bea178113d/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/41b2ce11-7c58-4d8b-9361-b4bea178113d"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/49df4b8a-2841-4838-b3e1-8687962fea52"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "49df4b8a-2841-4838-b3e1-8687962fea52",
+          "uuid": "49df4b8a-2841-4838-b3e1-8687962fea52",
+          "name": "Accelerated heat degradation Testing and characterization of Nickel-Pigmented Aluminum Oxide selective absorber",
+          "handle": "20.500.11888/9678",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Ared Wazooz",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9678",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Accelerated heat degradation Testing and characterization of Nickel-Pigmented Aluminum Oxide selective absorber",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Accelerated heat degradation Testing and characterization of Nickel-Pigmented Aluminum Oxide selective absorber",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:43:29.721+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/49df4b8a-2841-4838-b3e1-8687962fea52/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/49df4b8a-2841-4838-b3e1-8687962fea52/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/49df4b8a-2841-4838-b3e1-8687962fea52/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/49df4b8a-2841-4838-b3e1-8687962fea52/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/49df4b8a-2841-4838-b3e1-8687962fea52/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/49df4b8a-2841-4838-b3e1-8687962fea52/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/49df4b8a-2841-4838-b3e1-8687962fea52/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/49df4b8a-2841-4838-b3e1-8687962fea52/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/49df4b8a-2841-4838-b3e1-8687962fea52"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/46993893-5eba-4e57-bde9-cda10e7e7ec0"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "46993893-5eba-4e57-bde9-cda10e7e7ec0",
+          "uuid": "46993893-5eba-4e57-bde9-cda10e7e7ec0",
+          "name": "مسوغات انشاء نادي اصدقاء البيئة في جامعة القدس المفتوحة",
+          "handle": "20.500.11888/9669",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. خالد دويكات",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9669",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "مسوغات انشاء نادي اصدقاء البيئة في جامعة القدس المفتوحة",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "مسوغات انشاء نادي اصدقاء البيئة في جامعة القدس المفتوحة",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:40:24.393+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/46993893-5eba-4e57-bde9-cda10e7e7ec0/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/46993893-5eba-4e57-bde9-cda10e7e7ec0/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/46993893-5eba-4e57-bde9-cda10e7e7ec0/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/46993893-5eba-4e57-bde9-cda10e7e7ec0/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/46993893-5eba-4e57-bde9-cda10e7e7ec0/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/46993893-5eba-4e57-bde9-cda10e7e7ec0/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/46993893-5eba-4e57-bde9-cda10e7e7ec0/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/46993893-5eba-4e57-bde9-cda10e7e7ec0/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/46993893-5eba-4e57-bde9-cda10e7e7ec0"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/4403f401-74e5-4c4f-b7b4-0e5018d21769"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "4403f401-74e5-4c4f-b7b4-0e5018d21769",
+          "uuid": "4403f401-74e5-4c4f-b7b4-0e5018d21769",
+          "name": "Quality of Drinking Water from Rainwater Harvesting Cisterns of Hebron City and Factors Affecting It",
+          "handle": "20.500.11888/9687",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Mr. Esam El Khateeb",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Mr Adel Salaime",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9687",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Quality of Drinking Water from Rainwater Harvesting Cisterns of Hebron City and Factors Affecting It",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Quality of Drinking Water from Rainwater Harvesting Cisterns of Hebron City and Factors Affecting It",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:38:57.199+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/4403f401-74e5-4c4f-b7b4-0e5018d21769/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/4403f401-74e5-4c4f-b7b4-0e5018d21769/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/4403f401-74e5-4c4f-b7b4-0e5018d21769/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/4403f401-74e5-4c4f-b7b4-0e5018d21769/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/4403f401-74e5-4c4f-b7b4-0e5018d21769/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/4403f401-74e5-4c4f-b7b4-0e5018d21769/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/4403f401-74e5-4c4f-b7b4-0e5018d21769/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/4403f401-74e5-4c4f-b7b4-0e5018d21769/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/4403f401-74e5-4c4f-b7b4-0e5018d21769"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/545cdff4-c14d-4d49-aa39-9f92012ac0ee"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "545cdff4-c14d-4d49-aa39-9f92012ac0ee",
+          "uuid": "545cdff4-c14d-4d49-aa39-9f92012ac0ee",
+          "name": "تعرض المزارعين وعائلاتهم ﺇلى المبيدات في المجتمعات الزراعية",
+          "handle": "20.500.11888/9673",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ. ميسون الفارس",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "د. نضال زعتر",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              },
+              {
+                "value": "د. أنسام صوالحة",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 2
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9673",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "تعرض المزارعين وعائلاتهم ﺇلى المبيدات في المجتمعات الزراعية",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "تعرض المزارعين وعائلاتهم ﺇلى المبيدات في المجتمعات الزراعية",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:52:39.858+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/545cdff4-c14d-4d49-aa39-9f92012ac0ee/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/545cdff4-c14d-4d49-aa39-9f92012ac0ee/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/545cdff4-c14d-4d49-aa39-9f92012ac0ee/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/545cdff4-c14d-4d49-aa39-9f92012ac0ee/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/545cdff4-c14d-4d49-aa39-9f92012ac0ee/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/545cdff4-c14d-4d49-aa39-9f92012ac0ee/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/545cdff4-c14d-4d49-aa39-9f92012ac0ee/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/545cdff4-c14d-4d49-aa39-9f92012ac0ee/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/545cdff4-c14d-4d49-aa39-9f92012ac0ee"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/48c924b0-bbc4-451f-8e89-83cde8747a8c"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "48c924b0-bbc4-451f-8e89-83cde8747a8c",
+          "uuid": "48c924b0-bbc4-451f-8e89-83cde8747a8c",
+          "name": "المحاجر وتأثيرها على البيئة الريفية في منطقة شمال شرق الخليل",
+          "handle": "20.500.11888/9680",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ. يوسف حلايقة",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9680",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "المحاجر وتأثيرها على البيئة الريفية في منطقة شمال شرق الخليل",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "المحاجر وتأثيرها على البيئة الريفية في منطقة شمال شرق الخليل",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:42:39.832+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/48c924b0-bbc4-451f-8e89-83cde8747a8c/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/48c924b0-bbc4-451f-8e89-83cde8747a8c/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/48c924b0-bbc4-451f-8e89-83cde8747a8c/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/48c924b0-bbc4-451f-8e89-83cde8747a8c/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/48c924b0-bbc4-451f-8e89-83cde8747a8c/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/48c924b0-bbc4-451f-8e89-83cde8747a8c/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/48c924b0-bbc4-451f-8e89-83cde8747a8c/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/48c924b0-bbc4-451f-8e89-83cde8747a8c/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/48c924b0-bbc4-451f-8e89-83cde8747a8c"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/53dd3ce8-43e0-46bc-b029-9a30401ecfc4"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "53dd3ce8-43e0-46bc-b029-9a30401ecfc4",
+          "uuid": "53dd3ce8-43e0-46bc-b029-9a30401ecfc4",
+          "name": "Renewable Energy Applications in Palestine",
+          "handle": "20.500.11888/9664",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Eng. Basel Yaseen",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9664",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Renewable Energy Applications in Palestine",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Renewable Energy Applications in Palestine",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:52:24.410+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/53dd3ce8-43e0-46bc-b029-9a30401ecfc4/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/53dd3ce8-43e0-46bc-b029-9a30401ecfc4/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/53dd3ce8-43e0-46bc-b029-9a30401ecfc4/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/53dd3ce8-43e0-46bc-b029-9a30401ecfc4/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/53dd3ce8-43e0-46bc-b029-9a30401ecfc4/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/53dd3ce8-43e0-46bc-b029-9a30401ecfc4/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/53dd3ce8-43e0-46bc-b029-9a30401ecfc4/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/53dd3ce8-43e0-46bc-b029-9a30401ecfc4/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/53dd3ce8-43e0-46bc-b029-9a30401ecfc4"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/e1b86422-d5dc-4da9-9cf1-31271fe97c0c"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "e1b86422-d5dc-4da9-9cf1-31271fe97c0c",
+          "uuid": "e1b86422-d5dc-4da9-9cf1-31271fe97c0c",
+          "name": "Adsorption and desorption characteristics of Endosulfan pesticide in three soils in Palestine",
+          "handle": "20.500.11888/9672",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Shehda Joodeh",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Dr. Nidal Zatar",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              },
+              {
+                "value": "Mr. Karbla&#039; Jaradat",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 2
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9672",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Adsorption and desorption characteristics of Endosulfan pesticide in three soils in Palestine",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Adsorption and desorption characteristics of Endosulfan pesticide in three soils in Palestine",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T02:29:17.277+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/e1b86422-d5dc-4da9-9cf1-31271fe97c0c/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/e1b86422-d5dc-4da9-9cf1-31271fe97c0c/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/e1b86422-d5dc-4da9-9cf1-31271fe97c0c/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/e1b86422-d5dc-4da9-9cf1-31271fe97c0c/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/e1b86422-d5dc-4da9-9cf1-31271fe97c0c/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/e1b86422-d5dc-4da9-9cf1-31271fe97c0c/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/e1b86422-d5dc-4da9-9cf1-31271fe97c0c/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/e1b86422-d5dc-4da9-9cf1-31271fe97c0c/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/e1b86422-d5dc-4da9-9cf1-31271fe97c0c"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/af4f0e98-3ff6-4d25-af0a-74b1ea08a68b"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "af4f0e98-3ff6-4d25-af0a-74b1ea08a68b",
+          "uuid": "af4f0e98-3ff6-4d25-af0a-74b1ea08a68b",
+          "name": "البيئة كمفهوم وحق من حقوق الإنسان وانتهاكات الاحتلال للبيئة الفلسطينية",
+          "handle": "20.500.11888/9688",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ.سامر العقروق",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9688",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "البيئة كمفهوم وحق من حقوق الإنسان وانتهاكات الاحتلال للبيئة الفلسطينية",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "البيئة كمفهوم وحق من حقوق الإنسان وانتهاكات الاحتلال للبيئة الفلسطينية",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T01:33:54.887+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/af4f0e98-3ff6-4d25-af0a-74b1ea08a68b/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/af4f0e98-3ff6-4d25-af0a-74b1ea08a68b/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/af4f0e98-3ff6-4d25-af0a-74b1ea08a68b/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/af4f0e98-3ff6-4d25-af0a-74b1ea08a68b/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/af4f0e98-3ff6-4d25-af0a-74b1ea08a68b/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/af4f0e98-3ff6-4d25-af0a-74b1ea08a68b/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/af4f0e98-3ff6-4d25-af0a-74b1ea08a68b/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/af4f0e98-3ff6-4d25-af0a-74b1ea08a68b/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/af4f0e98-3ff6-4d25-af0a-74b1ea08a68b"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/65040d0d-4fc6-4a08-a201-a3d4976a0423"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "65040d0d-4fc6-4a08-a201-a3d4976a0423",
+          "uuid": "65040d0d-4fc6-4a08-a201-a3d4976a0423",
+          "name": "Agricultural Drought: Changing Perception of Planning and Management",
+          "handle": "20.500.11888/9692",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Mr. Kasem Abdo",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9692",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Agricultural Drought: Changing Perception of Planning and Management",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Agricultural Drought: Changing Perception of Planning and Management",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:26:48.523+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/65040d0d-4fc6-4a08-a201-a3d4976a0423/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/65040d0d-4fc6-4a08-a201-a3d4976a0423/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/65040d0d-4fc6-4a08-a201-a3d4976a0423/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/65040d0d-4fc6-4a08-a201-a3d4976a0423/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/65040d0d-4fc6-4a08-a201-a3d4976a0423/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/65040d0d-4fc6-4a08-a201-a3d4976a0423/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/65040d0d-4fc6-4a08-a201-a3d4976a0423/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/65040d0d-4fc6-4a08-a201-a3d4976a0423/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/65040d0d-4fc6-4a08-a201-a3d4976a0423"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/67909aab-0416-4fec-8d6e-834e5675a91a"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "67909aab-0416-4fec-8d6e-834e5675a91a",
+          "uuid": "67909aab-0416-4fec-8d6e-834e5675a91a",
+          "name": "Evaluation of Common and Small Scale Brackish Water Desalination Plant for Drinking Purposes in Gaza Strip at 2009",
+          "handle": "20.500.11888/9661",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Yosef Abu Maileh",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Eng. Salem Abu Omar",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              },
+              {
+                "value": "Eng. Omar Shtaat",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 2
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:35Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:35Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9661",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Evaluation of Common and Small Scale Brackish Water Desalination Plant for Drinking Purposes in Gaza Strip at 2009",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Evaluation of Common and Small Scale Brackish Water Desalination Plant for Drinking Purposes in Gaza Strip at 2009",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:27:51.650+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/67909aab-0416-4fec-8d6e-834e5675a91a/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/67909aab-0416-4fec-8d6e-834e5675a91a/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/67909aab-0416-4fec-8d6e-834e5675a91a/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/67909aab-0416-4fec-8d6e-834e5675a91a/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/67909aab-0416-4fec-8d6e-834e5675a91a/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/67909aab-0416-4fec-8d6e-834e5675a91a/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/67909aab-0416-4fec-8d6e-834e5675a91a/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/67909aab-0416-4fec-8d6e-834e5675a91a/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/67909aab-0416-4fec-8d6e-834e5675a91a"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/5c82b7f1-d7a8-47e4-8673-050b24d51eeb"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "5c82b7f1-d7a8-47e4-8673-050b24d51eeb",
+          "uuid": "5c82b7f1-d7a8-47e4-8673-050b24d51eeb",
+          "name": "المحاجر وأثرها على البيئة في منطقة الخليل",
+          "handle": "20.500.11888/9676",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "محمد ذياب أبو صالح",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9676",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "المحاجر وأثرها على البيئة في منطقة الخليل",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "المحاجر وأثرها على البيئة في منطقة الخليل",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:19:08.952+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/5c82b7f1-d7a8-47e4-8673-050b24d51eeb/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/5c82b7f1-d7a8-47e4-8673-050b24d51eeb/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/5c82b7f1-d7a8-47e4-8673-050b24d51eeb/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/5c82b7f1-d7a8-47e4-8673-050b24d51eeb/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/5c82b7f1-d7a8-47e4-8673-050b24d51eeb/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/5c82b7f1-d7a8-47e4-8673-050b24d51eeb/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/5c82b7f1-d7a8-47e4-8673-050b24d51eeb/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/5c82b7f1-d7a8-47e4-8673-050b24d51eeb/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/5c82b7f1-d7a8-47e4-8673-050b24d51eeb"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/3ecdf746-e24a-448c-b1c4-683f6beb3038"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "3ecdf746-e24a-448c-b1c4-683f6beb3038",
+          "uuid": "3ecdf746-e24a-448c-b1c4-683f6beb3038",
+          "name": "النفايات الكيماوية الخطرة في الوطن العربي وأثرها على البيئة",
+          "handle": "20.500.11888/9675",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. حسني عودة",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9675",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "النفايات الكيماوية الخطرة في الوطن العربي وأثرها على البيئة",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "النفايات الكيماوية الخطرة في الوطن العربي وأثرها على البيئة",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:35:20.384+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ecdf746-e24a-448c-b1c4-683f6beb3038/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ecdf746-e24a-448c-b1c4-683f6beb3038/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ecdf746-e24a-448c-b1c4-683f6beb3038/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ecdf746-e24a-448c-b1c4-683f6beb3038/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ecdf746-e24a-448c-b1c4-683f6beb3038/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ecdf746-e24a-448c-b1c4-683f6beb3038/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ecdf746-e24a-448c-b1c4-683f6beb3038/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ecdf746-e24a-448c-b1c4-683f6beb3038/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/3ecdf746-e24a-448c-b1c4-683f6beb3038"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/77a5ae14-5bdf-4af7-8f50-d88fb9884ca8"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "77a5ae14-5bdf-4af7-8f50-d88fb9884ca8",
+          "uuid": "77a5ae14-5bdf-4af7-8f50-d88fb9884ca8",
+          "name": "تشريعات النفايات الصلبة في فلسطين الواقع والاحتياجات التشريعية",
+          "handle": "20.500.11888/9691",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "أ. مراد منذر مدني",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9691",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "تشريعات النفايات الصلبة في فلسطين الواقع والاحتياجات التشريعية",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "تشريعات النفايات الصلبة في فلسطين الواقع والاحتياجات التشريعية",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:40:58.993+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/77a5ae14-5bdf-4af7-8f50-d88fb9884ca8/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/77a5ae14-5bdf-4af7-8f50-d88fb9884ca8/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/77a5ae14-5bdf-4af7-8f50-d88fb9884ca8/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/77a5ae14-5bdf-4af7-8f50-d88fb9884ca8/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/77a5ae14-5bdf-4af7-8f50-d88fb9884ca8/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/77a5ae14-5bdf-4af7-8f50-d88fb9884ca8/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/77a5ae14-5bdf-4af7-8f50-d88fb9884ca8/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/77a5ae14-5bdf-4af7-8f50-d88fb9884ca8/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/77a5ae14-5bdf-4af7-8f50-d88fb9884ca8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/6963623f-7439-4a01-a895-5ef75365bee7"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "6963623f-7439-4a01-a895-5ef75365bee7",
+          "uuid": "6963623f-7439-4a01-a895-5ef75365bee7",
+          "name": "استدامة بيئية نحو حياة أفضل:أسلوب بحثي متكامل لتوطين جدول أعمال القرن 21 في محافظة بيت لحم",
+          "handle": "20.500.11888/9695",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. جاد اسحق",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "عبير صفر",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:38Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:38Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9695",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "استدامة بيئية نحو حياة أفضل:أسلوب بحثي متكامل لتوطين جدول أعمال القرن 21 في محافظة بيت لحم",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "استدامة بيئية نحو حياة أفضل:أسلوب بحثي متكامل لتوطين جدول أعمال القرن 21 في محافظة بيت لحم",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:31:55.660+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/6963623f-7439-4a01-a895-5ef75365bee7/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/6963623f-7439-4a01-a895-5ef75365bee7/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/6963623f-7439-4a01-a895-5ef75365bee7/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/6963623f-7439-4a01-a895-5ef75365bee7/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/6963623f-7439-4a01-a895-5ef75365bee7/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/6963623f-7439-4a01-a895-5ef75365bee7/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/6963623f-7439-4a01-a895-5ef75365bee7/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/6963623f-7439-4a01-a895-5ef75365bee7/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/6963623f-7439-4a01-a895-5ef75365bee7"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/6a1fd7e0-6701-4070-bf65-0078bb1a4eca"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "6a1fd7e0-6701-4070-bf65-0078bb1a4eca",
+          "uuid": "6a1fd7e0-6701-4070-bf65-0078bb1a4eca",
+          "name": "Investigation of soil and groundwater pollution using geophysical methods in West Bank, Palestine",
+          "handle": "20.500.11888/9682",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Mohammad Hamedi",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Eng. Azl Sarhan",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              },
+              {
+                "value": "Biier Andriox",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 2
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9682",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Investigation of soil and groundwater pollution using geophysical methods in West Bank, Palestine",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Investigation of soil and groundwater pollution using geophysical methods in West Bank, Palestine",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:32:07.003+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/6a1fd7e0-6701-4070-bf65-0078bb1a4eca/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/6a1fd7e0-6701-4070-bf65-0078bb1a4eca/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/6a1fd7e0-6701-4070-bf65-0078bb1a4eca/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/6a1fd7e0-6701-4070-bf65-0078bb1a4eca/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/6a1fd7e0-6701-4070-bf65-0078bb1a4eca/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/6a1fd7e0-6701-4070-bf65-0078bb1a4eca/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/6a1fd7e0-6701-4070-bf65-0078bb1a4eca/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/6a1fd7e0-6701-4070-bf65-0078bb1a4eca/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/6a1fd7e0-6701-4070-bf65-0078bb1a4eca"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f",
+          "uuid": "7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f",
+          "name": "الآثار التي خلفها جدار الفصل العنصري الاسرائيلي على استدامة الأنظمة البيئية الزراعية في المناطق المتأثرة في محافظة قلقيلية",
+          "handle": "20.500.11888/9670",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "م. &quot;محمد تيسير&quot; بصلات",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9670",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "الآثار التي خلفها جدار الفصل العنصري الاسرائيلي على استدامة الأنظمة البيئية الزراعية في المناطق المتأثرة في محافظة قلقيلية",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "الآثار التي خلفها جدار الفصل العنصري الاسرائيلي على استدامة الأنظمة البيئية الزراعية في المناطق المتأثرة في محافظة قلقيلية",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:42:36.854+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/7bc956ea-58b6-42f6-a1c3-1fb4cce30a8f"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/347ab366-c05d-4d2c-ba72-538c6f683419"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "347ab366-c05d-4d2c-ba72-538c6f683419",
+          "uuid": "347ab366-c05d-4d2c-ba72-538c6f683419",
+          "name": "رؤية الشريعة الاسلامية ومنهجها في الحفاظ على البيئة",
+          "handle": "20.500.11888/9690",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. محمد شلش",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9690",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "رؤية الشريعة الاسلامية ومنهجها في الحفاظ على البيئة",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "رؤية الشريعة الاسلامية ومنهجها في الحفاظ على البيئة",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:24:15.992+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/347ab366-c05d-4d2c-ba72-538c6f683419/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/347ab366-c05d-4d2c-ba72-538c6f683419/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/347ab366-c05d-4d2c-ba72-538c6f683419/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/347ab366-c05d-4d2c-ba72-538c6f683419/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/347ab366-c05d-4d2c-ba72-538c6f683419/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/347ab366-c05d-4d2c-ba72-538c6f683419/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/347ab366-c05d-4d2c-ba72-538c6f683419/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/347ab366-c05d-4d2c-ba72-538c6f683419/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/347ab366-c05d-4d2c-ba72-538c6f683419"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/5330aa84-aa3b-476d-9eda-17875b863c99"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "5330aa84-aa3b-476d-9eda-17875b863c99",
+          "uuid": "5330aa84-aa3b-476d-9eda-17875b863c99",
+          "name": "أثر المناطق الصناعية الاسرائيلية على البيئة وصحة الانسان في مدينة طولكرم",
+          "handle": "20.500.11888/9667",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. سليمان خليل",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "أ. عصام قاسم",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9667",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "أثر المناطق الصناعية الاسرائيلية على البيئة وصحة الانسان في مدينة طولكرم",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "أثر المناطق الصناعية الاسرائيلية على البيئة وصحة الانسان في مدينة طولكرم",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:51:59.545+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/5330aa84-aa3b-476d-9eda-17875b863c99/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/5330aa84-aa3b-476d-9eda-17875b863c99/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/5330aa84-aa3b-476d-9eda-17875b863c99/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/5330aa84-aa3b-476d-9eda-17875b863c99/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/5330aa84-aa3b-476d-9eda-17875b863c99/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/5330aa84-aa3b-476d-9eda-17875b863c99/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/5330aa84-aa3b-476d-9eda-17875b863c99/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/5330aa84-aa3b-476d-9eda-17875b863c99/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/5330aa84-aa3b-476d-9eda-17875b863c99"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/851c366d-c845-4539-ad1f-b15723a843a0"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "851c366d-c845-4539-ad1f-b15723a843a0",
+          "uuid": "851c366d-c845-4539-ad1f-b15723a843a0",
+          "name": "Linking of wave energy utilization with coastal protection",
+          "handle": "20.500.11888/9666",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Paimpillil S. Joseph",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Baba.M",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9666",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Linking of wave energy utilization with coastal protection",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Linking of wave energy utilization with coastal protection",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:49:26.194+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/851c366d-c845-4539-ad1f-b15723a843a0/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/851c366d-c845-4539-ad1f-b15723a843a0/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/851c366d-c845-4539-ad1f-b15723a843a0/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/851c366d-c845-4539-ad1f-b15723a843a0/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/851c366d-c845-4539-ad1f-b15723a843a0/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/851c366d-c845-4539-ad1f-b15723a843a0/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/851c366d-c845-4539-ad1f-b15723a843a0/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/851c366d-c845-4539-ad1f-b15723a843a0/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/851c366d-c845-4539-ad1f-b15723a843a0"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8",
+          "uuid": "7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8",
+          "name": "تنمية زراعية نحو بيئة مستدامة",
+          "handle": "20.500.11888/9693",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "م. عصام نوفل",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:38Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:38Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9693",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "تنمية زراعية نحو بيئة مستدامة",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "تنمية زراعية نحو بيئة مستدامة",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:47:22.897+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/7eb1ca08-a0ad-4e0e-bbf1-d950eea6c5d8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/e5d734d4-9660-4827-9a7a-ec15e1797cbc"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "e5d734d4-9660-4827-9a7a-ec15e1797cbc",
+          "uuid": "e5d734d4-9660-4827-9a7a-ec15e1797cbc",
+          "name": "Performance of Hydroponic System as Decentralized Wastewater Treatment and Reuse for Rural communities",
+          "handle": "20.500.11888/9686",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Marwan Haddad",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Dr. No&#039;man Mizyed",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              },
+              {
+                "value": "Adel Abdallah",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 2
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9686",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Performance of Hydroponic System as Decentralized Wastewater Treatment and Reuse for Rural communities",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Performance of Hydroponic System as Decentralized Wastewater Treatment and Reuse for Rural communities",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T02:39:05.252+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/e5d734d4-9660-4827-9a7a-ec15e1797cbc/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/e5d734d4-9660-4827-9a7a-ec15e1797cbc/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/e5d734d4-9660-4827-9a7a-ec15e1797cbc/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/e5d734d4-9660-4827-9a7a-ec15e1797cbc/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/e5d734d4-9660-4827-9a7a-ec15e1797cbc/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/e5d734d4-9660-4827-9a7a-ec15e1797cbc/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/e5d734d4-9660-4827-9a7a-ec15e1797cbc/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/e5d734d4-9660-4827-9a7a-ec15e1797cbc/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/e5d734d4-9660-4827-9a7a-ec15e1797cbc"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/eeba608f-7331-4f71-af93-16147b9a81be"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "eeba608f-7331-4f71-af93-16147b9a81be",
+          "uuid": "eeba608f-7331-4f71-af93-16147b9a81be",
+          "name": "Sorption Characteristics of Nonionic surface triton X-100 into soil contamination with Diesel",
+          "handle": "20.500.11888/9679",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Eng. Mahmod Haitale",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Dr. Shahda joodeh",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9679",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Sorption Characteristics of Nonionic surface triton X-100 into soil contamination with Diesel",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Sorption Characteristics of Nonionic surface triton X-100 into soil contamination with Diesel",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T02:51:09.485+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/eeba608f-7331-4f71-af93-16147b9a81be/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/eeba608f-7331-4f71-af93-16147b9a81be/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/eeba608f-7331-4f71-af93-16147b9a81be/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/eeba608f-7331-4f71-af93-16147b9a81be/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/eeba608f-7331-4f71-af93-16147b9a81be/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/eeba608f-7331-4f71-af93-16147b9a81be/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/eeba608f-7331-4f71-af93-16147b9a81be/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/eeba608f-7331-4f71-af93-16147b9a81be/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/eeba608f-7331-4f71-af93-16147b9a81be"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/e79fcd82-965e-48a3-bfeb-7fd8f1c856e8"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "e79fcd82-965e-48a3-bfeb-7fd8f1c856e8",
+          "uuid": "e79fcd82-965e-48a3-bfeb-7fd8f1c856e8",
+          "name": "البعد البيئي للمسؤولية الاجتماعية للقطاع الخاص الفسطيني",
+          "handle": "20.500.11888/9681",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "د. ياسر شاهين",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9681",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "البعد البيئي للمسؤولية الاجتماعية للقطاع الخاص الفسطيني",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "البعد البيئي للمسؤولية الاجتماعية للقطاع الخاص الفسطيني",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T02:39:43.579+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/e79fcd82-965e-48a3-bfeb-7fd8f1c856e8/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/e79fcd82-965e-48a3-bfeb-7fd8f1c856e8/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/e79fcd82-965e-48a3-bfeb-7fd8f1c856e8/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/e79fcd82-965e-48a3-bfeb-7fd8f1c856e8/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/e79fcd82-965e-48a3-bfeb-7fd8f1c856e8/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/e79fcd82-965e-48a3-bfeb-7fd8f1c856e8/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/e79fcd82-965e-48a3-bfeb-7fd8f1c856e8/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/e79fcd82-965e-48a3-bfeb-7fd8f1c856e8/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/e79fcd82-965e-48a3-bfeb-7fd8f1c856e8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/f33993cd-3a37-4ea0-b4f7-baa62e25a33d"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "f33993cd-3a37-4ea0-b4f7-baa62e25a33d",
+          "uuid": "f33993cd-3a37-4ea0-b4f7-baa62e25a33d",
+          "name": "Rainfall runoff analysis of Wadis contributing to the Dead Sea",
+          "handle": "20.500.11888/9665",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Dr. Anan El Jayose",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Eng. Salam Abu Hantash",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:37:36Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2009-10-06",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/9665",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Rainfall runoff analysis of Wadis contributing to the Dead Sea",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Rainfall runoff analysis of Wadis contributing to the Dead Sea",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Other",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T03:02:41.286+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/f33993cd-3a37-4ea0-b4f7-baa62e25a33d/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/f33993cd-3a37-4ea0-b4f7-baa62e25a33d/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/f33993cd-3a37-4ea0-b4f7-baa62e25a33d/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/f33993cd-3a37-4ea0-b4f7-baa62e25a33d/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/f33993cd-3a37-4ea0-b4f7-baa62e25a33d/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/f33993cd-3a37-4ea0-b4f7-baa62e25a33d/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/f33993cd-3a37-4ea0-b4f7-baa62e25a33d/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/f33993cd-3a37-4ea0-b4f7-baa62e25a33d/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/f33993cd-3a37-4ea0-b4f7-baa62e25a33d"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

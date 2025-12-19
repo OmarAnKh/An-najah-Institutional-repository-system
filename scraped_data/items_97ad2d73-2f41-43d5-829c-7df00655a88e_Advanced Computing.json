@@ -1,0 +1,2168 @@
+{
+  "collection_id": "97ad2d73-2f41-43d5-829c-7df00655a88e",
+  "collection_name": "Advanced Computing",
+  "total_items": 13,
+  "items": [
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/8a0e511a-5844-450c-92c6-11b387763b52"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "8a0e511a-5844-450c-92c6-11b387763b52",
+          "uuid": "8a0e511a-5844-450c-92c6-11b387763b52",
+          "name": "Developing Wireless Sensor Network for Traffic Monitoring",
+          "handle": "20.500.11888/16546",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "فادي عبد الحق, محمد",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2021-12-15T13:07:13Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2021-12-15T13:07:13Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2019-10-16",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description": [
+              {
+                "value": "قدمت هذه الأطروحة استكمالا لمتطلبات الحصول على درجة الماجستير في الحوسبة المتقدمة بكلية الدراسات العليا في جامعة النجاح الوطنية في نابلس، فلسطين.",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "تلعب إدارة أنظمة المرور الذكية (ITS) دورًا مهمًا في نظام النقل الحديث حيث يعتبر تطوير انطمة مراقية حركة المرور من الابحاث الهامة في هذا المجال. \r\nأحد اهم انظمة المرور الذكية هي تلك الانظمة التي تعتمد على تطبيقات متقدمة لجمع معلومات عن حالة المرور في الزمن الحقيقي مثل عد المركبات وقياس سرعاتها وتحديد احجامها من أجل اتخاذ قرارات ذكية.\r\nتعتمد أنظمة مراقبة حركة المرور الحالية بشكل أساسي على كاميرات تصوير  الفيديو أو الحلقات الاستقرائية. هذه الأنظمة لها العديد من القيود. فعلى سبيل المثال، أداء  الأنظمة القائمة على كاميرات تصوير الفيديو يتأثر باحوال الطقس كالامطار الغزيرة والثلوج كذلك يحتاج نشر وصيانة الحلقات الاستقرائية إلى حفر سطح الطريق وبالتالي عرقلة لحركة المركبات، علاوة على ذلك، تكلفة كلا النوعين من أنظمة مراقبة حركة المرور عالية وليست مناسبة للنشر على نطاق واسع.\r\nفي هذه الرسالة، قمنا بتطوير شبكة استشعار لاسلكية (WSN) لعد المركبات وتحديد حجمها وقياس السرعة على أساس أجهزة الاستشعار المغناطيسية التي توضع على جانب الطريق.\r\nبيانات المرور التي تم جمعها من اجهزة الاستشعار اللاسلكية يتم ارسالها الى كمبيوتر مركزي لاسلكيا لمعالجتها وتحليلها وحفظها في قاعدة بيانات وكما يمكن مشاركتها مع تطبيقات أخرى من خلال استخدام خدمات الويب.\r\nالتطبيقات التي تم تطويرها في الاطروحة توفر مراقبة حركة المرور في الوقت الحقيقي، وتكلفة منخفضة، كما تضمن مراقبة مناسبة للطرق ومشاركة بشرية أقل.\r\nينصب تركيز هذه الاطروحة على تطوير شبكة استشعار لاسلكية لادارة بيانات المرور حيث تم محاكاة البيانات لتقييم النظام بدلاً من نشر أجهزة استشعار مغناطيسية.",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/16546",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "other",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "جامعة النجاح الوطنية",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.subject": [
+              {
+                "value": "تطوير شبكة استشعار لاسلكية لرصد حركة المرور",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "د. عدنان سلمان",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Developing Wireless Sensor Network for Traffic Monitoring",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "تطوير شبكة استشعار لاسلكية لرصد حركة المرور",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:56:06.604+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/8a0e511a-5844-450c-92c6-11b387763b52/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/8a0e511a-5844-450c-92c6-11b387763b52/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/8a0e511a-5844-450c-92c6-11b387763b52/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/8a0e511a-5844-450c-92c6-11b387763b52/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/8a0e511a-5844-450c-92c6-11b387763b52/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/8a0e511a-5844-450c-92c6-11b387763b52/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/8a0e511a-5844-450c-92c6-11b387763b52/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/8a0e511a-5844-450c-92c6-11b387763b52/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/8a0e511a-5844-450c-92c6-11b387763b52"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/86e0655f-a760-4ee2-bfee-31bf1c0ca728"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "86e0655f-a760-4ee2-bfee-31bf1c0ca728",
+          "uuid": "86e0655f-a760-4ee2-bfee-31bf1c0ca728",
+          "name": "Design and Implementation of Digital System for Lung Cancer Early Detection Using Neural Network and Image Processing",
+          "handle": "20.500.11888/16608",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "سهراب صوالحة, ديمة",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2021-12-19T10:18:23Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2021-12-19T10:18:23Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2021-02-16",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description": [
+              {
+                "value": "Design and Implementation of Digital System for Lung Cancer Early Detection Using Neural Network and Image Processing",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "يعتبر سرطان الرئة أكثر أنواع السرطانات شيوعًا بين الذكور في جميع أنحاء العالم. وهو يمثل 1 من كل 5 حالات وفاة بسبب السرطان ويحدث غالبًا بين سن 55 و65. وهذا هو الحال أيضًا في فلسطين، حيث يمثل سرطان الرئة نسبة 22.8٪ من الإصابات بين الذكور.\r\nيعد الكشف المبكر عن سرطان الرئة في المراحل الأولية خطوة حاسمة في عملية العلاج، حيث يمكن أن يزيد معدل البقاء على قيد الحياة بشكل ملحوظ.\r\nفي هذه الرسالة، تم تطبيق تقنيات معالجة الصور على صور التصوير المقطعي المحوسب (CT) لسرطان الرئة للعديد من المرضى لتحديد مناطق السرطان وحجمه. كما تم إجراء دراسة مقارنة بين خوارزميات معالجة الصور المختلفة على عدة صور لتحديد الخوارزميات الأكثر دقة التي سيتم استخدامها في عملية فحص سرطان الرئة. لقد تم استخدام خوارزميات التعلم الآلي والشبكات العصبونية وعمل مقارنة دراسية بينها لتحديد إذا كان الورم سرطان ام لا.",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/16608",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "other",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "جامعة النجاح الوطنية",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.subject": [
+              {
+                "value": "تصميم وتطبيق نظام محوسب للكشف المبكر لسرطان الرئة باستخدام الشبكة العصبونية ومعالجة الصور",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "د. عدنان سلمان",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Design and Implementation of Digital System for Lung Cancer Early Detection Using Neural Network and Image Processing",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "تصميم وتطبيق نظام محوسب للكشف المبكر لسرطان الرئة باستخدام الشبكة العصبونية ومعالجة الصور",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:54:59.589+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/86e0655f-a760-4ee2-bfee-31bf1c0ca728/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/86e0655f-a760-4ee2-bfee-31bf1c0ca728/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/86e0655f-a760-4ee2-bfee-31bf1c0ca728/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/86e0655f-a760-4ee2-bfee-31bf1c0ca728/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/86e0655f-a760-4ee2-bfee-31bf1c0ca728/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/86e0655f-a760-4ee2-bfee-31bf1c0ca728/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/86e0655f-a760-4ee2-bfee-31bf1c0ca728/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/86e0655f-a760-4ee2-bfee-31bf1c0ca728/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/86e0655f-a760-4ee2-bfee-31bf1c0ca728"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/11c790db-450d-42d1-99bc-f6fbd9310aab"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "11c790db-450d-42d1-99bc-f6fbd9310aab",
+          "uuid": "11c790db-450d-42d1-99bc-f6fbd9310aab",
+          "name": "Wireless Sensor Network for Smart Irrigation System",
+          "handle": "20.500.11888/16738",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "زياد ناجي, عرين",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2022-02-01T08:26:57Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2022-02-01T08:26:57Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2019-02-17",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description": [
+              {
+                "value": "قدمت هذه الأطروحة استكمالا لمتطلبات الحصول على درجة الماجستير في الحوسبة المتقدمة بكلية الدراسات العليا في جامعة النجاح الوطنية في نابلس، فلسطين.",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "مع التطورات الحديثة في تقنيات الحوسبة وأجهزة الاستشعار اللاسلكية ، أصبح بالامكان رصد ومراقبة البيئة من حولنا. كما يعتبر نظام الري الزراعي التقليدي المستخدم حالياً مستهلكاً رئيسياً للمياه حيث يتم استهلاك كمية كبيرة من المياه من خلال التبديد والصرف. علاوة على ذلك ، يمكن أن يؤدي نهج الري التقليدي إلى المبالغه او الجحاف في الري, والذي يمكن أن يكون له تأثير سلبي على جودة المحاصيل وإنتاجية المحاصيل. \r\nبما أن جدولة الري تعتمد بشكل كبير على حالة الطقس ، وخصائص التربة ، ونوع النبات ، فإن نظام الري التلقائي الذكي والمراقبة ، الذي يأخذ هذه العوامل في الاعتبار ، يمكن أن يؤدي إلى توفير كمية كبيرة من المياه ، وزيادة غلة المحاصيل ، وتحسين جودة المحاصيل. .\r\nفي هذه الأطروحة ، نقدم نظام الري الذكي الذي يستخدم شبكة الاستشعار اللاسلكية WSN ، لمراقبة الظروف الزراعية ، والتحكم في رطوبة التربة ، لتحقيق زراعة تلقائية أفضل.",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/16738",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "other",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "جامعة النجاح الوطنية",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.subject": [
+              {
+                "value": "شبكة مجسات لاسلكيه لنظام ري ذكي",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "ا.  د. عدنان سلمان",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Wireless Sensor Network for Smart Irrigation System",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "شبكة مجسات لاسلكيه لنظام ري ذكي",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T22:51:45.339+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/11c790db-450d-42d1-99bc-f6fbd9310aab/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/11c790db-450d-42d1-99bc-f6fbd9310aab/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/11c790db-450d-42d1-99bc-f6fbd9310aab/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/11c790db-450d-42d1-99bc-f6fbd9310aab/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/11c790db-450d-42d1-99bc-f6fbd9310aab/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/11c790db-450d-42d1-99bc-f6fbd9310aab/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/11c790db-450d-42d1-99bc-f6fbd9310aab/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/11c790db-450d-42d1-99bc-f6fbd9310aab/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/11c790db-450d-42d1-99bc-f6fbd9310aab"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/1120a3d5-e1a5-455f-8f51-6084bcb880f6"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "1120a3d5-e1a5-455f-8f51-6084bcb880f6",
+          "uuid": "1120a3d5-e1a5-455f-8f51-6084bcb880f6",
+          "name": "A Comparative Study of the Regularization Parameter Estimation Methods for the EEG Inverse Problem",
+          "handle": "20.500.11888/6312",
+          "metadata": {
+            "dc.contributor.advisor": [
+              {
+                "value": "Dr. Adnan Salman",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.contributor.author": [
+              {
+                "value": "Mohammed Jamil Aburidi",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2017-05-03T09:26:12Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2017-05-03T09:26:12Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2016",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "Investigation of the functional neuronal activity in the human brain depends on the localization of Electroencephalographic (EEG) signals to their cortex sources, which requires solving the source localization inverse problem. The problem is ill-conditioned and under-determinate, and so it is ill-posed. To find a treatment of the ill-posed nature of the problem, a regularization scheme must be applied. A crucial issue in the application of any regularization scheme, in any domain, is the optimal selection of the regularization parameter. The selected regularization parameter has to find an optimal tradeoff between the data fitting term and the amount of regularization.\nSeveral methods exist for finding an optimal estimate of the regularization parameter of the ill-posed problems in general. In this thesis, we investigated three popular methods and applied them to the source localization problem. These methods are: L-curve, Normalized Cumulative Periodogram (NCP), and the Generalized-Cross Validation (GCV). Then we compared the performance of these methods in terms of accuracy and reliability. We opted the WMNE algorithm to solve the EEG inverse problem with the application of different noise levels and different simulated source generators. The forward solution, which maps the current source generators inside the brain to scalp potential, was computed using an efficient accurate Finite Difference Method (FDM) forward solver. Our results indicate that NCP method gives the best estimation for the regularization parameter in general. However, for some levels of noise, GCV method has similar performance. In contrast, both NCP and GCV methods outperforms the L-curve method and resulted in a better average localization error. \nMoreover, we compared the performance of two inverse solver algorithms, eLORETA and sLORETA. Our results indicate that eLORETA outperform sLORETA in all localization error measures that we used, which includes, the center of gravity and the spatial spreading.",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "التحقيق في نشاط الخلايا العصبية في دماغ الانسان يعتمد على ربط اشارات جهاز EEG  بالنسبة الى المصدر المولد لها في قشرة الدماغ، والذي يتطلب حل المسألة العكسية لايجاد المصدر. هذه المسألة تحتوي على مشكلتين: الاولى انها ill condition  والثانية انها under determinate، لذلك تعتبر ill posed. لايجاد حل لمثل هذا النوع من المسائل، يجب تطبيق التسوية. تكمن الصعوبة في تطبيق التسوية في اختيار معاملها المثالي. معامل التسوية المثالي يكون بحيث يوازي كمية التسوية المضافة والحد الاصلي من المسألة العكسية.  \nالعديد من الطرق وضعت لايجاد معامل التسوية المثالي لهذا النوع من المسائل، في هذه الاطروحة قمنا بتطبيق ثلاثة طرق لايجاد معامل التسوية في المسألة العكسية لايجاد مصدر اشارات ال EEG. وهي ( NCP، GCV، L-curve ). ومن ثم قمنا بمقارنة اداء هذه الطرق من حيث الدقة والموثوقية. واخترناخورازمية WMNE لحل المسألة العكسية مع اضافة العديد من مستويات الضجيج الى مولدات الاشارة المختلفة التي تم محاكاتها. الحل الامامي والذي من خلاله يتم ايجاد الجهد الكهربائي الناتج من كل مصدر على الرأس تم حسابه من خلال FDM. نتائج هذه الدراسة اشارت الى ان طريقة NCP  اعطت افضل تقدير لمعامل التسوية بشكل عام. عند بعض مستويات الضجيج اعطت طريقة GCV نتائج مشابهة لطريقة NCP، على النقيض من L-curve التي اعطت اعلى نسبة خطأ.\nعلاوة على ذلك، تم مقارنة اداء خوارزميتان لحل المسألة العكسية وهما                   sLORETAوeLORETA. أشارت النتائج الى أن eLORETA اعطت افضل نتائج من حيث نسبة الخطأ.",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/6312",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "A Comparative Study of the Regularization Parameter Estimation Methods for the EEG Inverse Problem",
+                "language": "en",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "دراسة مقارنة لطرق تقدير معامل التسوية في مسألة تخطيط كهربية الدماغ المعاكسة",
+                "language": "ar",
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": "",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T22:51:32.187+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/1120a3d5-e1a5-455f-8f51-6084bcb880f6/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/1120a3d5-e1a5-455f-8f51-6084bcb880f6/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/1120a3d5-e1a5-455f-8f51-6084bcb880f6/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/1120a3d5-e1a5-455f-8f51-6084bcb880f6/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/1120a3d5-e1a5-455f-8f51-6084bcb880f6/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/1120a3d5-e1a5-455f-8f51-6084bcb880f6/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/1120a3d5-e1a5-455f-8f51-6084bcb880f6/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/1120a3d5-e1a5-455f-8f51-6084bcb880f6/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/1120a3d5-e1a5-455f-8f51-6084bcb880f6"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/497dfb4d-b4d0-451c-9406-c025b103d247"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "497dfb4d-b4d0-451c-9406-c025b103d247",
+          "uuid": "497dfb4d-b4d0-451c-9406-c025b103d247",
+          "name": "Algorithms of Optimization Techniques for Bin Packing Problem:  A Comparative Study",
+          "handle": "20.500.11888/17160",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "EL Karmi, Yasmin",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2022-09-19T06:04:03Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2022-09-19T06:04:03Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2021-09-28",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "One of the most critical optimization problems called Bin Packing Problem (BPP) attracts researchers attention because it is an NP-Complete problem means the solution can not be found in polynomial time. It has many applications such as storage and filling container.\r\nBPP aims to pick several items with different weights and pack them in a minimum number of bins without exceeding the bin’s capacity. One dimension BPP (1D-BPP) is one of its variations. Researchers have developed and proposed many algorithms to find an optimal solution or near-optimal solution.\r\nThis research aims to make a comparison between six algorithms to solve one-dimensional BPP. Two heuristic algorithms proposed by Zehmakan [?] are approximation algorithms; one of them has an approximation ratio of 3/2, called A1 and A2. Those algorithms promise to perform more efficient and much better than other algorithms.\r\nTwo classical approximation algorithms First Fit Decreasing (FFD) and Best Fit Decreasing (BFD) and two meta-heuristic algorithm namely Genetic Algorithms (GA) and Particle Swarm Optimization (PSO) with specific parameters have been compared.\r\nIn this work, several data sets have been used with the known optimal solution. They vary between random and arranged. Also, they vary in size. Some groups are small such as 9, 20 items, and medium such as 50, 100, 120 items and large such as 250, 500, 1000 items.\r\nMoreover, the sets vary in difficulty between easy and medium. So the number of bins used and running time have been compared to consider these algorithms’ performance.\r\nAccording to the number of bins used, A2 has performed better than A1 by comparing heuristic algorithms. However, it took much more running time than A1, especially in large data sets. Nevertheless, classical heuristics (BFD   FFD) outperform both A1 and A2 in easy datasets, while in hard datasets A2 outperform the classical heuristics.\r\nBy comparing meta-heuristic algorithms according to the number of bins used, in small data sets, PSO has performed better than GA but in large sets it’s almost the same. Also, PSO takes double running time than GA. PSO and GA have close results by the number of bins comparison and running time comparisons in other data sets. PSO is slightly better than GA when both the heuristics and the meta-heuristics are compared. Heuristic performs more efficient according to the number of bins and running time",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/17160",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "en",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "جامعة النجاح الوطنية",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "Dr. Baker Abdulhaq",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Algorithms of Optimization Techniques for Bin Packing Problem:  A Comparative Study",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "خوارزميات لتقنيات التحسين لمشكلة تعبئة الحاويات:  دراسة مقارنة",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:43:11.468+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/497dfb4d-b4d0-451c-9406-c025b103d247/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/497dfb4d-b4d0-451c-9406-c025b103d247/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/497dfb4d-b4d0-451c-9406-c025b103d247/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/497dfb4d-b4d0-451c-9406-c025b103d247/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/497dfb4d-b4d0-451c-9406-c025b103d247/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/497dfb4d-b4d0-451c-9406-c025b103d247/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/497dfb4d-b4d0-451c-9406-c025b103d247/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/497dfb4d-b4d0-451c-9406-c025b103d247/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/497dfb4d-b4d0-451c-9406-c025b103d247"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/51414229-85e7-4869-a15b-620a55ed70f1"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "51414229-85e7-4869-a15b-620a55ed70f1",
+          "uuid": "51414229-85e7-4869-a15b-620a55ed70f1",
+          "name": "Feature Extraction of EEG Signal to Classify Epileptic Signal Using Neural Network",
+          "handle": "20.500.11888/17314",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Jazzar, Isam Mutasem",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2022-09-21T07:46:20Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2022-09-21T07:46:20Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2020-09-07",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "Electroencephalogram (EEG) is the electrical signal associated with the communication of the brain neural cells. It is used to evaluate and test the electrical activity of the brain. Consequently, it can be used to detect abnormalities associated with this activity such as epilepsy. Epilepsy, characterized by recurrent seizures, is one of the most common neurological disorder that affect people at all ages. It is associated with abnormal electrical activity in the brain. One way to detect and diagnose epilepsy is by using electroencephalogram (EEG) signal since it contains enough information to characterize the disease. \r\nWe designed an algorithm capable of automate the process of identifying epileptic seizures and classifying it into three classes: normal, interictal, and ictal. The four-stage pipeline consists of a preprocessing stage, a wavelet transformation stage, a feature extraction stage, and a classification stage. The wavelet transformation stage is used to process the signals in order to prepare them for feature extraction stage. Then, statistical features are extracted from the coefficients of the wavelet transformation.  Nine features were extracted and used in the classification of the signals using the Artificial Neural Network. \r\nTo evaluate the performance of our model we used several measures includes: accuracy, sensitivity, and specificity. Using 300 brain signals and carrying proper calculations, we identified 144 epilepsy cases, and 156 non-epileptic cases. The accuracy, specificity, and sensitivity of our model are 81%, 80%, 84% respectively. The project provided a method to solve problems resulted from epilepsy diagnosis",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/17314",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "other",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "جامعة النجاح الوطنية",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "Adnan Salman",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Feature Extraction of EEG Signal to Classify Epileptic Signal Using Neural Network",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "استخراج سمات من إشارة كهربائية الدماغ  لتصنيف إشارة الصرع باستخدام الشبكة العصبية",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-09T23:50:46.619+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/51414229-85e7-4869-a15b-620a55ed70f1/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/51414229-85e7-4869-a15b-620a55ed70f1/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/51414229-85e7-4869-a15b-620a55ed70f1/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/51414229-85e7-4869-a15b-620a55ed70f1/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/51414229-85e7-4869-a15b-620a55ed70f1/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/51414229-85e7-4869-a15b-620a55ed70f1/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/51414229-85e7-4869-a15b-620a55ed70f1/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/51414229-85e7-4869-a15b-620a55ed70f1/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/51414229-85e7-4869-a15b-620a55ed70f1"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/ba5835ef-0172-494d-8dbd-01e7e9f9c396"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "ba5835ef-0172-494d-8dbd-01e7e9f9c396",
+          "uuid": "ba5835ef-0172-494d-8dbd-01e7e9f9c396",
+          "name": "A Cloud Application for Smart Agricultural Irrigation Management System",
+          "handle": "20.500.11888/15707",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "يونس, مصطفى محمد",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2021-06-03T06:47:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2021-06-03T06:47:05Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2018-09-27",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "Agriculture is one of the most important sectors of the Palestinian economy and it is the main consumer of fresh water. It is the broadest economic sector and plays an important role in the economic development of any nation. Several factors have a major impact on agriculture activities includes water availability, soil type, climate condition, fertilizers, and diseases. In conventional farming, farmers have to make decisions about all these factors. This include: what to grow, how to use the irrigation schedule, the type of fertilizers, and the best method to control pest and diseases. Farmer’s decisions are based solely upon their experience, which can result in wasting valuable resources such as water, fertilizers, time, labor, etc. Furthermore, conventional farming experience can result in growing plants that are not the most suitable for a particular soil and climate, which can cause less yield and profit.\r\nIn this thesis, we provide a cloud-based software application that is (combined with IoT devices) able to automates the irrigation schedule based on information obtained from agricultural experts and environmental data collected from the field by using sensors technology through Wireless Sensor Network (WSN). The application can easily be extended to automate fertilization as well as provide recommendation for weed and pest control.",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/15707",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "en_US",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "An-Najah National University",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "A Cloud Application for Smart Agricultural Irrigation Management System",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "تطبيق الحوسبة السحابية على نظام إدارة الري الزراعي الذكي",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T01:44:48.579+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/ba5835ef-0172-494d-8dbd-01e7e9f9c396/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/ba5835ef-0172-494d-8dbd-01e7e9f9c396/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/ba5835ef-0172-494d-8dbd-01e7e9f9c396/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/ba5835ef-0172-494d-8dbd-01e7e9f9c396/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/ba5835ef-0172-494d-8dbd-01e7e9f9c396/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/ba5835ef-0172-494d-8dbd-01e7e9f9c396/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/ba5835ef-0172-494d-8dbd-01e7e9f9c396/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/ba5835ef-0172-494d-8dbd-01e7e9f9c396/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/ba5835ef-0172-494d-8dbd-01e7e9f9c396"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91",
+          "uuid": "5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91",
+          "name": "Optimization of Traffic Signals Timing Using Parameter-less Metaheuristic Optimization Algorithms",
+          "handle": "20.500.11888/17426",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Thaher, Thaer",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2022-09-22T06:12:54Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2022-09-22T06:12:54Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2018-07-22",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "Traffic congestion is a common challenge in urban areas, so several methods are used to reduce it. A powerful solution that can reduce the congestion problem is by developing a real-time traffic light control system with an optimization technique to minimize the overall traffic delay through optimizing the traffic signals timing. Researchers have proposed several simulation models and used various techniques to optimize the traffic signals timing. \r\nThe purpose of this research is to evaluate and compare the performance of several meta-heuristic techniques in tackling the Traffic Signals Optimization Problem (TSOP). In this work, recently published algorithms that do not have specific parameters (the parameter-less) such as Teaching-Learning-Based Optimization (TLBO) and Jaya are applied to solve the traffic signals optimization problem. These algorithms have not been applied to the considered problem yet. \r\nA stochastic micro-simulator called 'Simulation of Urban Mobility' (SUMO) is used as a tool to implement and evaluate the performance and convergence speed of each algorithm. Three road networks of different sizes: small, medium and large containing 13, 34 and 141 phases respectively are simulated to study the scalability of algorithms.\r\nThe performance of TLBO and Jaya algorithms are compared to three algorithms that have some parameters that need to be set such as Genetic Algorithm (GA), Particle Swarm Optimization (PSO), and Weighted Teaching-Learning-Based Optimization (WTLBO). The study also considers the effect of common controlling parameters (i.e. the population size) on the performance of the evaluated algorithms.  \r\nAfter conducting many experiments, the comparisons and discussions have shown that TLBO and Jaya outperformed WTLBO, GA, and PSO for small and medium-sized networks. Moreover, TLBO achieved the best performance and scalability for the complex network",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/17426",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "other",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "جامعة النجاح الوطنية",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "Dr. Baker Abdulhaq",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "Optimization of Traffic Signals Timing Using Parameter-less Metaheuristic Optimization Algorithms",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "تحسين توقيت إشارات المرور باستخدام خوارزميات التحسين التخمينية الخالية من المعلمات",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:18:55.087+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/5bce2f7d-e4a6-4b9e-a3b6-c9cf1b1d0c91"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/6b4dfa25-b295-4574-8ea9-84eea856bc4e"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "6b4dfa25-b295-4574-8ea9-84eea856bc4e",
+          "uuid": "6b4dfa25-b295-4574-8ea9-84eea856bc4e",
+          "name": "PANDEMIC-BASED SCHOOL CLASSES SCHEDULING AUTOMATION ALGORITHM: PALESTINIAN SCHOOLS AS  A TESTING CASE",
+          "handle": "20.500.11888/17223",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Mukhaimer, Eman",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2022-09-20T08:02:51Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2022-09-20T08:02:51Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2022-03-29",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "During the COVID-19 pandemic, the distance learning was proposed as a vital solution to go on with the teaching/learning process and to keep both students and teachers (elementary and/or higher education) in contact with the avoidance of possible infection between them. However, despite the distance education offers and despite its role in eliminating the amounts of infections, it suffers from several drawbacks (in some communities): the lack of distance learning experience for both students and teachers, the need of high students’ motivation and the need for sufficient number of devices especially if the family has more than one school/college student. The purpose of this study is to propose a solution for the last problem (considering elementary education) by the proper scheduling of school classes’ sessions considering all of the affecting parameters like the number of lessons per teacher, the number of brothers students and the number of devices per family. The study is applied for 4 different school subjects: Arabic, English, Science and Mathematics and the study considers 4 elementary Palestinian schools to be involved in the study. The problem is modelled as an Integer Programming problem, and it is implemented using Gurobi. Comprehensive experimental tests are executed to compare between our work and the manual preparation of lessons scheduling in which a promising result are achieved. The IP algorithm decreased the number of conflicts by 40%.",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/17223",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "en",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "جامعة النجاح الوطنية",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.subject": [
+              {
+                "value": "School Timetabling, Scheduling, Integer Programming",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "Dr. Amjad Hawash",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "PANDEMIC-BASED SCHOOL CLASSES SCHEDULING AUTOMATION ALGORITHM: PALESTINIAN SCHOOLS AS  A TESTING CASE",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "خوارزمية أتمته البرنامج المدرسي في ظل الوباء: المدارس الفلسطينية كحالة اختبار",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": "en_US",
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2022-12-10T00:32:28.881+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/6b4dfa25-b295-4574-8ea9-84eea856bc4e/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/6b4dfa25-b295-4574-8ea9-84eea856bc4e/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/6b4dfa25-b295-4574-8ea9-84eea856bc4e/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/6b4dfa25-b295-4574-8ea9-84eea856bc4e/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/6b4dfa25-b295-4574-8ea9-84eea856bc4e/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/6b4dfa25-b295-4574-8ea9-84eea856bc4e/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/6b4dfa25-b295-4574-8ea9-84eea856bc4e/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/6b4dfa25-b295-4574-8ea9-84eea856bc4e/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/6b4dfa25-b295-4574-8ea9-84eea856bc4e"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/6c14a379-9b76-4072-aa28-af9defb30118"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "6c14a379-9b76-4072-aa28-af9defb30118",
+          "uuid": "6c14a379-9b76-4072-aa28-af9defb30118",
+          "name": "A DYNAMIC ONTOLOGICAL FRAMEWORK FOR BUKHARI AHADITH",
+          "handle": "20.500.11888/18513",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Areej Sawwan",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2023-11-23T11:47:16Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2023-11-23T11:47:16Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2023-02-23",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "The honorable Sunnah is the second source of Islamic legislation after the Holy Qur’an. Muslim scholars have been interested in preserving and codifying the hadith because of  its role in the statement of the Holy Qur’an by allocating the general, restricting the absolute, and clarifying the total. The Prophet’s Sunnah was transmitted orally with isnad(Isnad, from Arabic “sanad” (support), in Islam, a list of authorities who have transmitted a report(hadith) of Prophet Mohammad(PBUH) or his companions. Its reliability determines the validity of a hadith), which are the most dominant, and in writing for those who mastered writing in the time of the Prophet and the Companions, then it was written down and the hadiths were compiled with their chains of narrators until today they became Resources books of hadith(hadith, everything that was narrated from the Prophet Muhammad (PBUH) in terms of saying, acting, or reporting), Mustadrakat and other books that specialize in collecting and classifying hadiths. Enriching Islamic electronic content is a great challenge for researchers. Although Arabic is a global language and ranks as the sixth most used language around the world and is spoken by more than 400 million people, it does not have a sufficient presence on the internet, compared to other languages.\nOntology is defined as a knowledge representation way, and it is data model that reflects a set of concepts inside a domain and the relationships between those concepts.\nThis study aimed to build a dynamic ontological framework through which specialists in hadith science will be able to provide sufficient information about hadith, so that the ontology is able to save hadith, taking into account linking it with the relevant hadiths and narrators present in the framework, which makes the process of retrieval of information easy and fruitful. The study was conducted on the “Ablution Book” from Sahih Al-Bukhari. The researcher evaluated the system by executing several queries about narrators, hadiths, and the chain of isnad, and when comparing the results of the system with the traditional results and other ways of knowledge representation, the outcome was much better in search, retrieval, or in drawing hadith isnad trees, or in execution time in searching for information.",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/18513",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "en_US",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "An - Najah National University",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "Dr. Amjad Hawash",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Dr. Mohammad Jetan",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "A DYNAMIC ONTOLOGICAL FRAMEWORK FOR BUKHARI AHADITH",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "إطار أنطولوجيا ديناميكي لأحاديث البخاري",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2023-11-24T01:01:29.630+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/6c14a379-9b76-4072-aa28-af9defb30118/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/6c14a379-9b76-4072-aa28-af9defb30118/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/6c14a379-9b76-4072-aa28-af9defb30118/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/6c14a379-9b76-4072-aa28-af9defb30118/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/6c14a379-9b76-4072-aa28-af9defb30118/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/6c14a379-9b76-4072-aa28-af9defb30118/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/6c14a379-9b76-4072-aa28-af9defb30118/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/6c14a379-9b76-4072-aa28-af9defb30118/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/6c14a379-9b76-4072-aa28-af9defb30118"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c",
+          "uuid": "ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c",
+          "name": "USING ARTIFICIAL NEURAL NETWORK TO PREDICT PARTICLE TYPE IN HIGH-ENERGY PHYSICS",
+          "handle": "20.500.11888/19502",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Othman, Iman",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2024-09-02T07:48:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2024-09-02T07:48:37Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2024-06-13",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "In the realm of high-energy physics, such as particle collision experiments in particle accelerators like the Large Hadron Collider (LHC), complex collision events occur, leading to the formation of particle jets. Precisely identifying and describing these jets is crucial for understanding fundamental particles and their interactions. However, traditional jet identification algorithms face challenges in capturing subtle features and interactions within jets, especially in dense and complex environments. Thus, predicting the type of particle in high-energy physics is essential to advancing our scientific understanding of fundamental particles and their interactions.\nArtificial intelligence is a prominent research field that offers optimal solutions across various domains, especially in the context of deep learning. Many models have been studied, such as deep neural networks, jet classification, the use of neural networks, and recurrent neural networks. This study addresses the challenge of using neural networks to classify jets into five distinct categories (light quarks (q), gluons (g), W and Z bosons, and top quarks) with the highest possible accuracy. Using a model within the TensorFlow/Keras framework, we leveraged data from the Zenodo platform consisting of 150 particles with 16 attributes used for jet classification. The methods included building various neural network architectures in depth, including single-layer networks, two-layer networks, and three-layer networks. We explored different activation functions, the number of training epochs, and optimizers. Additionally, we adopted a strategy to control for overfitting and identify prominent features to improve classification performance.\nThe best results were achieved by building a three-layer neural network using Softmax, Sigmoid, and Selu activation functions, with the Adamax optimizer. These results were obtained after training the model for approximately 200 epochs, achieving an accuracy of 0.7400. This research highlights the potential of neural networks to achieve high levels of jet classification accuracy and provides insights into improving neural network architectures for similar tasks in particle physics research.",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/19502",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "en",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "An-Najah National University",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "Abdulhaq, Baker",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "USING ARTIFICIAL NEURAL NETWORK TO PREDICT PARTICLE TYPE IN HIGH-ENERGY PHYSICS",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "استخدام الشبكة العصبية الاصطناعية للتنبؤ بنوع الجسيمات في فيزياء الطاقة العالية",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2025-07-17T00:08:43.384+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/ced70e2c-a2ed-4f2d-a2fb-7eb17bc2534c"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/41daf0f2-7656-4393-955d-c942c1bf16cb"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "41daf0f2-7656-4393-955d-c942c1bf16cb",
+          "uuid": "41daf0f2-7656-4393-955d-c942c1bf16cb",
+          "name": "APPLYING CENTRALITY MEASURE FOR BUKHARI AHADITH ONTOLOGY OF NARRATORS",
+          "handle": "20.500.11888/20341",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Abu Rwais, Rola",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2025-08-06T08:11:43Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2025-08-06T08:11:43Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2023-10-05",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "The two main sources of Islamic legislation are the Qur’an and Hadith. Ahadith are the narrations stemming from the sayings and deeds of the Prophet Mohammad (peace be upon him). The narrators transmitted hadith of the Isnad from the Prophet, and the importance of the Isnad, Muslim’s keen interest in Isnad science because it helps to differentiate between accepted and rejected hadith, or in other words, authentic and weak hadith. Islamic scholars were the first to carefully study the Isnad to know and distinguish between trusted and non-trusted Ruwah, especially with the spread of Islam in non-Arabic countries and the increased number of Muslims from different cultures.\nThis work depends on the ontology of narrations of Jihad and Seiar Ahadith in Sahih Al Bukhari in order to apply different ontological centrality measures to generate a set of numbers related to each Rawi. These numbers were investigated to study the importance and extent of involvement of a particular narrator in the process of narrating hadith. For each centrality measure applied, we studied the calculated numbers for each Rawi in order to show how these numbers are related to the Ruwah importance in terms of their concerns in narrations, the amounts of their efforts, and their ranks of the narration process. These results are compared with the manual efforts applied by Islamic studies that rely on the manual categorization of Ruwah. We identified a list of Mokthreen narrators from the Sahaba (e.g., Abu Horaira, Ibn Abbas, Ibn Omar, etc.) as well as the Mokthreen of narrators from the second and third-generation (e.g., Shoaaba Ibn Alhajjaj, Alzohre, Sofian Ibn Aoyayna, Sofian Althori, etc.) who contribute significantly in the propagation of hadith collected in Sahih Al-Bukhari. To the best of our knowledge, this comprehensive and systematic study is based on ontology, representing narrators as a graph to analyze their contribution to the preservation and dissemination of hadith. When comparing the results of the system with the traditional results, we obtained similar results, whether in the information of the narrator or his role in the process of narrating the hadith.",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/20341",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "en",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "An-Najah National University",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "Hawash, Amjad",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              },
+              {
+                "value": "Jetan, Mohammad",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 1
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "APPLYING CENTRALITY MEASURE FOR BUKHARI AHADITH ONTOLOGY OF NARRATORS",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "تطبيق المقاييس المركزية على انطولوجيا أسانيد الحديث النبوي الشريف في صحيح البخاري",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2025-08-08T00:02:19.084+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/41daf0f2-7656-4393-955d-c942c1bf16cb/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/41daf0f2-7656-4393-955d-c942c1bf16cb/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/41daf0f2-7656-4393-955d-c942c1bf16cb/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/41daf0f2-7656-4393-955d-c942c1bf16cb/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/41daf0f2-7656-4393-955d-c942c1bf16cb/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/41daf0f2-7656-4393-955d-c942c1bf16cb/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/41daf0f2-7656-4393-955d-c942c1bf16cb/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/41daf0f2-7656-4393-955d-c942c1bf16cb/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/41daf0f2-7656-4393-955d-c942c1bf16cb"
+            }
+          }
+        }
+      }
+    },
+    {
+      "hitHighlights": null,
+      "type": "discover",
+      "_links": {
+        "indexableObject": {
+          "href": "https://repository.najah.edu/server/api/core/items/5e9d4e6e-346b-423f-9a3b-86c89b02aff4"
+        }
+      },
+      "_embedded": {
+        "indexableObject": {
+          "id": "5e9d4e6e-346b-423f-9a3b-86c89b02aff4",
+          "uuid": "5e9d4e6e-346b-423f-9a3b-86c89b02aff4",
+          "name": "DECISION TREE TO CLASSIFY JETS OF PARTICLES IN HIGH-ENERGY PHYSICS",
+          "handle": "20.500.11888/20071",
+          "metadata": {
+            "dc.contributor.author": [
+              {
+                "value": "Khaled, Marwa",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.accessioned": [
+              {
+                "value": "2025-05-12T10:13:25Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.available": [
+              {
+                "value": "2025-05-12T10:13:25Z",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.date.issued": [
+              {
+                "value": "2025-04-10",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.description.abstract": [
+              {
+                "value": "This study investigates the application of Decision Tree and Random Forest models to tackle the challenge of jet classification in particle physics, focusing on categorizing jets into five key particle types: light quarks (q), gluons (g), W and Z bosons, and top quarks. Using a dataset from Zenodo comprising list of 53 High-Level Features derived from jet events, we explored Decision Tree and Random Forest models within the machine learning framework to enhance classification accuracy. Our approach involved building and comparing various Decision Tree and Random Forest models, assessing configurations such as tree depth, the minimum number of samples leaf, and the number of trees in the Random Forest ensemble to optimize performance.\nIn our jet classification research, the Random Forest model outperforms the Decision Tree model in classifying particle physics events, achieving higher precision, recall, F1-scores, and an overall accuracy of (85.32%) compared to (81.32%). Optimal Random Forest performance was obtained using 100 trees, maximum depth = 10, and top 20 selected features, which also reduced training time by 36.8%. In contrast, the best Decision Tree configuration used maximum depth = 8 and maximum features = 40. This research highlights the potential of Random Forest to achieve high jet classification accuracy and offers insights into optimizing Random Forest models for similar tasks in particle physics research.",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.identifier.uri": [
+              {
+                "value": "https://hdl.handle.net/20.500.11888/20071",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.language.iso": [
+              {
+                "value": "en",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.publisher": [
+              {
+                "value": "An-Najah National University",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.supervisor": [
+              {
+                "value": "Abdulhaq, Baker",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title": [
+              {
+                "value": "DECISION TREE TO CLASSIFY JETS OF PARTICLES IN HIGH-ENERGY PHYSICS",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.title.alternative": [
+              {
+                "value": "شجرة القرار لتصنيف نفاثات من الجسيمات في فيزياء الطاقة العالية",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ],
+            "dc.type": [
+              {
+                "value": "Thesis",
+                "language": null,
+                "authority": null,
+                "confidence": -1,
+                "place": 0
+              }
+            ]
+          },
+          "inArchive": true,
+          "discoverable": true,
+          "withdrawn": false,
+          "lastModified": "2025-10-15T00:03:33.486+00:00",
+          "entityType": null,
+          "type": "item",
+          "_links": {
+            "accessStatus": {
+              "href": "https://repository.najah.edu/server/api/core/items/5e9d4e6e-346b-423f-9a3b-86c89b02aff4/accessStatus"
+            },
+            "bundles": {
+              "href": "https://repository.najah.edu/server/api/core/items/5e9d4e6e-346b-423f-9a3b-86c89b02aff4/bundles"
+            },
+            "mappedCollections": {
+              "href": "https://repository.najah.edu/server/api/core/items/5e9d4e6e-346b-423f-9a3b-86c89b02aff4/mappedCollections"
+            },
+            "owningCollection": {
+              "href": "https://repository.najah.edu/server/api/core/items/5e9d4e6e-346b-423f-9a3b-86c89b02aff4/owningCollection"
+            },
+            "relationships": {
+              "href": "https://repository.najah.edu/server/api/core/items/5e9d4e6e-346b-423f-9a3b-86c89b02aff4/relationships"
+            },
+            "version": {
+              "href": "https://repository.najah.edu/server/api/core/items/5e9d4e6e-346b-423f-9a3b-86c89b02aff4/version"
+            },
+            "templateItemOf": {
+              "href": "https://repository.najah.edu/server/api/core/items/5e9d4e6e-346b-423f-9a3b-86c89b02aff4/templateItemOf"
+            },
+            "thumbnail": {
+              "href": "https://repository.najah.edu/server/api/core/items/5e9d4e6e-346b-423f-9a3b-86c89b02aff4/thumbnail"
+            },
+            "self": {
+              "href": "https://repository.najah.edu/server/api/core/items/5e9d4e6e-346b-423f-9a3b-86c89b02aff4"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
