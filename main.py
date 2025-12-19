@@ -18,10 +18,6 @@ opensearch = OpenSearchInsertion(
     location_extractor=StanzaLocationsExtractor(),
     temporal_extractor=MultiLangTemporalExtractor(),
     geo_location_finder=GeopyGeoLocationFinder(),
-    index_name="an_najah_repository",
+    index_name=global_config.index_name,
 )
 
-
-opensearch.extract_and_insert(
-    jsonl_path="src/data/bulk_opensearch.jsonl",
-)

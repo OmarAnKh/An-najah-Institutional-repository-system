@@ -28,4 +28,3 @@ boto3.setup_default_session(
     aws_secret_access_key=global_config.aws_secret_access_key,
     region_name=global_config.aws_region,
 )
-
