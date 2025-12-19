@@ -11,11 +11,22 @@ class OpenSearchClient(ABCClient):
     _initialized = False
 
     def __new__(cls, *args, **kwargs):
+        """Create a singleton instance of OpenSearchClient.
+
+        Returns:
+            OpenSearchClient: The singleton instance of OpenSearchClient.
+        """
         if cls._instance is None:
             cls._instance = super().__new__(cls)
         return cls._instance
 
     def __init__(self, use_ssl: bool = True, verify_certs: bool = True):
+        """Initialize the OpenSearchClient.
+
+        Args:
+            use_ssl (bool, optional): Whether to use SSL. Defaults to True.
+            verify_certs (bool, optional): Whether to verify SSL certificates. Defaults to True.
+        """
         if self.__class__._initialized:
             return
 
@@ -26,6 +37,11 @@ class OpenSearchClient(ABCClient):
 
     # In src/opensearch/open_search_client.py
     def get_client(self) -> OpenSearch:
+        """Get the OpenSearch client instance.
+
+        Returns:
+            OpenSearch: The OpenSearch client instance.
+        """
         if self.__class__._client is None:
 
             session = boto3.Session()
