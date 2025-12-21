@@ -1,6 +1,7 @@
 import ollama
-from query_prompt import prompt_function
 from abc import ABC, abstractmethod
+from prompts import query_generation_prompt
+import json
 
 
 # Define an abstract class for query generation
@@ -19,7 +20,7 @@ class Query(ABC):
     """
 
     @abstractmethod
-    def generate_opensearch_query(self, user_prompt: str):
+    def generate_opensearch_query(self, user_prompt: str, mapping):
         """
         Abstract method to generate a search query.
 
@@ -62,7 +63,7 @@ class QueryGeneration(Query):
         Generates an OpenSearch query based on the given user prompt.
     """
 
-    def __init__(self):
+    def __init__(self, ollama_model: str):
         """
         Initializes the `QueryGeneration` object by setting up the Ollama client
         and selecting the model for query generation.
@@ -71,9 +72,9 @@ class QueryGeneration(Query):
         """
         # Initialize the Ollama client
         self.client = ollama.Client()
-        self.model = "llama3.1:8b"
+        self.model = ollama_model
 
-    def generate_opensearch_query(self, user_prompt: str):
+    def generate_opensearch_query(self, user_prompt: str, mapping):
         """
         Generates an OpenSearch query by sending the user's prompt to the Ollama model
         and retrieving a natural language response.
@@ -89,11 +90,12 @@ class QueryGeneration(Query):
             The generated OpenSearch query as a string.
         """
         # Combine system and user messages
-        combined_prompt = (
-            f"System: {prompt_function()}\nUser: {user_prompt}\nAssistant:"
+        system_part = (
+            query_generation_prompt
+            + "\n\nINDEX MAPPING:\n"
+            + json.dumps(mapping, ensure_ascii=False)
         )
+        combined_prompt = f"System: {system_part}\nUser: {user_prompt}\nAssistant:"
 
-        # Send the combined prompt to the Ollama model for query generation
         response = self.client.generate(model=self.model, prompt=combined_prompt)
-
         return response.response
