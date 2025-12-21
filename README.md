@@ -64,10 +64,21 @@ pip install -r requirements.txt
 Create a `.env` file in the root folder (or set environment variables) with the connection details and model configuration:
 
 ```ini
-EMBEDDING_MODEL_NAME=<the name of the model you want to use for embedding>
-OPENSEARCH_HOST=<the host (default is locally)>
-OPENSEARCH_PORT=<The port to be used>
-INDEX_NAME=<the name of the index you want to create>
+EMBEDDING_MODEL_NAME=<The name of the model you want to use for embedding (must be able to embed Arabic and English)>
+OPENSEARCH_HOST=<The link for the opensearch>
+OPENSEARCH_PORT=<Port for the opensearch>
+
+INDEX_NAME=<Name of the index>
+GENERATIVE_MODEL_NAME=<Name of Ollama model to be used in the rag and the query generation>
+PIPELINE_NAME =<>
+SUGGEST_URL =<>
+
+
+
+#AWS Credentials for OpenSearch Optionals (empty string if you dont have an AWS Opensearch Domain) 
+AWS_ACCESS_KEY_ID=<AWS access key for the IAM user>
+AWS_SECRET_ACCESS_KEY=<AWS Secret key for the same IAM user>
+AWS_REGION=<the region of that user>
 ```
 
 #### 4. Start OpenSearch services
