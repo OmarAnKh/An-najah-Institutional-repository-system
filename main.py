@@ -4,7 +4,9 @@ from src.opensearch.mapping import ProjectMapping
 from src.extracters.stanza_temporal_extractor import MultiLangTemporalExtractor
 from src.extracters.stanza_locations_extractor import StanzaLocationsExtractor
 from src.extracters.geopy_geo_location_finder import GeopyGeoLocationFinder
-from src.services.article_search_service import ArticleSearchService
+from src.services.an_najah_repository_search_service import (
+    AnNajahRepositorySearchService,
+)
 from global_config import global_config
 from fastapi import FastAPI, Query
 
@@ -19,21 +21,18 @@ project_mapping = ProjectMapping(
     opensearch_client=client,
 )
 
-opensearch = OpenSearchInsertion(
+opensearch_insertion_client = OpenSearchInsertion(
     project_mapping,
     location_extractor=StanzaLocationsExtractor(),
     temporal_extractor=MultiLangTemporalExtractor(),
     geo_location_finder=GeopyGeoLocationFinder(),
-    index_name="an_najah_repository",
+    index_name=global_config.index_name,
 )
 
-
-opensearch.extract_and_insert(
-    jsonl_path="src/data/bulk_opensearch.jsonl",
+opensearch_search_service = AnNajahRepositorySearchService(
+    index=global_config.index_name,
+    client=client,
 )
-
-# Create a service instance (IMPORTANT: instance, not class)
-article_service = ArticleSearchService(index="an_najah_repository", client=client)
 
 # autocomplete API endpoint
 @main.get("/api/suggest")
@@ -42,5 +41,6 @@ def suggest(
     limit: int = Query(8, ge=1, le=20)
 ):
     # return a raw list[str] of suggestions
-    return article_service.suggest(prefix=q, limit=limit)
+    return opensearch_search_service.suggest(prefix=q, limit=limit)
 
+print(opensearch_search_service.client_health())
