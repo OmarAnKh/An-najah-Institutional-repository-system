@@ -10,6 +10,7 @@ dateparser
 langchain-text-splitters 
 transformers
 requests-aws4auth
+prompt_toolkit
 boto3
 pandas
 langchain

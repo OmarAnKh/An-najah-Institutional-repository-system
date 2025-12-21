@@ -13,6 +13,8 @@ class GlobalConfig(BaseSettings):
     aws_region: str
     aws_secret_access_key: str
     aws_access_key_id: str
+    pipeline_name: str
+    suggest_url: str
     generative_model_name: str
 
 

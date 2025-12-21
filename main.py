@@ -1,3 +1,5 @@
+from fastapi import FastAPI, Query
+
 from src.services.open_seach_insertion import OpenSearchInsertion
 from src.opensearch.open_search_client import OpenSearchClient
 from src.opensearch.mapping import ProjectMapping
@@ -10,9 +12,11 @@ from src.services.an_najah_repository_search_service import (
 from global_config import global_config
 from src.queries_generation.query_generation import QueryGeneration
 
+
 query_generation = QueryGeneration(ollama_model=global_config.generative_model_name)
 client = OpenSearchClient(True, True)
 print("OpenSearch client initialized.")
+
 project_mapping = ProjectMapping(
     model_name=global_config.embedding_model_name,
     opensearch_client=client,
@@ -33,6 +37,8 @@ opensearch_search_service = AnNajahRepositorySearchService(
     mapping=project_mapping,
 )
 
+print(opensearch_search_service.client_health())
+
 generated_query = opensearch_search_service.generate_query(
     user_prompt="Find articles related to climate change published after 2020."
 )
@@ -40,4 +46,17 @@ generated_query = opensearch_search_service.generate_query(
 
 print("Generated Query:", generated_query[1])
 
-# print(opensearch_search_service.client_health())
+# Initialize FastAPI app
+main = FastAPI()
+
+
+# autocomplete API endpoint
+@main.get("/api/suggest")
+def suggest(q: str = Query(..., min_length=3), limit: int = Query(8, ge=1, le=20)):
+    # return a raw list[str] of suggestions
+    return opensearch_search_service.suggest(prefix=q, limit=limit)
+
+
+
+
+
