@@ -1,4 +1,5 @@
 def prompt_function():
+    """Return the system prompt used for query generation."""
     prompt = """
     You are an OpenSearch Query Generator.
 
