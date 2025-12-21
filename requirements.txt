@@ -10,4 +10,5 @@ dateparser
 langchain-text-splitters 
 transformers
 requests-aws4auth
-boto3
+boto3 
+prompt_toolkit
