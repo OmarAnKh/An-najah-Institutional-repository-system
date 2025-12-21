@@ -37,14 +37,14 @@ opensearch_search_service = AnNajahRepositorySearchService(
     mapping=project_mapping,
 )
 
-print(opensearch_search_service.client_health())
+# print(opensearch_search_service.client_health())
 
-generated_query = opensearch_search_service.generate_query(
-    user_prompt="Find articles related to climate change published after 2020."
-)
+# generated_query = opensearch_search_service.generate_query(
+#     user_prompt="Find articles related to climate change published after 2020."
+# )
 
 
-print("Generated Query:", generated_query[1])
+# print("Generated Query:", generated_query[1])
 
 # Initialize FastAPI app
 main = FastAPI()
@@ -55,8 +55,3 @@ main = FastAPI()
 def suggest(q: str = Query(..., min_length=3), limit: int = Query(8, ge=1, le=20)):
     # return a raw list[str] of suggestions
     return opensearch_search_service.suggest(prefix=q, limit=limit)
-
-
-
-
-

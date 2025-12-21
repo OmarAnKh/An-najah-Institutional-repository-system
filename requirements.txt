@@ -15,3 +15,5 @@ boto3
 pandas
 langchain
 langchain-ollama
+fastapi
+uvicorn
