@@ -169,12 +169,16 @@ def clean_query_text(
     phrases = set()
 
     if temporal_expressions:
-        phrases.update(t.strip() for t in temporal_expressions if t)
+        for temp in temporal_expressions:
+            if temp:
+                phrases.update(temp.strip())
 
     if locations:
-        phrases.update(l.strip() for l in locations if l)
+        for loc in locations:
+            if loc:
+                phrases.update(loc.strip())
 
-    # remove longer phrases first (important!)
+    # remove longer phrases first to avoid partial overlaps
     for phrase in sorted(phrases, key=len, reverse=True):
         pattern = re.compile(rf"\b{re.escape(phrase)}\b", re.IGNORECASE)
         text = pattern.sub(" ", text)
