@@ -3,6 +3,7 @@ from src.query_utils.suggest_query import build_suggest_query
 from src.query_utils.query_preprocessor import prepare_input
 from src.query_utils.full_text_query import build_hybrid_query_pipeline
 
+
 class AnNajahRepositorySearchService:
     """
     Service for indexing and searching articles in OpenSearch.
@@ -82,22 +83,17 @@ class AnNajahRepositorySearchService:
 
         return out[:limit]
 
+    def user_query(self, q: str) -> dict:
+        lang, lexical25_clean_query, semantic_vector_query, temporals, geo_refs = (prepare_input(q))
 
-    def user_query(self,q: str) -> dict:
+        # 3) Search pipeline normalization (hybrid DSL)
+        body = build_hybrid_query_pipeline(
+            lexical25_text=lexical25_clean_query,
+            semantic_query_vector=semantic_vector_query,
+            temporal_expressions=temporals,
+            geo_refs=geo_refs,
+            num_candidates=100,
+            lang=lang,
+        )
 
-            lang, lexical25_clean_query, semantic_vector_query, temporals, geo_refs= (
-                prepare_input(q)
-            )
-
-            # 3) Search pipeline normalization (hybrid DSL)
-            body = build_hybrid_query_pipeline(
-                lexical25_text=lexical25_clean_query,
-                semantic_query_vector=semantic_vector_query,
-                temporal_expressions=temporals,
-                geo_refs=geo_refs,
-                num_candidates=100,
-                lang=lang,
-            )
-
-            return body
-        
+        return body
