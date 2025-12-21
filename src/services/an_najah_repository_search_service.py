@@ -1,5 +1,5 @@
 from src.opensearch.abstract_classes.ABC_client import ABCClient
-from src.queries_generation.query_generation import QueryGeneration, Query
+from src.queries_generation.query_generation import Query
 from src.opensearch.mapping import ProjectMapping
 import json
 
