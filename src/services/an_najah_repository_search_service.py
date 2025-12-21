@@ -2,8 +2,6 @@ from src.opensearch.abstract_classes.ABC_client import ABCClient
 from src.query_utils.suggest_query import build_suggest_query
 from src.query_utils.query_preprocessor import prepare_input
 from src.query_utils.full_text_query import build_hybrid_query_pipeline
-from src.queries_generation.query_generation import QueryGeneration, Query
-
 from src.queries_generation.query_generation import Query
 from src.opensearch.mapping import ProjectMapping
 import json
