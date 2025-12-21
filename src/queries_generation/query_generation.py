@@ -1,5 +1,5 @@
 import ollama
-from prompt import prompt_function
+from query_prompt import prompt_function
 from abc import ABC, abstractmethod
 
 
@@ -67,11 +67,11 @@ class QueryGeneration(Query):
         Initializes the `QueryGeneration` object by setting up the Ollama client
         and selecting the model for query generation.
 
-        The model name is set to "llama2:latest" by default.
+        The model name is set to "llama3.1:8b" by default.
         """
         # Initialize the Ollama client
         self.client = ollama.Client()
-        self.model = "llama2:latest"
+        self.model = "llama3.1:8b"
 
     def generate_opensearch_query(self, user_prompt: str):
         """
