@@ -37,11 +37,24 @@ vector_model = SentenceTransformer(global_config.embedding_model_name)
 
 def filter_safe_temporals(temporals: Iterable[str] | None) -> List[str]:
     """
-    Keep only year-like temporals:
-    - "2014"
-    - "2013-2019" (range)
-    Drops things like "winter", "recent years", "90%", ages, durations, etc.
+    Filter extracted temporals to keep only year-like values.
+
+    Keeps:
+    - Single years like "2014"
+    - Year ranges like "2013-2019"
+
+    Drops:
+    - Seasons (e.g., "winter")
+    - Relative phrases (e.g., "recent years")
+    - Percentages, ages, and other non-year temporals
+
+    Args:
+        temporals: Iterable of extracted temporal strings.
+
+    Returns:
+        A list of temporal strings that contain a 4-digit year pattern.
     """
+
     if not temporals:
         return []
 
@@ -63,7 +76,19 @@ def filter_safe_temporals(temporals: Iterable[str] | None) -> List[str]:
 
 
 def strip_year_like_tokens(text: str) -> str:
-    """Remove standalone year tokens and common year-range patterns from text."""
+    """
+    Remove year-like tokens and common year-range patterns from text.
+
+    This is used to prevent standalone years (e.g., "2014") and ranges
+    (e.g., "2013-2019", "2013 to 2019") from dominating lexical BM25 ranking.
+    The semantic/temporal handling is done elsewhere via soft boosts.
+
+    Args:
+        text: Input query string.
+
+    Returns:
+        Text with year tokens and year-range patterns removed and whitespace normalized.
+    """
     if not text:
         return ""
     t = text
@@ -88,8 +113,19 @@ def strip_year_like_tokens(text: str) -> str:
 
 def expand_year_ranges(temporals: List[str]) -> List[str]:
     """
-    Convert tokens like '2013-2019' into ['2013','2014',...,'2019'].
-    Keeps normal year tokens as-is.
+    Expand year ranges into individual year tokens while preserving order.
+
+    Example:
+        "2013-2015" -> ["2013", "2014", "2015"]
+
+    Safety:
+        Expansion is limited to ranges of length <= 50 years to avoid blowups.
+
+    Args:
+        temporals: List of temporal strings (years and/or ranges).
+
+    Returns:
+        A de-duplicated list of year tokens and/or original temporals.
     """
     out: List[str] = []
     for t in temporals or []:
@@ -116,10 +152,21 @@ def expand_year_ranges(temporals: List[str]) -> List[str]:
 
 def build_lexical_text(query: str, temporals, locations) -> str:
     """
-    Option A (token-aware lexical anchoring):
-      - KEEP locations in the BM25 text (prevents generic drift).
-      - REMOVE ALL year-like temporals from the BM25 MUST text (years can hijack ranking).
-      - Years/ranges are handled only as SOFT boosts elsewhere (temporalExpressions).
+    Build the lexical BM25 query text using Option A (token-aware anchoring).
+
+    Strategy:
+    - Keep location mentions inside the lexical text to anchor retrieval.
+    - Remove year-like tokens/ranges from the lexical text to avoid ranking hijack.
+    - Keep non-year temporal phrases removable via `clean_query_text` (when applicable).
+    - Temporal constraints are handled later as *soft boosts* (not hard filters).
+
+    Args:
+        query: Raw user query text.
+        temporals: Extracted temporal expressions from the query.
+        locations: Extracted location mentions from the query.
+
+    Returns:
+        A cleaned lexical query string for BM25 matching.
     """
     # We still remove only "noisy temporals" phrases that are not simple years (e.g., 'recent years')
     safe_temporals = set(expand_year_ranges(filter_safe_temporals(temporals)))
@@ -141,6 +188,22 @@ def build_lexical_text(query: str, temporals, locations) -> str:
 
 
 def is_probable_location(name: str) -> bool:
+    """
+    Heuristically decide whether a string is a plausible location mention.
+
+    Used as a lightweight guard before geocoding to reduce noise and avoid
+    unnecessary geocoding calls. It filters out:
+    - Very short fragments
+    - Short uppercase acronyms (e.g., "SPSS", "TAM")
+    - Tokens containing known non-location keywords (e.g., "model", "analysis")
+
+    Args:
+        name: A candidate location phrase extracted from the query.
+
+    Returns:
+        True if the phrase looks like a plausible place name, otherwise False.
+    """
+
     t = (name or "").strip()
     if not t:
         return False
@@ -161,8 +224,19 @@ def clean_query_text(
     locations: Iterable[str] | None = None,
 ) -> str:
     """
-    Remove extracted temporal expressions and location names
-    from the query text, keeping it readable and safe for BM25/embeddings.
+    Remove extracted temporals and locations from a query string.
+
+    This is mainly used to produce a cleaner semantic input (for embeddings)
+    by removing explicit temporal/location mentions after they have been
+    extracted and will be handled separately (e.g., boosting/filtering).
+
+    Args:
+        query: Raw query text.
+        temporal_expressions: Extracted temporal phrases to remove.
+        locations: Extracted location phrases to remove.
+
+    Returns:
+        Cleaned query text with removed phrases and normalized whitespace.
     """
     text = query or ""
 
@@ -191,6 +265,25 @@ def clean_query_text(
 
 
 def extractors(q: str, lang: str):
+    """
+    Extract temporals and locations from a query and build structured geo references.
+
+    Steps:
+    - Extract temporal expressions using the configured temporal extractor.
+    - Extract location candidates using the configured locations extractor.
+    - Optionally geocode up to 3 plausible locations into structured geo refs:
+      {"placeName": ..., "lat": ..., "lon": ...}.
+
+    Args:
+        q: Raw user query text.
+        lang: Query language ("en" or "ar") used for the NLP extractors.
+
+    Returns:
+        A tuple in the exact order:
+            temporals: List of extracted temporal expressions.
+            geo_refs: List of structured geo references (up to 3).
+            locations: List of extracted location surface forms.
+    """
 
     temporals = temporal_extractor.extract(q, lang=lang)
     locations = locations_extractor.extract(q, lang=lang)
@@ -219,6 +312,28 @@ def extractors(q: str, lang: str):
 
 
 def prepare_input(q):
+    """
+    Prepare a raw user query for hybrid retrieval (lexical + semantic + signals).
+
+    This function:
+    - Detects the query language ("en"/"ar") using `langdetect`.
+    - Extracts temporal expressions and geo references from the query.
+    - Builds:
+        - A semantic-clean query (temporals/locations removed) for embeddings.
+        - A lexical BM25 query text using Option A (locations kept, years stripped).
+    - Encodes the semantic-clean query into an embedding vector.
+
+    Args:
+        q: Raw user query text.
+
+    Returns:
+        A 5-tuple in the exact order:
+            lang: Resolved language ("en" or "ar").
+            lexical25_clean_query: Lexical BM25 query text.
+            semantic_vector: Embedding vector as a Python list[float].
+            temporals: Extracted temporal expressions.
+            geo_refs: Structured geo references (list of dicts).
+    """
 
     lang = detect(q)
     if lang not in ("en", "ar"):

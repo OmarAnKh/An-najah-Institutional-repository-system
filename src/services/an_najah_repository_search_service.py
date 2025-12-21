@@ -41,6 +41,23 @@ class AnNajahRepositorySearchService:
         return es.cluster.health()
 
     def suggest(self, prefix: str, limit: int = 8) -> list[str]:
+        """
+        Return autocomplete suggestions for a user-typed query prefix.
+
+        The method:
+        - Normalizes the prefix and enforces a minimum length (>= 3 chars).
+        - Builds an OpenSearch query via `build_suggest_query`.
+        - Searches the index and extracts candidate suggestions from `_source`
+        (titles in English/Arabic and author names).
+        - De-duplicates suggestions case-insensitively and returns up to `limit`.
+
+        Args:
+            prefix: Partial query text typed by the user.
+            limit: Maximum number of suggestions to return.
+
+        Returns:
+            A list of unique suggestion strings (titles/authors), capped at `limit`.
+        """
         prefix = (prefix or "").strip()
         if len(prefix) < 3:
             return []
@@ -84,6 +101,24 @@ class AnNajahRepositorySearchService:
         return out[:limit]
 
     def user_query(self, q: str) -> dict:
+        """
+        Build the OpenSearch query body for a user query (hybrid lexical + semantic).
+
+        This method prepares the input query by:
+        - Detecting language ("en"/"ar").
+        - Extracting temporal expressions and geographic references.
+        - Building a hybrid OpenSearch DSL using `build_hybrid_query_pipeline`.
+
+        Note:
+            This method currently returns the constructed OpenSearch request body
+            (DSL). Executing the search is handled elsewhere.
+
+        Args:
+            q: Raw user query text.
+
+        Returns:
+            An OpenSearch query body (dictionary) suitable for `search(...)`.
+        """
         lang, lexical25_clean_query, semantic_vector_query, temporals, geo_refs = (
             prepare_input(q)
         )

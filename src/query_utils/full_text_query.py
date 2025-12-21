@@ -9,10 +9,21 @@ def _wrap_with_filters(
     should_boosts: Optional[List[Dict[str, Any]]] = None,
 ) -> Dict[str, Any]:
     """
-    Wrap a leaf query with:
-      - filter: HARD constraints (must match)
-      - should: SOFT preferences (boost only)
-    This keeps semantic (kNN) and lexical queries consistent.
+    Wrap a leaf query with optional hard filters and soft boosts.
+
+    This helper keeps lexical and semantic queries consistent by applying:
+    - `filter`: hard constraints (must match; does not affect score).
+    - `should`: soft preferences (boosts score when matched).
+
+    If no filters/boosts are provided, the input query is returned unchanged.
+
+    Args:
+        q: A leaf OpenSearch query (e.g., knn, multi_match).
+        filters: Hard filter clauses applied under `bool.filter`.
+        should_boosts: Optional boosting clauses applied under `bool.should`.
+
+    Returns:
+        A query dictionary, possibly wrapped in a `bool` query.
     """
     should_boosts = should_boosts or []
     if not filters and not should_boosts:
@@ -38,6 +49,34 @@ def build_hybrid_query_pipeline(
     geo_distance_str: str = "50km",
     lang: str = "en",
 ) -> Dict[str, Any]:
+    """
+    Build a hybrid OpenSearch query body (BM25 + kNN) with soft temporal/geo boosts.
+
+    The pipeline combines two retrieval signals:
+    1) Semantic retrieval using kNN over `abstract_vector.<lang>`.
+    2) Lexical retrieval using BM25 (`multi_match`) over title/abstract fields.
+
+    Extracted signals from preprocessing are incorporated as *soft boosts*:
+    - Temporal expressions are expanded into year tokens and boosted via
+      `constant_score` on `temporalExpressions` (not hard-filtered).
+    - Geographic references are boosted by:
+        - Matching place names in nested `geoReferences.placeName`.
+        - Boosting documents within `geo_distance_str` when coordinates exist.
+
+    Args:
+        lexical25_text: Cleaned lexical query text for BM25 matching.
+        semantic_query_vector: Embedding vector used for kNN retrieval.
+        temporal_expressions: Optional extracted temporal expressions (e.g., years/ranges).
+        geo_refs: Optional geo references (dicts with placeName + coordinates/lat-lon).
+        size: Number of hits to return.
+        k: Number of nearest neighbors for the kNN query.
+        num_candidates: Candidate pool size (ef_search) for kNN retrieval.
+        geo_distance_str: Distance radius for geo boosting (e.g., "50km").
+        lang: Language selector ("en" or "ar") used to pick the correct fields.
+
+    Returns:
+        An OpenSearch query body dictionary for hybrid retrieval.
+    """
 
     temporal_expressions = temporal_expressions or []
     if isinstance(temporal_expressions, set):
