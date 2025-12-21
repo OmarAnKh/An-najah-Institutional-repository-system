@@ -2,6 +2,7 @@ from typing import Any, Dict, List, Optional
 
 from src.query_utils.query_preprocessor import filter_safe_temporals, expand_year_ranges
 
+
 def _wrap_with_filters(
     q: Dict[str, Any],
     filters: List[Dict[str, Any]],
@@ -24,6 +25,7 @@ def _wrap_with_filters(
         out["bool"]["should"] = should_boosts
         out["bool"]["minimum_should_match"] = 0
     return out
+
 
 def build_hybrid_query_pipeline(
     lexical25_text: str,
@@ -156,7 +158,8 @@ def build_hybrid_query_pipeline(
                             }
                         }
                     },
-                    filters, should_boosts,
+                    filters,
+                    should_boosts,
                 ),
                 _wrap_with_filters(
                     {
@@ -167,12 +170,12 @@ def build_hybrid_query_pipeline(
                                 f"{abstract_text_field}^2",
                             ],
                             "type": "best_fields",
-                            "minimum_should_match": "60%"
+                            "minimum_should_match": "60%",
                         }
                     },
-                    filters, should_boosts,
+                    filters,
+                    should_boosts,
                 ),
-
             ]
         }
     }

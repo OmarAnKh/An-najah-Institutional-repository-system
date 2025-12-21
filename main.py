@@ -34,13 +34,12 @@ opensearch_search_service = AnNajahRepositorySearchService(
     client=client,
 )
 
+
 # autocomplete API endpoint
 @main.get("/api/suggest")
-def suggest(
-    q: str = Query(..., min_length=3),
-    limit: int = Query(8, ge=1, le=20)
-):
+def suggest(q: str = Query(..., min_length=3), limit: int = Query(8, ge=1, le=20)):
     # return a raw list[str] of suggestions
     return opensearch_search_service.suggest(prefix=q, limit=limit)
+
 
 print(opensearch_search_service.client_health())

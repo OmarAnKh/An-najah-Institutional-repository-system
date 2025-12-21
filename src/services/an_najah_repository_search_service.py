@@ -84,7 +84,9 @@ class AnNajahRepositorySearchService:
         return out[:limit]
 
     def user_query(self, q: str) -> dict:
-        lang, lexical25_clean_query, semantic_vector_query, temporals, geo_refs = (prepare_input(q))
+        lang, lexical25_clean_query, semantic_vector_query, temporals, geo_refs = (
+            prepare_input(q)
+        )
 
         # 3) Search pipeline normalization (hybrid DSL)
         body = build_hybrid_query_pipeline(

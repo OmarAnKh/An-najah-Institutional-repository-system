@@ -72,13 +72,19 @@ def strip_year_like_tokens(text: str) -> str:
     t = re.sub(r"\b(19|20)\d{2}\s*[-–]\s*(19|20)\d{2}\b", " ", t)
 
     # Remove forms like 2013 to 2019 / 2013–2019
-    t = re.sub(r"\b(19|20)\d{2}\s*(to|until|till)\s*(19|20)\d{2}\b", " ", t, flags=re.IGNORECASE)
+    t = re.sub(
+        r"\b(19|20)\d{2}\s*(to|until|till)\s*(19|20)\d{2}\b",
+        " ",
+        t,
+        flags=re.IGNORECASE,
+    )
 
     # Remove standalone years
     t = re.sub(r"\b(19|20)\d{2}\b", " ", t)
 
     t = re.sub(r"\s+", " ", t).strip()
     return t
+
 
 def expand_year_ranges(temporals: List[str]) -> List[str]:
     """
@@ -133,6 +139,7 @@ def build_lexical_text(query: str, temporals, locations) -> str:
 
     return text
 
+
 def is_probable_location(name: str) -> bool:
     t = (name or "").strip()
     if not t:
@@ -146,6 +153,7 @@ def is_probable_location(name: str) -> bool:
     if any(w in low for w in BAD_LOCATION_WORDS):
         return False
     return True
+
 
 def clean_query_text(
     query: str,
@@ -177,7 +185,8 @@ def clean_query_text(
 
     return text
 
-def extractors(q: str,lang: str):
+
+def extractors(q: str, lang: str):
 
     temporals = temporal_extractor.extract(q, lang=lang)
     locations = locations_extractor.extract(q, lang=lang)
@@ -204,6 +213,7 @@ def extractors(q: str,lang: str):
 
     return temporals, geo_refs, locations
 
+
 def prepare_input(q):
 
     lang = detect(q)
@@ -224,4 +234,3 @@ def prepare_input(q):
     semantic_vector = emb.tolist() if hasattr(emb, "tolist") else list(emb)
 
     return lang, lexical25_clean_query, semantic_vector, temporals, geo_refs
-
