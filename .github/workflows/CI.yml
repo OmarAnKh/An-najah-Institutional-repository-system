@@ -1,4 +1,4 @@
-ame: CI - Quality Gates
+name: CI - Quality Gates
 
 on:
   push:
