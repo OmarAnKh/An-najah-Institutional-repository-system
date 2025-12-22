@@ -18,6 +18,7 @@ The stack combines traditional metadata indexing with modern vector search. Scra
 - Spatio-temporal faceting over extracted geo and temporal metadata.
 - Metadata enrichment that augments author, date, and abstract information.
 - OpenSearch + FAISS + Sentence Transformers as the core search stack.
+- Query generation from natural language 
 
 ---
 
@@ -122,22 +123,6 @@ This separation keeps indexing/search logic decoupled from low‑level OpenSearc
 
 A lightweight evaluation pipeline is provided under [src/evaluation](src/evaluation) to measure search quality on a small, curated set of queries.
 
-- **Data artifacts**  
-	- [src/evaluation/export_200_docs.json](src/evaluation/export_200_docs.json): a sample of 200 documents exported from the OpenSearch index (without vectors) for offline analysis.  
-	- [src/evaluation/evaluation_queries.csv](src/evaluation/evaluation_queries.csv): 15 evaluation rows. Each row contains:
-		- `chunk_id`: original chunk index within a document.  
-		- `abstract_ar`, `abstract_en`: the abstract text used to locate the source document.  
-		- `query`: a query that is expected to retrieve that document.
-
-- **UUID enrichment script**  
-	- [src/evaluation/augment_queries_with_uuid.py](src/evaluation/augment_queries_with_uuid.py) matches each abstract in `evaluation_queries.csv` against `export_200_docs.json` and writes [src/evaluation/evaluation_queries_with_uuid.csv](src/evaluation/evaluation_queries_with_uuid.csv), adding a stable `bitstream_uuid` column.  
-	- Matching strategy: normalized exact match on `abstract.en`/`abstract.ar` first, then a substring fallback.  
-	- Run once (from the project root) to regenerate the enriched file:
-
-		```bash
-		python -m src.evaluation.augment_queries_with_uuid
-		```
-
 - **IR evaluation script**  
 	- [src/evaluation/evaluation.py](src/evaluation/evaluation.py) runs a simple text‑based evaluation over the 15 queries.  
 	- Uses `bitstream_uuid` as the **ground‑truth identifier** (document‑level), not `chunk_id`, to avoid ambiguity across chunks.  
@@ -157,10 +142,7 @@ A lightweight evaluation pipeline is provided under [src/evaluation](src/evaluat
 	With the virtual environment activated and from the project root:
 
 	```bash
-	# 1) (Optional) regenerate the enriched CSV with UUIDs
-	python -m src.evaluation.augment_queries_with_uuid
-
-	# 2) Run the evaluation using the enriched CSV
+	# 1) Run the evaluation using the enriched CSV
 	python -m src.evaluation.evaluation
 	```
 
@@ -173,8 +155,3 @@ A lightweight evaluation pipeline is provided under [src/evaluation](src/evaluat
 
 ---
 
-### 🧪 Next Steps
-
-- Add more labeled queries and documents to scale evaluation beyond 15 examples.  
-- Compare classical BM25 scoring against vector/knn search on the same ground‑truth set.  
-- Integrate evaluation into CI (GitHub Actions) to track relevance metrics over time as the index and ranking logic evolve.
