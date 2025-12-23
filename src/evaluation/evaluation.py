@@ -126,6 +126,7 @@ def evaluate_ir(*, k: int = 10, csv_path: str) -> Tuple[float, float, float]:
 
         try:
             response = search_service.search_articles(search_body)
+            response = search_service.user_query(search_body)
         except Exception as e:
             print(f"[ERROR] Query {idx} failed: {e}")
             continue
