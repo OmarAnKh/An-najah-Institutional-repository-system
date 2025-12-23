@@ -245,12 +245,12 @@ def clean_query_text(
     if temporal_expressions:
         for temp in temporal_expressions:
             if temp:
-                phrases.update(temp.strip())
+                phrases.add(temp.strip())
 
     if locations:
         for loc in locations:
             if loc:
-                phrases.update(loc.strip())
+                phrases.add(loc.strip())
 
     # remove longer phrases first to avoid partial overlaps
     for phrase in sorted(phrases, key=len, reverse=True):
