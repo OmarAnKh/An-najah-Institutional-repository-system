@@ -19,6 +19,7 @@ class GlobalConfig(BaseSettings):
     google_api_key: str
     ollama_model_name: str
 
+
 global_config = GlobalConfig()
 
 os.environ["AWS_ACCESS_KEY_ID"] = global_config.aws_access_key_id

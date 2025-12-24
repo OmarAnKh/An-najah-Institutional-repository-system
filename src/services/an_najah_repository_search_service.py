@@ -197,7 +197,7 @@ class AnNajahRepositorySearchService:
             users_input_language if users_input_language in {"en", "ar"} else "en"
         )
         fallback_lang = "ar" if preferred_lang == "en" else "en"
-        
+
         # 1) Formulate a self-contained query
         formulated_query = self._generative_model.formulate_query(user_input)
         # 2) Search for relevant documents
