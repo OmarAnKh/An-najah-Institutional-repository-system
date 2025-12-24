@@ -1,5 +1,4 @@
 from collections import deque
-from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
@@ -7,25 +6,25 @@ from src.models.abstract_classes.generative_model import ABCGenerativeModel
 from prompts import system_prompt, history_prompt
 
 
-class OllamaGenerativeModel(ABCGenerativeModel):
+class GeminiGenerativeModel(ABCGenerativeModel):
     """
     Ollama RAG Model implementation using OllamaLLM from langchain-ollama. Defines methods for generating responses,
     formulating queries, and maintaining chat history.
     """
 
-    def __init__(self, model_name: str = "llama3.1:8b") -> None:
+    def __init__(self, model) -> None:
         """
-        Initialize the OllamaGenerativeModel with the specified Ollama model.
+        Initialize the GeminiGenerativeModel with the specified Ollama model.
         Args:
             model_name (str): The name of the Ollama model to use.
         """
-        self.__model_name = model_name
-        self.__model = OllamaLLM(model=model_name)
+
+        self.__model = model
 
         self.__prompt = ChatPromptTemplate.from_template(system_prompt)
         self.__history_prompt = ChatPromptTemplate.from_template(history_prompt)
 
-        self.__history = deque(maxlen=10)
+        self.__history = deque(maxlen=2)
 
         self.__generation_chain = self.__prompt | self.__model | StrOutputParser()
         self.__formulate_query_chain = (
@@ -64,12 +63,12 @@ class OllamaGenerativeModel(ABCGenerativeModel):
         """
         self.__history.append({"query": query, "response": response})
 
-    def generate(self, query: str, documents: list[str]) -> str:
+    def generate(self, query: str, documents: set[str]) -> str:
         """Generate an answer based on the query and retrieved documents.
 
         Args:
             query (str): The user's query.
-            documents (list[str]): A list of retrieved documents.
+            documents (set[str]): A set of retrieved documents.
         Returns:
             str: The generated answer.
         """

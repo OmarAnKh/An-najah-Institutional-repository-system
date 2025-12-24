@@ -54,7 +54,6 @@ def build_suggest_query(prefix: str, fetch_size: int = 60):
                         }
                     },
                 ],
-                "minimum_should_match": 1,
             }
         },
     }
