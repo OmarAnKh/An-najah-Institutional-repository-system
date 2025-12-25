@@ -1,10 +1,13 @@
+import json
+from langdetect import detect
+
 from src.opensearch.abstract_classes.ABC_client import ABCClient
 from src.query_utils.suggest_query import build_suggest_query
 from src.query_utils.query_preprocessor import prepare_input
 from src.query_utils.full_text_query import build_hybrid_query_pipeline
 from src.queries_generation.query_generation import Query
 from src.opensearch.mapping import ProjectMapping
-import json
+from src.models.abstract_classes.generative_model import ABCGenerativeModel
 
 
 class AnNajahRepositorySearchService:
@@ -17,7 +20,8 @@ class AnNajahRepositorySearchService:
         index: str,
         client: ABCClient,
         query_generator: Query,
-        mapping=ProjectMapping,
+        mapping: ProjectMapping,
+        generative_model: ABCGenerativeModel,
     ):
         """
             Class constructor inject the required dependencies via the parameters
@@ -29,6 +33,7 @@ class AnNajahRepositorySearchService:
         self._index = index
         self.mapping = mapping
         self._query_generator = query_generator
+        self._generative_model = generative_model
 
     def search_articles(self, query: dict):
         """simple search function for custom queries
@@ -133,7 +138,7 @@ class AnNajahRepositorySearchService:
 
         return out[:limit]
 
-    def user_query(self, q: str) -> dict:
+    def user_query(self, query: str) -> dict:
         """
         Build the OpenSearch query body for a user query (hybrid lexical + semantic).
 
@@ -152,8 +157,9 @@ class AnNajahRepositorySearchService:
         Returns:
             An OpenSearch query body (dictionary) suitable for `search(...)`.
         """
+
         lang, lexical25_clean_query, semantic_vector_query, temporals, geo_refs = (
-            prepare_input(q)
+            prepare_input(query)
         )
 
         # 3) Search pipeline normalization (hybrid DSL)
@@ -167,3 +173,51 @@ class AnNajahRepositorySearchService:
         )
 
         return body
+
+    def generate_answer(self, user_input: str) -> str:
+        """
+        Generate a response based on the input user query and retrieved documents.
+
+        Args:
+            user_input (str): The input query string.
+        Returns:
+            str: The generated response.
+        """
+
+        if not user_input or user_input.strip() == "":
+            return "Please provide a valid query."
+
+        # Detect user's input language
+        try:
+            users_input_language = detect(user_input)
+        except Exception:
+            users_input_language = "en"  # default fallback
+
+        preferred_lang = (
+            users_input_language if users_input_language in {"en", "ar"} else "en"
+        )
+        fallback_lang = "ar" if preferred_lang == "en" else "en"
+
+        # 1) Formulate a self-contained query
+        formulated_query = self._generative_model.formulate_query(user_input)
+        # 2) Search for relevant documents
+        os_query = self.user_query(formulated_query)
+        search_results = self.search_articles(os_query)
+        # 3) Extract relevant documents' text in preferred language
+        retrieved_docs = set()
+        for hit in search_results.get("hits", {}).get("hits", []):
+            abstract = (hit.get("_source", {}) or {}).get("abstract", {}) or {}
+            preferred_text = abstract.get(preferred_lang)
+            fallback_text = abstract.get(fallback_lang)
+
+            # Keep the text in the user's language when available; otherwise, fall back once.
+            if preferred_text:
+                retrieved_docs.add(preferred_text)
+            elif fallback_text:
+                retrieved_docs.add(fallback_text)
+
+        if not retrieved_docs:
+            return "No relevant documents found to generate an answer."
+        # 4) Generate the answer using the generative model
+        answer = self._generative_model.generate(formulated_query, retrieved_docs)
+        return answer

@@ -8,13 +8,13 @@ class ABCGenerativeModel(ABC):
     """
 
     @abstractmethod
-    def generate(self, query: str, documents: list[str]) -> str:
+    def generate(self, query: str, documents: set[str]) -> str:
         """
         Generate a response based on the input query and retrieved documents.
 
         Args:
             query (str): The input query string.
-            documents (list): A list of retrieved documents.
+            documents (set): A set of retrieved documents.
         Returns:
             str: The generated response.
         """

@@ -16,6 +16,8 @@ class GlobalConfig(BaseSettings):
     pipeline_name: str
     suggest_url: str
     generative_model_name: str
+    google_api_key: str
+    ollama_model_name: str
 
 
 global_config = GlobalConfig()
@@ -23,6 +25,7 @@ global_config = GlobalConfig()
 os.environ["AWS_ACCESS_KEY_ID"] = global_config.aws_access_key_id
 os.environ["AWS_SECRET_ACCESS_KEY"] = global_config.aws_secret_access_key
 os.environ["AWS_REGION"] = global_config.aws_region
+os.environ["GOOGLE_API_KEY"] = global_config.google_api_key
 
 os.environ.pop("AWS_PROFILE", None)
 
