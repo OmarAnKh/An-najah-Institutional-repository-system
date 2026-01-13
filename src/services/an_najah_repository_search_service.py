@@ -5,7 +5,7 @@ from src.opensearch.abstract_classes.ABC_client import ABCClient
 from src.query_utils.suggest_query import build_suggest_query
 from src.query_utils.query_preprocessor import prepare_input
 from src.query_utils.full_text_query import build_hybrid_query_pipeline
-from src.queries_generation.query_generation import Query
+from src.queries_generation.abstract_classes import ABCQueryGeneration
 from src.opensearch.mapping import ProjectMapping
 from src.models.abstract_classes.generative_model import ABCGenerativeModel
 
@@ -19,7 +19,7 @@ class AnNajahRepositorySearchService:
         self,
         index: str,
         client: ABCClient,
-        query_generator: Query,
+        query_generator: ABCQueryGeneration,
         mapping: ProjectMapping,
         generative_model: ABCGenerativeModel,
     ):
@@ -45,7 +45,22 @@ class AnNajahRepositorySearchService:
             dict: The search results.
         """
         es = self._client.get_client()
-        return es.search(index=self._index, body=query)
+
+        # Always exclude embeddings from responses (large payload, not needed by API clients).
+        # Use OpenSearch's source filtering (server-side) + a defensive post-filter below.
+        result = es.search(
+            index=self._index,
+            body=query,
+            _source_excludes=["abstract_vector"],
+        )
+
+        hits = (result.get("hits") or {}).get("hits") or []
+        for hit in hits:
+            src = hit.get("_source")
+            if isinstance(src, dict):
+                src.pop("abstract_vector", None)
+
+        return result
 
     def generate_query(self, user_prompt: str):
         """Generate a search query based on the user's prompt.
