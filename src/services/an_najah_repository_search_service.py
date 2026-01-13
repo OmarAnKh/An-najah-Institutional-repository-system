@@ -35,7 +35,7 @@ class AnNajahRepositorySearchService:
         self._query_generator = query_generator
         self._generative_model = generative_model
 
-    def search_articles(self, query: dict):
+    def search_using_query(self, query: dict):
         """simple search function for custom queries
 
         Args:
@@ -85,7 +85,7 @@ class AnNajahRepositorySearchService:
         except Exception as e:
             print("Error parsing generated query string:", e)
             generated_query = {}
-        result = self.search_articles(generated_query)
+        result = self.search_using_query(generated_query)
         return result, generated_query_str
 
     def client_health(self):
@@ -117,7 +117,7 @@ class AnNajahRepositorySearchService:
         fetch_size = min(80, max(25, limit * 8))  # e.g., limit=8 -> 64
         query = build_suggest_query(prefix, fetch_size=fetch_size)
 
-        res = self.search_articles(query=query)
+        res = self.search_using_query(query=query)
 
         hits = res.get("hits", {}).get("hits", [])
 
@@ -217,7 +217,7 @@ class AnNajahRepositorySearchService:
         formulated_query = self._generative_model.formulate_query(user_input)
         # 2) Search for relevant documents
         os_query = self.user_query(formulated_query)
-        search_results = self.search_articles(os_query)
+        search_results = self.search_using_query(os_query)
         # 3) Extract relevant documents' text in preferred language
         retrieved_docs = set()
         for hit in search_results.get("hits", {}).get("hits", []):

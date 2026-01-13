@@ -27,6 +27,7 @@ router = APIRouter(prefix="/api")
 
 
 def get_search_service(request: Request) -> AnNajahRepositorySearchService:
+    """Dependency to get the AnNajahRepositorySearchService from the app state."""
     return request.app.state.search_service
 
 
@@ -36,6 +37,7 @@ def suggest(
     limit: int = Query(8, ge=1, le=20),
     service: AnNajahRepositorySearchService = Depends(get_search_service),
 ) -> SuggestResponse:
+    """Endpoint to get autocomplete suggestions."""
     suggestions = service.suggest(prefix=q, limit=limit)
     return SuggestResponse(suggestions=suggestions)
 
@@ -45,7 +47,8 @@ def search(
     request: SearchRequest,
     service: AnNajahRepositorySearchService = Depends(get_search_service),
 ) -> SearchResponse:
-    results = service.search_articles(query=request.query)
+    """Endpoint to execute a custom search."""
+    results = service.search_using_query(query=request.query)
     return SearchResponse(results=results)
 
 
@@ -54,17 +57,9 @@ def generate_query(
     request: GenerateQueryRequest,
     service: AnNajahRepositorySearchService = Depends(get_search_service),
 ) -> GenerateQueryResponse:
+    """Endpoint to generate a search query from a user natural language prompt."""
     results, generated_query = service.generate_query(request.prompt)
     return GenerateQueryResponse(results=results, generated_query=generated_query)
-
-
-@router.post("/user-query", **user_query_responses)
-def user_query(
-    request: UserQueryRequest,
-    service: AnNajahRepositorySearchService = Depends(get_search_service),
-) -> UserQueryResponse:
-    dsl = service.user_query(request.query)
-    return UserQueryResponse(dsl=dsl)
 
 
 @router.post("/answer", **answer_responses)
@@ -72,5 +67,6 @@ def answer(
     request: AnswerRequest,
     service: AnNajahRepositorySearchService = Depends(get_search_service),
 ) -> AnswerResponse:
+    """"Endpoint to generate an answer using the RAG pipeline."""
     answer_text = service.generate_answer(request.query)
     return AnswerResponse(answer=answer_text)

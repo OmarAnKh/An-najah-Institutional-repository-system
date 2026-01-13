@@ -9,6 +9,7 @@ router = APIRouter(prefix="/api")
 
 
 def get_insertion_service(request: Request) -> OpenSearchInsertion:
+    """Dependency to get the OpenSearchInsertion service from the app state."""
     return request.app.state.insertion_service
 
 
@@ -17,6 +18,7 @@ def index(
     request: IndexRequest,
     service: OpenSearchInsertion = Depends(get_insertion_service),
 ) -> IndexResponse:
+    """Endpoint to index data into the search engine."""
     result = service.extract_and_insert(
         chunk_size=request.chunk_size,
         jsonl_path=request.jsonl_path,
