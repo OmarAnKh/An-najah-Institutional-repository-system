@@ -12,15 +12,12 @@ from .models import (
     SearchRequest,
     SearchResponse,
     SuggestResponse,
-    UserQueryRequest,
-    UserQueryResponse,
 )
 from .responses import (
     answer_responses,
     generate_query_responses,
     search_responses,
     suggest_responses,
-    user_query_responses,
 )
 
 router = APIRouter(prefix="/api")
@@ -67,6 +64,6 @@ def answer(
     request: AnswerRequest,
     service: AnNajahRepositorySearchService = Depends(get_search_service),
 ) -> AnswerResponse:
-    """"Endpoint to generate an answer using the RAG pipeline."""
+    """Endpoint to generate an answer using the RAG pipeline."""
     answer_text = service.generate_answer(request.query)
     return AnswerResponse(answer=answer_text)
