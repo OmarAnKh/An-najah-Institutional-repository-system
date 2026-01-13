@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import Any, Dict, List
+from typing import List
 
 from src.dtos.geo_reference import GeoReference
 
@@ -52,21 +52,14 @@ class ABCGeoLocationFinder(ABC):
         """
         pass
 
+    @abstractmethod
     def extract_from_places(self, places: List[str]) -> List[GeoReference]:
         """
-        Template method:
-        - loops over place names
-        - delegates single-place geocoding to implementation
-        - guarantees clean output structure
+        Extract structured geolocation references from a list of place names.
+
+        Implementations should:
+        - loop over place names
+        - delegate single-place geocoding
+        - return clean GeoReference objects
         """
-        geo_refs: List[Dict[str, Any]] = []
-
-        for place in places:
-            if not place or not place.strip():
-                continue
-
-            result = self._geocode_single_place(place.strip())
-            if result:
-                geo_refs.append(result)
-
-        return geo_refs
+        pass

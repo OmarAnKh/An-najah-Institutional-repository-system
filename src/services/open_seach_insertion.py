@@ -362,7 +362,7 @@ class OpenSearchInsertion:
         self,
         chunk_size: int = 500,
         jsonl_path: str = "scraped_data/bulk_opensearch.jsonl",
-    ) -> Any:
+    ) -> dict[str, Any]:
         """Perform bulk insertion of documents from a JSON stream file.
         Args:
             file_path: Path to the JSON stream file containing raw records.
@@ -380,9 +380,10 @@ class OpenSearchInsertion:
                 request_timeout=120,
             )
 
+            error_count = len(errors) if errors else 0
             if errors:
                 print(
-                    f"Bulk completed with {len(errors)} errors and {success} successes."
+                    f"Bulk completed with {error_count} errors and {success} successes."
                 )
                 # Show a few sample errors to diagnose (avoid huge dumps)
                 for err in errors[:5]:
@@ -390,9 +391,34 @@ class OpenSearchInsertion:
             else:
                 print(f"Bulk completed successfully. Indexed {success} documents.")
 
+            return {
+                "success": error_count == 0,
+                "indexed": success,
+                "errors": error_count,
+                "message": (
+                    "Bulk completed."
+                    if error_count == 0
+                    else "Bulk completed with errors."
+                ),
+            }
+
         except ImportError:
-            print(
+            message = (
                 "opensearchpy is not installed. Please install it to use bulk_insert."
             )
+            print(message)
+            return {
+                "success": False,
+                "indexed": None,
+                "errors": None,
+                "message": message,
+            }
         except Exception as exc:
-            print(f"Bulk ingestion failed: {exc}")
+            message = f"Bulk ingestion failed: {exc}"
+            print(message)
+            return {
+                "success": False,
+                "indexed": None,
+                "errors": None,
+                "message": message,
+            }

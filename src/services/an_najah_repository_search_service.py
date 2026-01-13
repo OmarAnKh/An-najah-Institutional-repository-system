@@ -5,7 +5,7 @@ from src.opensearch.abstract_classes.ABC_client import ABCClient
 from src.query_utils.suggest_query import build_suggest_query
 from src.query_utils.query_preprocessor import prepare_input
 from src.query_utils.full_text_query import build_hybrid_query_pipeline
-from src.queries_generation.query_generation import Query
+from src.queries_generation.abstract_classes import ABCQueryGeneration
 from src.opensearch.mapping import ProjectMapping
 from src.models.abstract_classes.generative_model import ABCGenerativeModel
 
@@ -19,7 +19,7 @@ class AnNajahRepositorySearchService:
         self,
         index: str,
         client: ABCClient,
-        query_generator: Query,
+        query_generator: ABCQueryGeneration,
         mapping: ProjectMapping,
         generative_model: ABCGenerativeModel,
     ):
@@ -35,7 +35,7 @@ class AnNajahRepositorySearchService:
         self._query_generator = query_generator
         self._generative_model = generative_model
 
-    def search_articles(self, query: dict):
+    def search_using_query(self, query: dict):
         """simple search function for custom queries
 
         Args:
@@ -45,7 +45,22 @@ class AnNajahRepositorySearchService:
             dict: The search results.
         """
         es = self._client.get_client()
-        return es.search(index=self._index, body=query)
+
+        # Always exclude embeddings from responses (large payload, not needed by API clients).
+        # Use OpenSearch's source filtering (server-side) + a defensive post-filter below.
+        result = es.search(
+            index=self._index,
+            body=query,
+            _source_excludes=["abstract_vector"],
+        )
+
+        hits = (result.get("hits") or {}).get("hits") or []
+        for hit in hits:
+            src = hit.get("_source")
+            if isinstance(src, dict):
+                src.pop("abstract_vector", None)
+
+        return result
 
     def generate_query(self, user_prompt: str):
         """Generate a search query based on the user's prompt.
@@ -70,7 +85,7 @@ class AnNajahRepositorySearchService:
         except Exception as e:
             print("Error parsing generated query string:", e)
             generated_query = {}
-        result = self.search_articles(generated_query)
+        result = self.search_using_query(generated_query)
         return result, generated_query_str
 
     def client_health(self):
@@ -102,7 +117,7 @@ class AnNajahRepositorySearchService:
         fetch_size = min(80, max(25, limit * 8))  # e.g., limit=8 -> 64
         query = build_suggest_query(prefix, fetch_size=fetch_size)
 
-        res = self.search_articles(query=query)
+        res = self.search_using_query(query=query)
 
         hits = res.get("hits", {}).get("hits", [])
 
@@ -202,7 +217,7 @@ class AnNajahRepositorySearchService:
         formulated_query = self._generative_model.formulate_query(user_input)
         # 2) Search for relevant documents
         os_query = self.user_query(formulated_query)
-        search_results = self.search_articles(os_query)
+        search_results = self.search_using_query(os_query)
         # 3) Extract relevant documents' text in preferred language
         retrieved_docs = set()
         for hit in search_results.get("hits", {}).get("hits", []):

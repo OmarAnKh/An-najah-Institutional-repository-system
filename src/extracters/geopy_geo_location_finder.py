@@ -36,6 +36,25 @@ class GeopyGeoLocationFinder(ABCGeoLocationFinder):
     Concrete geolocation extractor using Geopy + Nominatim.
     """
 
+    def extract_from_places(self, places: list[str]) -> list[GeoReference]:
+        """
+        Template method:
+        - loops over place names
+        - delegates single-place geocoding to implementation
+        - guarantees clean output structure
+        """
+        geo_refs: list[GeoReference] = []
+
+        for place in places:
+            if not place or not place.strip():
+                continue
+
+            result = self._geocode_single_place(place.strip())
+            if result:
+                geo_refs.append(result)
+
+        return geo_refs
+
     def _geocode_single_place(self, place_name: str) -> GeoReference | None:
 
         try:
