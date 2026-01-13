@@ -5,6 +5,7 @@ import json
 from src.queries_generation.abstract_classes import ABCQueryGeneration
 from prompts import query_generation_prompt
 
+
 class GeminiQueryGeneration(ABCQueryGeneration):
     """
     Query generation implementation using a Gemini chat model.

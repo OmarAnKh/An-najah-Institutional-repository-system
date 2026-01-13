@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 # Define an abstract class for query generation
 class ABCQueryGeneration(ABC):
     """

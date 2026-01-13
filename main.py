@@ -55,9 +55,11 @@ app.state.insertion_service = opensearch_insertion_client
 app.include_router(search_router)
 app.include_router(indexing_router)
 
+
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
+
 
 main = app
 

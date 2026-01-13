@@ -395,7 +395,11 @@ class OpenSearchInsertion:
                 "success": error_count == 0,
                 "indexed": success,
                 "errors": error_count,
-                "message": "Bulk completed." if error_count == 0 else "Bulk completed with errors.",
+                "message": (
+                    "Bulk completed."
+                    if error_count == 0
+                    else "Bulk completed with errors."
+                ),
             }
 
         except ImportError:
@@ -403,8 +407,18 @@ class OpenSearchInsertion:
                 "opensearchpy is not installed. Please install it to use bulk_insert."
             )
             print(message)
-            return {"success": False, "indexed": None, "errors": None, "message": message}
+            return {
+                "success": False,
+                "indexed": None,
+                "errors": None,
+                "message": message,
+            }
         except Exception as exc:
             message = f"Bulk ingestion failed: {exc}"
             print(message)
-            return {"success": False, "indexed": None, "errors": None, "message": message}
+            return {
+                "success": False,
+                "indexed": None,
+                "errors": None,
+                "message": message,
+            }

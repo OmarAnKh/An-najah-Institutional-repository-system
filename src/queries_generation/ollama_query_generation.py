@@ -4,9 +4,6 @@ from prompts import query_generation_prompt
 from src.queries_generation.abstract_classes import ABCQueryGeneration
 
 
-
-
-
 # Implement the abstract class in the concrete class
 class OllamaQueryGeneration(ABCQueryGeneration):
     """
