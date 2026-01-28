@@ -6,7 +6,6 @@ from .models import (
     UserQueryResponse,
 )
 
-
 suggest_responses = {
     "response_model": SuggestResponse,
     "summary": "Autocomplete suggestions",
