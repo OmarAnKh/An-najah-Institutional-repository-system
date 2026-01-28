@@ -67,3 +67,4 @@ if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run("main:main", host="0.0.0.0", port=8000)
+    print("Server started at http://0.0.0.0:8000")
