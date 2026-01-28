@@ -99,6 +99,18 @@ Wait until OpenSearch reports a healthy status before proceeding.
 uvicorn main:main --host 0.0.0.0 --port 8000 --reload
 ```
 
+#### 6. Run the UI (Vite/React)
+
+The frontend lives in the `ui/` folder and talks to the same FastAPI backend via `/api/*` routes.
+
+```powershell
+cd ui
+npm install
+npm run dev -- --host --port 5173
+```
+
+By default Vite will proxy `/api` to the backend if served from the same host. Ensure the API server above is running. For a production build: `npm run build` (outputs to `ui/dist`).
+
 ---
 
 ### API Endpoints

@@ -4,3 +4,10 @@
 __pycache__/
 data_scarpping.py
 /.gradio
+
+# UI app artifacts
+/ui/node_modules
+/ui/dist
+/ui/.env
+/ui/.vite
+/ui/.turbo
