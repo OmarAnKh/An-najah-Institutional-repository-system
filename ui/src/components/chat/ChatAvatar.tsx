@@ -1,23 +1,23 @@
-import { User } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import logoSvg from '@/assets/logo.svg';
+import { User } from "lucide-react";
+import { cn } from "@/lib/utils";
+import logoSvg from "@/assets/logo.svg";
 
 interface ChatAvatarProps {
-  role: 'user' | 'assistant';
+  role: "user" | "assistant";
   className?: string;
 }
 
 export function ChatAvatar({ role, className }: ChatAvatarProps) {
-  const isUser = role === 'user';
+  const isUser = role === "user";
 
   return (
     <div
       className={cn(
-        'w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 hover:scale-105',
+        "w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 hover:scale-105",
         isUser
-          ? 'bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-sm'
-          : 'bg-secondary text-muted-foreground',
-        className
+          ? "bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-sm"
+          : "bg-secondary text-muted-foreground",
+        className,
       )}
     >
       {isUser ? (
