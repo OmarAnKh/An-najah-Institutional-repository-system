@@ -8,6 +8,7 @@ class GlobalConfig(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
     opensearch_host: str
     opensearch_port: int
+    opensearch_client_mode: str = "local"
     index_name: str = "documents"
     embedding_model_name: str
     aws_region: str

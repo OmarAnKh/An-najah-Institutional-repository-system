@@ -2,7 +2,6 @@
 */data
 /.venv
 __pycache__/
-data_scarpping.py
 /.gradio
 
 # UI app artifacts

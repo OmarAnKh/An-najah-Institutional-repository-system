@@ -24,7 +24,11 @@ generative_model = ChatGoogleGenerativeAI(
 
 query_generation = GeminiQueryGeneration(model=generative_model)
 
-client = OpenSearchClient(True, True)
+client = OpenSearchClient(
+    mode=global_config.opensearch_client_mode,
+    use_ssl=False,
+    verify_certs=False,
+)
 print("OpenSearch client initialized.")
 
 project_mapping = ProjectMapping(
