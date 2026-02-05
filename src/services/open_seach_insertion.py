@@ -293,6 +293,7 @@ class OpenSearchInsertion:
             article_dto = ArticleDTO(
                 collection=self._safe_str(obj.get("collection")),
                 bitstream_uuid=self._safe_str(obj.get("bitstream_uuid")),
+                item_uuid=self._safe_str(obj.get("item_uuid")),
                 chunk_id=chunk_id,
                 title=title_dto,
                 abstract=chunk,

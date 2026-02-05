@@ -104,7 +104,11 @@ def evaluate_ir(*, k: int = 10, csv_path: str) -> Tuple[float, float, float]:
         raise RuntimeError(f"No evaluation queries found in {csv_path}")
 
     # Initialize OpenSearch-backed search service
-    client = OpenSearchClient(use_ssl=True, verify_certs=True)
+    client = OpenSearchClient(
+        mode=global_config.opensearch_client_mode,
+        use_ssl=True,
+        verify_certs=True,
+    )
     search_service = AnNajahRepositorySearchService(
         index=global_config.index_name,
         client=client,

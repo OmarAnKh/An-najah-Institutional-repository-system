@@ -1,6 +1,5 @@
 from .models import IndexResponse
 
-
 index_responses = {
     "response_model": IndexResponse,
     "summary": "Index repository documents",

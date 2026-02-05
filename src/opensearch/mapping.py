@@ -189,6 +189,10 @@ class ProjectMapping:
                         "type": "keyword",
                         "index": False,  # to disable indexing on it (we cant search on it but it will be stored and takes less disk space)
                     },
+                    "item_uuid": {
+                        "type": "keyword",
+                        "index": False,
+                    },
                     "chunk_id": {
                         "type": "keyword",
                         "index": False,  # to disable indexing on it (we cant search on it but it will be stored and takes less disk space)

@@ -12,6 +12,7 @@ class ArticleDTO(BaseModel):
 
     collection: str = ""
     bitstream_uuid: str = ""
+    item_uuid: str = ""
     chunk_id: int
 
     title: Optional[LocalizedText] = None
