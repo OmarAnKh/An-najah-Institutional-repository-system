@@ -1,0 +1,5 @@
+# Development-only tooling pinned to keep CI and local runs consistent
+black==24.4.2
+ruff==0.3.4
+mypy==1.10.0
+pydocstyle==6.3.0
