@@ -8,6 +8,13 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    proxy: {
+      // Proxy API calls to the FastAPI backend during local dev
+      "/api": {
+        target: "http://localhost:8000",
+        changeOrigin: true,
+      },
+    },
     hmr: {
       overlay: false,
     },

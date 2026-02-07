@@ -26,7 +26,15 @@ export function StreamingText({ text, onComplete, speed = 15 }: StreamingTextPro
       }
     }, speed);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      // If unmounted before completion (e.g., user navigates away), mark complete once
+      // so we don’t replay typing when returning.
+      if (!isComplete) {
+        setIsComplete(true);
+        onComplete?.();
+      }
+    };
   }, [text, speed, onComplete, isComplete]);
 
   return (

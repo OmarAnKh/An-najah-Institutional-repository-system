@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
-import { ChatMessage, ChatResponse, DocumentSource } from '@/types/chat';
+import { ChatMessage, DocumentSource } from '@/types/chat';
 import { ChatBubble } from './ChatBubble';
 import { ChatInput } from './ChatInput';
 import { ChatSidebar } from './ChatSidebar';
@@ -7,9 +7,8 @@ import { useConversations } from '@/hooks/useConversations';
 import { PanelLeftClose, PanelLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { fetchAnswer } from '@/lib/api';
 import logoSvg from '@/assets/logo.svg';
-
-const ANSWER_ENDPOINT = '/api/answer';
 
 export function ChatInterface() {
   const {
@@ -38,7 +37,7 @@ export function ChatInterface() {
 
   const handleSendMessage = async (content: string) => {
     let conversationId = activeId;
-    
+
     if (!conversationId) {
       conversationId = createConversation();
     }
@@ -64,22 +63,15 @@ export function ChatInterface() {
     addMessage(conversationId, aiPlaceholder);
 
     try {
-      const response = await fetch(ANSWER_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: content }),
-      });
+      const { answer, sources } = await fetchAnswer(content);
 
-      if (!response.ok) throw new Error('Failed to get response');
-
-      const data: ChatResponse = await response.json();
-      
       updateMessage(conversationId, aiMessageId, {
-        content: data.answer,
-        sources: data.sources || [],
+        content: answer,
+        sources,
         isStreaming: true,
       });
     } catch {
+      // Demo fallback
       const demoSources: DocumentSource[] = [
         {
           id: '550e8400-e29b-41d4-a716-446655440000',
@@ -116,9 +108,9 @@ export function ChatInterface() {
       {/* Sidebar */}
       <motion.div
         initial={false}
-        animate={{ width: sidebarOpen ? 256 : 0 }}
+        animate={{ width: sidebarOpen ? 272 : 0 }}
         transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-        className="overflow-hidden border-r border-border"
+        className="overflow-hidden border-r border-border/50"
       >
         <ChatSidebar
           conversations={conversations}
@@ -133,7 +125,7 @@ export function ChatInterface() {
       {/* Main Chat Area */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* Toggle Button */}
-        <div className="px-4 py-3 border-b border-border flex items-center">
+        <div className="px-4 py-3 flex items-center glass-subtle border-b border-border/30">
           <Button
             variant="ghost"
             size="icon"
@@ -157,8 +149,8 @@ export function ChatInterface() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
               >
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 mx-auto">
-                  <img src={logoSvg} alt="An-Najah Repository" className="w-16 h-16 object-contain block" />
+                <div className="w-20 h-20 rounded-full glass-card flex items-center justify-center mb-6 mx-auto shadow-lg">
+                  <img src={logoSvg} alt="AI" className="w-20 h-20 object-contain rounded-full" />
                 </div>
                 <h2 className="text-2xl font-semibold text-foreground mb-2 tracking-tight">
                   How can I help you?
@@ -178,7 +170,7 @@ export function ChatInterface() {
                   <button
                     key={suggestion}
                     onClick={() => handleSendMessage(suggestion)}
-                    className="px-4 py-2 text-sm rounded-full border border-border bg-card hover:bg-secondary hover:border-primary/20 transition-all duration-200 text-foreground"
+                    className="px-4 py-2.5 text-sm rounded-full glass-card hover:shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 text-foreground bg-primary/10 hover:bg-primary/20"
                   >
                     {suggestion}
                   </button>

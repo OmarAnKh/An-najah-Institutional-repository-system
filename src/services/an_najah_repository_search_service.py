@@ -93,7 +93,7 @@ class AnNajahRepositorySearchService:
         es = self._client.get_client()
         return es.cluster.health()
 
-    def suggest(self, prefix: str, limit: int = 8) -> list[str]:
+    def suggest(self, prefix: str, limit: int = 5) -> list[str]:
         """
         Return autocomplete suggestions for a user-typed query prefix.
 
@@ -114,6 +114,14 @@ class AnNajahRepositorySearchService:
         prefix = (prefix or "").strip()
         if len(prefix) < 3:
             return []
+
+        # Prefer suggestions in the same language as the typed prefix (en/ar only).
+        try:
+            detected_lang = detect(prefix)
+            preferred_lang = detected_lang if detected_lang in {"en", "ar"} else "en"
+        except Exception:
+            preferred_lang = "en"
+
         fetch_size = min(80, max(25, limit * 8))  # e.g., limit=8 -> 64
         query = build_suggest_query(prefix, fetch_size=fetch_size)
 
@@ -129,27 +137,14 @@ class AnNajahRepositorySearchService:
 
             # titles (en/ar)
             title = src.get("title", {}) or {}
-            for lang in ("en", "ar"):
-                t = (title.get(lang) or "").strip()
-                key = t.lower()
-                if t and key not in seen:
-                    seen.add(key)
-                    out.append(t)
-                    if len(out) >= limit:
-                        return out
 
-            # authors
-            authors = src.get("author", [])
-            if isinstance(authors, str):
-                authors = [authors]
-            for a in authors or []:
-                a = (a or "").strip()
-                key = a.lower()
-                if a and key not in seen:
-                    seen.add(key)
-                    out.append(a)
-                    if len(out) >= limit:
-                        return out
+            t = (title.get(preferred_lang) or "").strip()
+            key = t.lower()
+            if t and key not in seen:
+                seen.add(key)
+                out.append(t)
+                if len(out) >= limit:
+                    return out
 
         return out[:limit]
 
@@ -189,18 +184,18 @@ class AnNajahRepositorySearchService:
 
         return body
 
-    def generate_answer(self, user_input: str) -> str:
+    def generate_answer(self, user_input: str) -> tuple[str, list[dict]]:
         """
         Generate a response based on the input user query and retrieved documents.
 
         Args:
             user_input (str): The input query string.
         Returns:
-            str: The generated response.
+            tuple[str, list[dict]]: Generated answer text and citation metadata.
         """
 
         if not user_input or user_input.strip() == "":
-            return "Please provide a valid query."
+            return "Please provide a valid query.", []
 
         # Detect user's input language
         try:
@@ -215,24 +210,86 @@ class AnNajahRepositorySearchService:
 
         # 1) Formulate a self-contained query
         formulated_query = self._generative_model.formulate_query(user_input)
+        if not formulated_query:
+            formulated_query = user_input
         # 2) Search for relevant documents
         os_query = self.user_query(formulated_query)
         search_results = self.search_using_query(os_query)
         # 3) Extract relevant documents' text in preferred language
+        hits = search_results.get("hits", {}).get("hits", [])
+
         retrieved_docs = set()
-        for hit in search_results.get("hits", {}).get("hits", []):
-            abstract = (hit.get("_source", {}) or {}).get("abstract", {}) or {}
+        citations = []
+        seen_items = set()
+
+        for hit in hits:
+            source = hit.get("_source", {}) or {}
+            abstract = source.get("abstract", {}) or {}
             preferred_text = abstract.get(preferred_lang)
             fallback_text = abstract.get(fallback_lang)
 
             # Keep the text in the user's language when available; otherwise, fall back once.
             if preferred_text:
-                retrieved_docs.add(preferred_text)
+                retrieved_docs.add(str(preferred_text))
             elif fallback_text:
-                retrieved_docs.add(fallback_text)
+                retrieved_docs.add(str(fallback_text))
+
+            item_uuid = source.get("item_uuid")
+            if not item_uuid:
+                continue
+
+            title_obj = source.get("title") or {}
+
+            if isinstance(title_obj, dict):
+                title = (
+                    title_obj.get(preferred_lang) or title_obj.get(fallback_lang) or ""
+                )
+            elif isinstance(title_obj, str):
+                title = title_obj
+            else:
+                title = ""
+
+            if not title:
+                dc_title = source.get("dc_title")
+                if isinstance(dc_title, dict):
+                    title = (
+                        dc_title.get(preferred_lang)
+                        or dc_title.get(fallback_lang)
+                        or ""
+                    )
+                elif isinstance(dc_title, str):
+                    title = dc_title
+
+            title = title.strip() if isinstance(title, str) else ""
+            if not title:
+                title = "Untitled"
+
+            snippet_val = preferred_text or fallback_text or ""
+            snippet = snippet_val if isinstance(snippet_val, str) else str(snippet_val)
+
+            if item_uuid not in seen_items:
+                seen_items.add(item_uuid)
+                citations.append(
+                    {
+                        "item_uuid": str(item_uuid),
+                        "title": title,
+                        "snippet": snippet,
+                    }
+                )
 
         if not retrieved_docs:
-            return "No relevant documents found to generate an answer."
+            return "No relevant documents found to generate an answer.", []
+
         # 4) Generate the answer using the generative model
-        answer = self._generative_model.generate(formulated_query, retrieved_docs)
-        return answer
+        try:
+            answer = self._generative_model.generate(formulated_query, retrieved_docs)
+        except Exception as exc:
+            return f"No relevant documents found to generate an answer. ({exc})", []
+
+        answer_text = answer if isinstance(answer, str) else str(answer)
+
+        normalized_answer = answer_text.lower()
+        if "no relevant" in normalized_answer or "no available" in normalized_answer:
+            citations = []
+
+        return answer_text, citations

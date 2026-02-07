@@ -17,12 +17,12 @@ export function SourcesPopover({ sources }: SourcesPopoverProps) {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <button className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors duration-200 py-1 px-2 rounded-lg hover:bg-secondary">
-          <FileText className="w-3.5 h-3.5" />
+        <button className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors duration-200 py-1 px-2 rounded-lg hover:bg-secondary">
+          <FileText className="w-3 h-3" />
           <span>{sources.length} source{sources.length > 1 ? 's' : ''}</span>
         </button>
       </PopoverTrigger>
-      <PopoverContent className="w-80 p-3 rounded-2xl" align="start">
+      <PopoverContent className="w-80 p-3 rounded-2xl max-h-80 overflow-y-auto" align="start">
         <p className="text-xs font-medium text-muted-foreground mb-3">
           Sources
         </p>

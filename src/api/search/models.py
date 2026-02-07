@@ -15,10 +15,19 @@ class AnswerRequest(BaseModel):
     query: str
 
 
+class DocumentSource(BaseModel):
+    """Cited document metadata returned with an answer."""
+
+    item_uuid: str | None = None
+    title: str
+    snippet: str | None = None
+
+
 class AnswerResponse(BaseModel):
     """Response model for generated answers."""
 
     answer: str
+    sources: List[DocumentSource] = Field(default_factory=list)
 
 
 class GenerateQueryRequest(BaseModel):

@@ -65,5 +65,5 @@ def answer(
     service: AnNajahRepositorySearchService = Depends(get_search_service),
 ) -> AnswerResponse:
     """Endpoint to generate an answer using the RAG pipeline."""
-    answer_text = service.generate_answer(request.query)
-    return AnswerResponse(answer=answer_text)
+    answer_text, sources = service.generate_answer(request.query)
+    return AnswerResponse(answer=answer_text, sources=sources)
