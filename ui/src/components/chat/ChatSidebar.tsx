@@ -45,12 +45,12 @@ export function ChatSidebar({
   };
 
   return (
-    <div className="w-64 h-full bg-sidebar flex flex-col">
+    <div className="w-[272px] h-full bg-sidebar flex flex-col">
       {/* Header */}
       <div className="p-4">
         <Button
           onClick={onCreate}
-          className="w-full justify-center gap-2 rounded-full h-10 bg-primary hover:bg-primary/90 shadow-sm"
+          className="w-full justify-center gap-2 rounded-full h-10 bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all duration-200"
         >
           <Plus className="w-4 h-4" />
           New Chat
@@ -62,7 +62,7 @@ export function ChatSidebar({
         <AnimatePresence mode="popLayout">
           {conversations.length === 0 ? (
             <div className="text-center py-12 px-4">
-              <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center mx-auto mb-3">
+              <div className="w-10 h-10 rounded-full glass-card flex items-center justify-center mx-auto mb-3">
                 <MessageCircle className="w-5 h-5 text-muted-foreground" />
               </div>
               <p className="text-sm text-muted-foreground">No conversations</p>
@@ -79,7 +79,7 @@ export function ChatSidebar({
                 className="mb-1"
               >
                 {editingId === conv.id ? (
-                  <div className="flex items-center gap-1 p-1 bg-secondary rounded-xl">
+                  <div className="flex items-center gap-1 px-2 h-10 glass-input rounded-full">
                     <Input
                       value={editTitle}
                       onChange={(e) => setEditTitle(e.target.value)}
@@ -90,19 +90,19 @@ export function ChatSidebar({
                         if (e.key === 'Escape') handleCancelEdit();
                       }}
                     />
-                    <Button size="icon" variant="ghost" className="h-7 w-7 shrink-0 rounded-lg" onClick={handleSaveEdit}>
+                    <Button size="icon" variant="ghost" className="h-7 w-7 shrink-0 rounded-full" onClick={handleSaveEdit}>
                       <Check className="w-3.5 h-3.5" />
                     </Button>
-                    <Button size="icon" variant="ghost" className="h-7 w-7 shrink-0 rounded-lg" onClick={handleCancelEdit}>
+                    <Button size="icon" variant="ghost" className="h-7 w-7 shrink-0 rounded-full" onClick={handleCancelEdit}>
                       <X className="w-3.5 h-3.5" />
                     </Button>
                   </div>
                 ) : (
                   <div
                     className={cn(
-                      'group flex items-center gap-2 px-3 py-2.5 rounded-xl cursor-pointer transition-all duration-200',
+                      'group flex items-center gap-2 px-3 h-10 rounded-full cursor-pointer transition-all duration-200',
                       activeId === conv.id
-                        ? 'bg-secondary'
+                        ? 'bg-primary/10 dark:bg-muted/80 border border-border/60 shadow-sm'
                         : 'hover:bg-secondary/50'
                     )}
                     onClick={() => onSelect(conv.id)}
@@ -114,7 +114,7 @@ export function ChatSidebar({
                       <Button
                         size="icon"
                         variant="ghost"
-                        className="h-6 w-6 rounded-lg"
+                        className="h-6 w-6 rounded-full"
                         onClick={(e) => {
                           e.stopPropagation();
                           handleStartEdit(conv);
@@ -125,7 +125,7 @@ export function ChatSidebar({
                       <Button
                         size="icon"
                         variant="ghost"
-                        className="h-6 w-6 rounded-lg hover:text-destructive hover:bg-destructive/10"
+                        className="h-6 w-6 rounded-full hover:text-destructive hover:bg-destructive/10"
                         onClick={(e) => {
                           e.stopPropagation();
                           onDelete(conv.id);

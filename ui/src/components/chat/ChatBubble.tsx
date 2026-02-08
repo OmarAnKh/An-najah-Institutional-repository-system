@@ -27,7 +27,7 @@ export function ChatBubble({ message, onStreamingComplete }: ChatBubbleProps) {
       
       <div
         className={cn(
-          'flex flex-col max-w-[70%]',
+          'flex flex-col max-w-[100%]',
           isUser ? 'items-end' : 'items-start'
         )}
       >
@@ -36,8 +36,8 @@ export function ChatBubble({ message, onStreamingComplete }: ChatBubbleProps) {
           className={cn(
             'px-4 py-2.5 transition-all duration-200',
             isUser
-              ? 'bg-primary text-primary-foreground rounded-[20px] rounded-br-[6px]'
-              : 'bg-secondary text-secondary-foreground rounded-[20px] rounded-bl-[6px]'
+              ? 'bg-primary text-primary-foreground rounded-[20px] rounded-br-[6px] shadow-sm'
+              : 'glass-card rounded-[20px] rounded-bl-[6px] text-foreground'
           )}
           style={{ textAlign: direction === 'rtl' ? 'right' : 'left' }}
         >
@@ -63,7 +63,7 @@ export function ChatBubble({ message, onStreamingComplete }: ChatBubbleProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="mt-2"
+            className="mt-2 rounded-2xl"
           >
             <SourcesPopover sources={message.sources} />
           </motion.div>

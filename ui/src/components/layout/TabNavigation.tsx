@@ -9,7 +9,7 @@ interface TabNavigationProps {
 
 export function TabNavigation({ activeTab, onTabChange }: TabNavigationProps) {
   return (
-    <div className="flex items-center bg-secondary rounded-full p-1">
+    <div className="flex items-center glass-subtle rounded-full p-1">
       <TabButton
         active={activeTab === 'chat'}
         onClick={() => onTabChange('chat')}
@@ -38,14 +38,14 @@ function TabButton({ active, onClick, icon, label }: TabButtonProps) {
     <button
       onClick={onClick}
       className={cn(
-        'relative flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-colors duration-200',
+        'relative flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-sm font-medium transition-colors duration-200',
         active ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
       )}
     >
       {active && (
         <motion.div
           layoutId="tab-indicator"
-          className="absolute inset-0 bg-card rounded-full shadow-sm"
+          className="absolute inset-0 bg-card rounded-full shadow-md"
           transition={{ type: 'spring', bounce: 0.15, duration: 0.4 }}
         />
       )}

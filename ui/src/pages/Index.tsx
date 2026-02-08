@@ -19,28 +19,27 @@ const Index = () => {
     <>
       <SplashScreen isVisible={showSplash} />
       <div className="flex flex-col h-screen bg-background">
-        {/* Header */}
-        <header className="border-b border-border px-6 py-3">
-          <div className="max-w-screen-2xl mx-auto flex items-center justify-between">
+        {/* Glass Header */}
+        <header className="sticky top-0 z-40 glass border-b border-border/50">
+          <div className="max-w-screen-2xl mx-auto flex items-center justify-between px-6 py-3">
             <div className="flex items-center gap-3">
               <img 
                 src={logo} 
                 alt="Logo" 
                 className="w-8 h-8 object-contain" 
               />
-              <span className="text-[15px] font-medium text-foreground tracking-tight">
+              <span className="text-[15px] font-semibold text-foreground tracking-tight">
                 An-Najah Repository
               </span>
             </div>
             <div className="flex items-center gap-2">
               <TabNavigation activeTab={activeTab} onTabChange={setActiveTab} />
-              <div className="w-px h-5 bg-border mx-2" />
+              <div className="w-px h-5 bg-border/50 mx-2" />
               <ThemeToggle />
             </div>
           </div>
         </header>
 
-        {/* Main Content */}
         <main className="flex-1 overflow-hidden">
           {activeTab === 'chat' ? <ChatInterface /> : <SearchInterface />}
         </main>

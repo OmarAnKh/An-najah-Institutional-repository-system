@@ -23,7 +23,7 @@ export interface Conversation {
 
 export interface ChatResponse {
   answer: string;
-  sources?: DocumentSource[];
+  sources: DocumentSource[];
 }
 
 export interface SearchResult {
@@ -36,7 +36,10 @@ export interface SearchResult {
   type?: string;
 }
 
-export type AutocompleteResult = string;
+export interface AutocompleteResult {
+  id: string;
+  title: string;
+}
 
 export interface SearchFilters {
   type?: string;

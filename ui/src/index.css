@@ -2,115 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
 @layer base {
   :root {
-    /* Apple-inspired: Clean whites, subtle grays, blue accent */
-    --background: 0 0% 99%;
-    --foreground: 0 0% 9%;
+    --background: 210 22% 94%;
+    --foreground: 215 25% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 9%;
+    --card-foreground: 215 25% 16%;
 
+    /* SOLID POPOVER */
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 9%;
+    --popover-foreground: 215 25% 16%;
 
-    --primary: 211 100% 50%;
+    --primary: 224 55% 32%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 210 65% 48%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 94%;
-    --muted-foreground: 0 0% 45%;
+    --accent: 36 95% 52%;
+    --accent-foreground: 0 0% 0%;
 
-    --accent: 211 100% 96%;
-    --accent-foreground: 211 100% 45%;
+    --muted: 210 16% 86%;
+    --muted-foreground: 215 12% 38%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --border: 210 14% 74%;
+    --input: 210 18% 90%;
+    --ring: 224 55% 32%;
 
-    --border: 0 0% 92%;
-    --input: 0 0% 96%;
-    --ring: 211 100% 50%;
+    /* INPUT SURFACES */
+    --input-surface: 0 0% 100% / 0.92; /* lighter than page bg for contrast in light mode */
+    --input-border-strong: 215 18% 32% / 0.14; /* slightly stronger edge for separation */
 
-    --radius: 0.875rem;
+    --radius: 0.55rem;
 
-    /* Chat specific */
-    --chat-user: 211 100% 50%;
-    --chat-user-foreground: 0 0% 100%;
-    --chat-system: 0 0% 97%;
-    --chat-system-foreground: 0 0% 9%;
+    /* SIDEBAR DEPTH STRUCTURE */
+    --sidebar: 210 18% 80%; /* BASE */
+    --sidebar-background: 210 18% 80%;
+    --sidebar-foreground: 215 25% 16%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 9%;
-    --sidebar-primary: 211 100% 50%;
+    --sidebar-card: 210 18% 88%; /* CHAT ITEM */
+    --sidebar-hover: 210 18% 92%; /* HOVER */
+    --sidebar-active: 224 45% 85%; /* ACTIVE */
+
+    --sidebar-primary: 224 55% 32%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 94%;
-    --sidebar-accent-foreground: 0 0% 9%;
-    --sidebar-border: 0 0% 92%;
-    --sidebar-ring: 211 100% 50%;
-    --sidebar: 0 0% 98%;
+    --sidebar-border: 210 16% 66%;
 
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-
-    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+    --font-sans: "Inter", system-ui, sans-serif;
   }
 
   .dark {
-    --background: 0 0% 7%;
-    --foreground: 0 0% 95%;
+    --background: 220 28% 9%;
+    --foreground: 210 30% 88%;
 
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 95%;
+    --card: 220 24% 13%;
+    --card-foreground: 210 30% 88%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 95%;
+    /* INPUT SURFACES */
+    --input-surface: 223 13% 16% / 0.7;
+    --input-border-strong: 0 0% 100% / 0.08;
+    /* SOLID POPOVER */
+    --popover: 220 24% 15%;
+    --popover-foreground: 210 30% 88%;
 
-    --primary: 211 100% 60%;
+    --primary: 224 65% 56%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 0 0% 90%;
+    --secondary: 210 70% 60%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 55%;
+    --accent: 36 95% 55%;
+    --accent-foreground: 0 0% 0%;
 
-    --accent: 211 60% 20%;
-    --accent-foreground: 211 100% 70%;
+    --muted: 220 18% 24%;
+    --muted-foreground: 210 12% 62%;
 
-    --destructive: 0 72% 55%;
-    --destructive-foreground: 0 0% 100%;
+    --border: 220 14% 30%;
+    --input: 220 18% 20%;
+    --ring: 224 65% 56%;
 
-    --border: 0 0% 16%;
-    --input: 0 0% 14%;
-    --ring: 211 100% 60%;
+    /* SIDEBAR DEPTH STRUCTURE */
+    --sidebar: 220 24% 12%; /* BASE */
+    --sidebar-background: 220 24% 12%;
+    --sidebar-foreground: 210 30% 88%;
 
-    --chat-user: 211 100% 55%;
-    --chat-user-foreground: 0 0% 100%;
-    --chat-system: 0 0% 12%;
-    --chat-system-foreground: 0 0% 90%;
+    --sidebar-card: 220 24% 18%; /* CHAT ITEM */
+    --sidebar-hover: 220 24% 22%;
+    --sidebar-active: 224 40% 26%;
 
-    --sidebar: 0 0% 9%;
-    --sidebar-background: 0 0% 9%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 211 100% 60%;
+    --sidebar-primary: 224 65% 56%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 0 0% 16%;
-    --sidebar-ring: 211 100% 60%;
-
-    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    --sidebar-border: 220 16% 34%;
   }
 }
 
@@ -120,9 +105,8 @@
   }
 
   html {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
@@ -130,55 +114,54 @@
   }
 }
 
-@layer utilities {
-  .glass {
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-  }
+/* ---------- HARD FIX FOR TRANSPARENT SUGGESTIONS ---------- */
 
-  .dark .glass {
-    background: rgba(28, 28, 30, 0.72);
-  }
+[data-radix-popper-content-wrapper],
+.popover-content,
+[role="listbox"],
+[cmdk-list] {
+  background: hsl(var(--popover)) !important;
+  backdrop-filter: none !important;
+  opacity: 1 !important;
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
 }
 
-/* RTL Support */
+/* ---------- SIDEBAR CHAT CARD STYLING ---------- */
+
+.sidebar-item {
+  background: hsl(var(--sidebar-card));
+}
+
+.sidebar-item:hover {
+  background: hsl(var(--sidebar-hover));
+}
+
+.sidebar-item.active {
+  background: hsl(var(--sidebar-active));
+}
+
+/* RTL */
 [dir="rtl"] {
   text-align: right;
 }
-
 [dir="ltr"] {
   text-align: left;
 }
 
-/* Scrollbar - Apple style */
+/* Shared glass input shell for chat/search inputs and toggles */
+.glass-subtle,
+.glass-input {
+  background-color: hsla(var(--input-surface));
+  border: 1px solid hsla(var(--input-border-strong));
+  backdrop-filter: blur(12px);
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
 }
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.25);
-}
-
-.dark ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.dark ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-/* Smooth transitions */
-* {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: hsl(var(--secondary));
+  border-radius: 3px;
 }

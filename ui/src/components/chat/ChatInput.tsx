@@ -34,9 +34,9 @@ export function ChatInput({ onSend, isLoading }: ChatInputProps) {
   };
 
   return (
-    <div className="p-4 border-t border-border bg-background">
+    <div className="p-4 glass border-t border-border/30">
       <div className="max-w-2xl mx-auto">
-        <div className="relative flex items-center gap-2 bg-secondary rounded-full px-3 py-2 transition-all duration-200 focus-within:ring-2 focus-within:ring-primary/20">
+        <div className="relative flex items-center gap-2 glass-subtle rounded-full px-3 py-2 transition-all duration-200 focus-within:ring-2 focus-within:ring-primary/20 focus-within:shadow-md border border-border/60 bg-card/90">
           <textarea
             ref={textareaRef}
             value={input}
@@ -53,7 +53,7 @@ export function ChatInput({ onSend, isLoading }: ChatInputProps) {
             onClick={handleSend}
             disabled={!input.trim() || isLoading}
             size="icon"
-            className="h-9 w-9 rounded-full bg-primary hover:bg-primary/90 disabled:opacity-40 shrink-0 transition-all duration-200"
+            className="h-9 w-9 rounded-full bg-primary hover:bg-primary/90 disabled:opacity-40 shrink-0 transition-all duration-200 shadow-sm"
           >
             {isLoading ? (
               <Loader2 className="w-4 h-4 animate-spin" />

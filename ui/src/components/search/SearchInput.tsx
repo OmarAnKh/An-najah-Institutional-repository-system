@@ -2,39 +2,33 @@ import { useState, useRef, useEffect, KeyboardEvent } from 'react';
 import { Search, Loader2 } from 'lucide-react';
 import { detectLanguageDirection } from '@/lib/languageUtils';
 import { motion, AnimatePresence } from 'framer-motion';
+import { fetchSuggestions } from '@/lib/api';
 
 interface SearchInputProps {
   onSearch: (query: string) => void;
   isLoading: boolean;
 }
 
-type Suggestion = string;
-
-const SUGGEST_ENDPOINT = '/api/suggest';
-
 export function SearchInput({ onSearch, isLoading }: SearchInputProps) {
   const [query, setQuery] = useState('');
-  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
+  const [suggestions, setSuggestions] = useState<string[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
   const direction = detectLanguageDirection(query);
 
   useEffect(() => {
-    const fetchSuggestions = async () => {
-      if (query.length < 2) {
+    const doFetch = async () => {
+      if (query.length < 3) {
         setSuggestions([]);
         return;
       }
 
       try {
-        const response = await fetch(`${SUGGEST_ENDPOINT}?q=${encodeURIComponent(query)}&limit=8`);
-        if (response.ok) {
-          const data = await response.json();
-          setSuggestions(data.suggestions || []);
-        }
+        const results = await fetchSuggestions(query);
+        setSuggestions(results.slice(0, 5));
       } catch {
-        // Demo suggestions
+        // Fallback demo suggestions
         setSuggestions([
           `${query} in machine learning`,
           `${query} research methodology`,
@@ -43,14 +37,16 @@ export function SearchInput({ onSearch, isLoading }: SearchInputProps) {
       }
     };
 
-    const timer = setTimeout(fetchSuggestions, 200);
+    const timer = setTimeout(doFetch, 200);
     return () => clearTimeout(timer);
   }, [query]);
 
   const handleSubmit = (value?: string) => {
     const searchQuery = value || query;
     if (searchQuery.trim()) {
-      onSearch(searchQuery.trim());
+      const normalized = searchQuery.trim();
+      setQuery(normalized);
+      onSearch(normalized);
       setShowSuggestions(false);
       setSelectedIndex(-1);
     }
@@ -77,8 +73,8 @@ export function SearchInput({ onSearch, isLoading }: SearchInputProps) {
 
   return (
     <div className="relative">
-      <div className="relative">
-        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground">
+      <div className="relative glass-subtle rounded-full border border-border/70 bg-secondary/50">
+        <div className="absolute left-5 top-1/2 -translate-y-1/2 text-muted-foreground">
           {isLoading ? (
             <Loader2 className="w-5 h-5 animate-spin" />
           ) : (
@@ -98,9 +94,9 @@ export function SearchInput({ onSearch, isLoading }: SearchInputProps) {
           onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
           onKeyDown={handleKeyDown}
           dir={direction}
-          placeholder="Search..."
-          className="w-full h-12 pl-12 pr-4 bg-secondary rounded-full text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all duration-200"
-          style={{ textAlign: direction === 'rtl' ? 'right' : 'left' }}
+          placeholder="Search the repository..."
+          className="w-full h-12 pl-13 pr-5 rounded-full text-foreground placeholder:text-muted-foreground bg-transparent focus:outline-none focus:ring-2 focus:ring-primary/20 focus:shadow-md transition-all duration-200"
+          style={{ textAlign: direction === 'rtl' ? 'right' : 'left', paddingLeft: '3.25rem' }}
         />
       </div>
 
@@ -112,19 +108,22 @@ export function SearchInput({ onSearch, isLoading }: SearchInputProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.15 }}
-            className="absolute top-full left-0 right-0 mt-2 bg-card rounded-2xl shadow-lg border border-border overflow-hidden z-50"
+            className="absolute top-full left-0 right-0 mt-2 glass-subtle rounded-2xl overflow-hidden z-50 shadow-lg"
           >
             {suggestions.map((suggestion, index) => (
               <button
-                key={`${suggestion}-${index}`}
-                className={`w-full px-4 py-3 text-left text-sm transition-colors ${
+                key={index}
+                className={`w-full px-5 py-3 text-left text-sm transition-colors ${
                   index === selectedIndex
-                    ? 'bg-secondary text-foreground'
-                    : 'text-muted-foreground hover:bg-secondary hover:text-foreground'
+                    ? 'bg-primary/15 text-foreground'
+                    : 'text-foreground/80 hover:bg-secondary/70 hover:text-foreground'
                 }`}
                 onMouseDown={() => handleSubmit(suggestion)}
               >
-                {suggestion}
+                <div className="flex items-center gap-2.5">
+                  <Search className="w-3.5 h-3.5 text-muted-foreground shrink-0" />
+                  {suggestion}
+                </div>
               </button>
             ))}
           </motion.div>
