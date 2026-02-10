@@ -12,13 +12,20 @@ from .models import (
     SearchRequest,
     SearchResponse,
     SuggestResponse,
+    UserQueryRequest,
+    UserQueryResponse,
 )
 from .responses import (
     answer_responses,
     generate_query_responses,
     search_responses,
     suggest_responses,
+    user_query_responses,
 )
+
+
+
+
 
 router = APIRouter(prefix="/api")
 
@@ -67,3 +74,16 @@ def answer(
     """Endpoint to generate an answer using the RAG pipeline."""
     answer_text, sources = service.generate_answer(request.query)
     return AnswerResponse(answer=answer_text, sources=sources)
+
+
+@router.post("/search/full-text", **search_responses)
+def search_full_text(
+    request: UserQueryRequest,
+    service: AnNajahRepositorySearchService = Depends(get_search_service),
+) -> SearchResponse:
+    """Endpoint to search using the full_text_query pipeline (hybrid BM25 + kNN)."""
+    # Build the OpenSearch query DSL using the user's query string
+    query_dsl = service.user_query(request.query)
+    # Execute the search
+    results = service.search_using_query(query=query_dsl)
+    return SearchResponse(results=results)

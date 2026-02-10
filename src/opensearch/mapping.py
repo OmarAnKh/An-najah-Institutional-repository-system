@@ -184,6 +184,7 @@ class ProjectMapping:
                     "collection": {
                         "type": "keyword",
                         "doc_values": True,  # add it to enable sorting and aggregations default is true
+                        "normalizer": "keyword_lowercase",  # to make it case-insensitive for exact matches
                     },
                     "bitstream_uuid": {
                         "type": "keyword",
@@ -281,7 +282,10 @@ class ProjectMapping:
                             },
                         },
                     },
-                    "temporalExpressions": {"type": "keyword"},
+                    "temporalExpressions": {
+                        "type": "keyword",
+                        "normalizer": "keyword_lowercase",
+                    },
                 },
             },
         }

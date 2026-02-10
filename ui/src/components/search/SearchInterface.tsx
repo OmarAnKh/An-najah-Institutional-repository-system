@@ -21,32 +21,9 @@ export function SearchInterface() {
       const generated = await generateQuery(query);
       let hits = (generated.results as any)?.hits?.hits || [];
 
-      // Fallback: simple multi_match if generation returns nothing
+      // Fallback: use new full-text hybrid search if generation returns nothing
       if (!hits.length) {
-        const searchBody = {
-          query: {
-            multi_match: {
-              query,
-              fields: [
-                'title.en^4',
-                'title.ar^4',
-                'abstract.en^3',
-                'abstract.ar^3',
-                'description^2',
-                'dc_title^3',
-                'dc_description^2',
-                'dc_subject^2',
-                'dc_creator',
-              ],
-              type: 'best_fields',
-              operator: 'and',
-            },
-          },
-          size: 20,
-          _source_excludes: ['abstract_vector'],
-        };
-
-        const fallbackRes = await searchDocuments(searchBody);
+        const fallbackRes = await import('@/lib/api').then(m => m.searchFullText(query));
         hits = (fallbackRes.results as any)?.hits?.hits || [];
       }
 
@@ -91,9 +68,8 @@ export function SearchInterface() {
   return (
     <div className="h-full overflow-y-auto">
       <div
-        className={`max-w-2xl mx-auto px-4 py-12 ${
-          hasQuery || isLoading ? '' : 'flex flex-col justify-center min-h-[70vh]'
-        }`}
+        className={`max-w-2xl mx-auto px-4 py-12 ${hasQuery || isLoading ? '' : 'flex flex-col justify-center min-h-[70vh]'
+          }`}
       >
         <motion.div
           initial={{ opacity: 0, y: 10 }}

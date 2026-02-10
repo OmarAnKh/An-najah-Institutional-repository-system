@@ -1,3 +1,13 @@
+/** POST /api/search/full-text { query } */
+export async function searchFullText(query: string): Promise<SearchResponse> {
+  const res = await fetch(`${API_BASE}/search/full-text`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query }),
+  });
+  if (!res.ok) throw new Error('Full-text search failed');
+  return res.json();
+}
 // API client for the FastAPI backend
 
 import type { DocumentSource } from '@/types/chat';
