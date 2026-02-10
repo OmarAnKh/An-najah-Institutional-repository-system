@@ -13,18 +13,13 @@ from .models import (
     SearchResponse,
     SuggestResponse,
     UserQueryRequest,
-    UserQueryResponse,
 )
 from .responses import (
     answer_responses,
     generate_query_responses,
     search_responses,
     suggest_responses,
-    user_query_responses,
 )
-
-
-
 
 
 router = APIRouter(prefix="/api")
