@@ -1,6 +1,5 @@
 import json
 from langdetect import detect
-from numpy import size
 
 from src.opensearch.abstract_classes.ABC_client import ABCClient
 from src.query_utils.suggest_query import build_suggest_query
