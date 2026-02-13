@@ -31,7 +31,7 @@ class GeminiGenerativeModel(ABCGenerativeModel):
             self.__history_prompt | self.__model | StrOutputParser()
         )
 
-    def formulate_query(self, user_input: str) -> str:
+    def formulate_query(self, user_input: str, history: list[dict]) -> str:
         """Formulate a self-contained query based on chat history and the latest user input.
 
         Args:
@@ -42,6 +42,9 @@ class GeminiGenerativeModel(ABCGenerativeModel):
         """
         if not self.__history:
             return user_input
+
+        if history:
+            self.__history = deque(history, maxlen=2)
 
         history_string = "\n".join(
             [

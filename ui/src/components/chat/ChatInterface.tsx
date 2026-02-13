@@ -7,7 +7,7 @@ import { useConversations } from '@/hooks/useConversations';
 import { PanelLeftClose, PanelLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { fetchAnswer } from '@/lib/api';
+import { fetchAnswer, type ChatHistoryItem } from '@/lib/api';
 import logoSvg from '@/assets/logo.svg';
 
 export function ChatInterface() {
@@ -31,11 +31,28 @@ export function ChatInterface() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const buildHistory = (msgs: ChatMessage[]): ChatHistoryItem[] => {
+    const pairs: ChatHistoryItem[] = [];
+    let pendingQuery: string | null = null;
+
+    msgs.forEach((msg) => {
+      if (msg.role === 'user') {
+        pendingQuery = msg.content;
+      } else if (msg.role === 'assistant' && pendingQuery !== null) {
+        pairs.push({ query: pendingQuery, response: msg.content });
+        pendingQuery = null;
+      }
+    });
+
+    return pairs.slice(-2);
+  };
+
   useEffect(() => {
     scrollToBottom();
   }, [activeConversation?.messages]);
 
   const handleSendMessage = async (content: string) => {
+    const historyToSend = buildHistory(activeConversation?.messages ?? []);
     let conversationId = activeId;
 
     if (!conversationId) {
@@ -63,7 +80,10 @@ export function ChatInterface() {
     addMessage(conversationId, aiPlaceholder);
 
     try {
-      const { answer, sources } = await fetchAnswer(content);
+      const { answer, sources } = await fetchAnswer(
+        content,
+        historyToSend.length > 0 ? historyToSend : undefined
+      );
 
       updateMessage(conversationId, aiMessageId, {
         content: answer,

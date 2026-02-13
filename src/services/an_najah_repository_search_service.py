@@ -35,7 +35,7 @@ class AnNajahRepositorySearchService:
         self._query_generator = query_generator
         self._generative_model = generative_model
 
-    def search_using_query(self, query: dict, size: int = 8) -> dict:
+    def search_using_query(self, query: dict, size: int = 5) -> dict:
         """simple search function for custom queries
 
         Args:
@@ -186,12 +186,15 @@ class AnNajahRepositorySearchService:
 
         return body
 
-    def generate_answer(self, user_input: str) -> tuple[str, list[dict]]:
+    def generate_answer(
+        self, user_input: str, history: list[dict]
+    ) -> tuple[str, list[dict]]:
         """
         Generate a response based on the input user query and retrieved documents.
 
         Args:
             user_input (str): The input query string.
+            history (list[dict]): The conversation history.
         Returns:
             tuple[str, list[dict]]: Generated answer text and citation metadata.
         """
@@ -211,7 +214,7 @@ class AnNajahRepositorySearchService:
         fallback_lang = "ar" if preferred_lang == "en" else "en"
 
         # 1) Formulate a self-contained query
-        formulated_query = self._generative_model.formulate_query(user_input)
+        formulated_query = self._generative_model.formulate_query(user_input, history)
         if not formulated_query:
             formulated_query = user_input
         # 2) Search for relevant documents

@@ -12,6 +12,11 @@ export async function searchFullText(query: string): Promise<SearchResponse> {
 
 import type { DocumentSource } from '@/types/chat';
 
+export interface ChatHistoryItem {
+  query: string;
+  response: string;
+}
+
 const API_BASE = (import.meta.env.VITE_API_BASE_URL || '/api').replace(/\/$/, '');
 
 export interface SuggestResponse {
@@ -56,12 +61,21 @@ export async function fetchSuggestions(query: string, limit = 8): Promise<string
   return data.suggestions || [];
 }
 
-/** POST /api/answer { query } */
-export async function fetchAnswer(query: string): Promise<{ answer: string; sources: DocumentSource[] }> {
+/** POST /api/answer { query, history? } */
+export async function fetchAnswer(
+  query: string,
+  history?: ChatHistoryItem[]
+): Promise<{ answer: string; sources: DocumentSource[] }> {
+  const payload: { query: string; history?: ChatHistoryItem[] } = { query };
+
+  if (history && history.length > 0) {
+    payload.history = history;
+  }
+
   const res = await fetch(`${API_BASE}/answer`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query }),
+    body: JSON.stringify(payload),
   });
   if (!res.ok) throw new Error('Answer failed');
   const data: AnswerResponse = await res.json();
