@@ -13,7 +13,7 @@ from .models import (
     SearchResponse,
     SuggestResponse,
     UserQueryRequest,
-    UserQueryResponse
+    UserQueryResponse,
 )
 from .responses import (
     answer_responses,
@@ -95,6 +95,7 @@ def generate_advanced_query(
 
     generated_query = service.generate_advanced_query(request.query)
     return UserQueryResponse(dsl=generated_query)
+
 
 @router.post("/execute_advanced_query", **search_responses)
 def execute_advanced_query(
