@@ -28,6 +28,7 @@ export interface ChatResponse {
 
 export interface SearchResult {
   id: string;
+  item_uuid?: string;
   title: string;
   snippet?: string;
   score?: number;

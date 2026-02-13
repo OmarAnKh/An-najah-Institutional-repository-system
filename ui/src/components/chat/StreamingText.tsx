@@ -12,24 +12,37 @@ export function StreamingText({ text, onComplete, speed = 15 }: StreamingTextPro
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
-    if (isComplete) return;
-    
+    setDisplayedText('');
+    setIsComplete(false);
+  }, [text]);
+
+  useEffect(() => {
+    if (!text) {
+      setDisplayedText('');
+      setIsComplete(true);
+      onComplete?.();
+      return;
+    }
+
+    const targetDurationMs = 10000;
+    const intervalMs = Math.max(1, speed);
+    const maxSteps = Math.max(1, Math.floor(targetDurationMs / intervalMs));
+    const chunkSize = Math.max(1, Math.ceil(text.length / maxSteps));
+
     let currentIndex = 0;
     const interval = setInterval(() => {
-      if (currentIndex < text.length) {
-        setDisplayedText(text.slice(0, currentIndex + 1));
-        currentIndex++;
-      } else {
+      currentIndex = Math.min(text.length, currentIndex + chunkSize);
+      setDisplayedText(text.slice(0, currentIndex));
+
+      if (currentIndex >= text.length) {
         clearInterval(interval);
         setIsComplete(true);
         onComplete?.();
       }
-    }, speed);
+    }, intervalMs);
 
     return () => {
       clearInterval(interval);
-      // If unmounted before completion (e.g., user navigates away), mark complete once
-      // so we don’t replay typing when returning.
       if (!isComplete) {
         setIsComplete(true);
         onComplete?.();

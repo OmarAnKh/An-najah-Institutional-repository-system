@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import { ChatInterface } from '@/components/chat/ChatInterface';
 import { SearchInterface } from '@/components/search/SearchInterface';
+import { AdvancedSearchInterface } from '@/components/advanced-search/AdvancedSearchInterface';
 import { TabNavigation } from '@/components/layout/TabNavigation';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { SplashScreen } from '@/components/SplashScreen';
 import logo from '@/assets/logo.svg';
 
 const Index = () => {
-  const [activeTab, setActiveTab] = useState<'chat' | 'search'>('chat');
+  const [activeTab, setActiveTab] = useState<'chat' | 'search' | 'advanced'>('chat');
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
@@ -41,7 +42,9 @@ const Index = () => {
         </header>
 
         <main className="flex-1 overflow-hidden">
-          {activeTab === 'chat' ? <ChatInterface /> : <SearchInterface />}
+          {activeTab === 'chat' && <ChatInterface />}
+            {activeTab === 'search' && <SearchInterface />}
+            {activeTab === 'advanced' && <AdvancedSearchInterface />}
         </main>
       </div>
     </>

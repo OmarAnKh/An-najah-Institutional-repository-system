@@ -179,5 +179,6 @@ query_generation_prompt = """
         Return a single JSON object only.
         No comments or explanation.
         No markdown.
+        dont normalize or sandardize the if the fields is not normalized in the mapping (e.g., temporalExpressions are keywords, so do not treat them as text or try to lemmatize them).
 
         """

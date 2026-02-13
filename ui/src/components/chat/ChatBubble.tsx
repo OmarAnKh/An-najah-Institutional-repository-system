@@ -6,6 +6,8 @@ import { StreamingText } from './StreamingText';
 import { TypingIndicator } from './TypingIndicator';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface ChatBubbleProps {
   message: ChatMessage;
@@ -51,9 +53,15 @@ export function ChatBubble({ message, onStreamingComplete }: ChatBubbleProps) {
               <TypingIndicator />
             )
           ) : (
-            <p className="text-[15px] leading-[1.5] whitespace-pre-wrap">
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              className={cn(
+                'prose prose-sm max-w-none text-[15px] leading-[1.5] prose-p:my-1 prose-headings:my-2 prose-ul:my-2 prose-ol:my-2 prose-li:my-0 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:bg-muted prose-code:text-foreground prose-a:underline prose-a:font-medium',
+                isUser ? 'prose-invert prose-a:text-primary-foreground' : 'prose-a:text-primary'
+              )}
+            >
               {message.content}
-            </p>
+            </ReactMarkdown>
           )}
         </div>
 

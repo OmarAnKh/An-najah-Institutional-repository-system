@@ -13,12 +13,14 @@ from .models import (
     SearchResponse,
     SuggestResponse,
     UserQueryRequest,
+    UserQueryResponse
 )
 from .responses import (
     answer_responses,
     generate_query_responses,
     search_responses,
     suggest_responses,
+    user_query_responses,
 )
 
 
@@ -57,7 +59,7 @@ def generate_query(
     service: AnNajahRepositorySearchService = Depends(get_search_service),
 ) -> GenerateQueryResponse:
     """Endpoint to generate a search query from a user natural language prompt."""
-    results, generated_query = service.generate_query(request.prompt)
+    results, generated_query = service.generate_query(request.prompt, request.size)
     return GenerateQueryResponse(results=results, generated_query=generated_query)
 
 
@@ -81,4 +83,25 @@ def search_full_text(
     query_dsl = service.user_query(request.query)
     # Execute the search
     results = service.search_using_query(query=query_dsl)
+    return SearchResponse(results=results)
+
+
+@router.post("/generate_advanced_query", **user_query_responses)
+def generate_advanced_query(
+    request: UserQueryRequest,
+    service: AnNajahRepositorySearchService = Depends(get_search_service),
+) -> UserQueryResponse:
+    """Generate an advanced OpenSearch query object from a user prompt."""
+
+    generated_query = service.generate_advanced_query(request.query)
+    return UserQueryResponse(dsl=generated_query)
+
+@router.post("/execute_advanced_query", **search_responses)
+def execute_advanced_query(
+    request: SearchRequest,
+    service: AnNajahRepositorySearchService = Depends(get_search_service),
+) -> SearchResponse:
+    """Execute an advanced OpenSearch query object from a user prompt."""
+
+    results = service.execute_query_object(query_object=request.query)
     return SearchResponse(results=results)
