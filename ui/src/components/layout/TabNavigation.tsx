@@ -1,10 +1,11 @@
-import { MessageCircle, Search } from 'lucide-react';
+import { MessageCircle, Search, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
+import type { ReactNode } from 'react';
 
 interface TabNavigationProps {
-  activeTab: 'chat' | 'search';
-  onTabChange: (tab: 'chat' | 'search') => void;
+  activeTab: 'chat' | 'search' | 'advanced';
+  onTabChange: (tab: 'chat' | 'search' | 'advanced') => void;
 }
 
 export function TabNavigation({ activeTab, onTabChange }: TabNavigationProps) {
@@ -22,6 +23,12 @@ export function TabNavigation({ activeTab, onTabChange }: TabNavigationProps) {
         icon={<Search className="w-4 h-4" />}
         label="Search"
       />
+      <TabButton
+        active={activeTab === 'advanced'}
+        onClick={() => onTabChange('advanced')}
+        icon={<Sparkles className="w-4 h-4" />}
+        label="Advanced"
+      />
     </div>
   );
 }
@@ -29,7 +36,7 @@ export function TabNavigation({ activeTab, onTabChange }: TabNavigationProps) {
 interface TabButtonProps {
   active: boolean;
   onClick: () => void;
-  icon: React.ReactNode;
+  icon: ReactNode;
   label: string;
 }
 

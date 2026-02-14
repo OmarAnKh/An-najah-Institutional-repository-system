@@ -54,48 +54,52 @@
     --font-sans: "Inter", system-ui, sans-serif;
   }
 
-  .dark {
-    --background: 220 28% 9%;
-    --foreground: 210 30% 88%;
+.dark {
+    /* iOS 18 Dark — Deep Navy/Black saturation */
+    --background: 220 25% 4%;
+    --foreground: 220 10% 98%;
 
-    --card: 220 24% 13%;
-    --card-foreground: 210 30% 88%;
+    --card: 220 25% 7%;
+    --card-foreground: 220 10% 98%;
 
-    /* INPUT SURFACES */
-    --input-surface: 223 13% 16% / 0.7;
-    --input-border-strong: 0 0% 100% / 0.08;
-    /* SOLID POPOVER */
-    --popover: 220 24% 15%;
-    --popover-foreground: 210 30% 88%;
+    /* INPUT SURFACES - Glass effect variables */
+    --input-surface: 220 20% 12% / 0.6;
+    --input-border-strong: 220 20% 25% / 0.4;
 
-    --primary: 224 65% 56%;
+    /* SOLID POPOVER - Elevated surface */
+    --popover: 220 25% 9%;
+    --popover-foreground: 220 10% 98%;
+
+    /* Vivid iOS Blue */
+    --primary: 215 90% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 70% 60%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 220 10% 98%;
 
-    --accent: 36 95% 55%;
+    /* Sophisticated Gold/Amber accent */
+    --accent: 36 90% 55%;
     --accent-foreground: 0 0% 0%;
 
-    --muted: 220 18% 24%;
-    --muted-foreground: 210 12% 62%;
+    --muted: 220 15% 16%;
+    --muted-foreground: 220 10% 65%;
 
-    --border: 220 14% 30%;
-    --input: 220 18% 20%;
-    --ring: 224 65% 56%;
+    --border: 220 20% 18%;
+    --input: 220 20% 14%;
+    --ring: 215 90% 55%;
 
-    /* SIDEBAR DEPTH STRUCTURE */
-    --sidebar: 220 24% 12%; /* BASE */
-    --sidebar-background: 220 24% 12%;
-    --sidebar-foreground: 210 30% 88%;
+    /* SIDEBAR DEPTH STRUCTURE - Layered Obsidian */
+    --sidebar: 220 25% 6%; /* Deepest base */
+    --sidebar-background: 220 25% 6%;
+    --sidebar-foreground: 220 10% 95%;
 
-    --sidebar-card: 220 24% 18%; /* CHAT ITEM */
-    --sidebar-hover: 220 24% 22%;
-    --sidebar-active: 224 40% 26%;
+    --sidebar-card: 220 20% 12%; /* Elevated chat items */
+    --sidebar-hover: 220 20% 18%;
+    --sidebar-active: 215 60% 25%; /* Deep blue glow for active */
 
-    --sidebar-primary: 224 65% 56%;
+    --sidebar-primary: 215 90% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-border: 220 16% 34%;
+    --sidebar-border: 220 20% 15%;
   }
 }
 

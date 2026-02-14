@@ -12,6 +12,11 @@ export async function searchFullText(query: string): Promise<SearchResponse> {
 
 import type { DocumentSource } from '@/types/chat';
 
+export interface ChatHistoryItem {
+  query: string;
+  response: string;
+}
+
 const API_BASE = (import.meta.env.VITE_API_BASE_URL || '/api').replace(/\/$/, '');
 
 export interface SuggestResponse {
@@ -44,6 +49,10 @@ export interface SearchResponse {
   results: Record<string, unknown>;
 }
 
+export interface GenerateAdvancedQueryResponse {
+  dsl: Record<string, unknown>;
+}
+
 /** GET /api/suggest?q=...&limit=8 */
 export async function fetchSuggestions(query: string, limit = 8): Promise<string[]> {
   const res = await fetch(`${API_BASE}/suggest?q=${encodeURIComponent(query)}&limit=${limit}`);
@@ -52,12 +61,21 @@ export async function fetchSuggestions(query: string, limit = 8): Promise<string
   return data.suggestions || [];
 }
 
-/** POST /api/answer { query } */
-export async function fetchAnswer(query: string): Promise<{ answer: string; sources: DocumentSource[] }> {
+/** POST /api/answer { query, history? } */
+export async function fetchAnswer(
+  query: string,
+  history?: ChatHistoryItem[]
+): Promise<{ answer: string; sources: DocumentSource[] }> {
+  const payload: { query: string; history?: ChatHistoryItem[] } = { query };
+
+  if (history && history.length > 0) {
+    payload.history = history;
+  }
+
   const res = await fetch(`${API_BASE}/answer`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query }),
+    body: JSON.stringify(payload),
   });
   if (!res.ok) throw new Error('Answer failed');
   const data: AnswerResponse = await res.json();
@@ -82,6 +100,17 @@ export async function generateQuery(prompt: string): Promise<GenerateQueryRespon
   return res.json();
 }
 
+/** POST /api/generate_advanced_query { query } */
+export async function generateAdvancedQuery(prompt: string): Promise<GenerateAdvancedQueryResponse> {
+  const res = await fetch(`${API_BASE}/generate_advanced_query`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query: prompt }),
+  });
+  if (!res.ok) throw new Error('Generate advanced query failed');
+  return res.json();
+}
+
 /** POST /api/search { query } */
 export async function searchDocuments(query: Record<string, unknown>): Promise<SearchResponse> {
   const res = await fetch(`${API_BASE}/search`, {
@@ -92,3 +121,15 @@ export async function searchDocuments(query: Record<string, unknown>): Promise<S
   if (!res.ok) throw new Error('Search failed');
   return res.json();
 }
+
+/** POST /api/execute_advanced_query { query } */
+export async function executeAdvancedQuery(query: Record<string, unknown>): Promise<SearchResponse> {
+  const res = await fetch(`${API_BASE}/execute_advanced_query`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query }),
+  });
+  if (!res.ok) throw new Error('Execute advanced query failed');
+  return res.json();
+}
+

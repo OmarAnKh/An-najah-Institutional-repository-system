@@ -7,6 +7,7 @@ const ACTIVE_KEY = 'ir-active-conversation';
 export function useConversations() {
   const [conversations, setConversations] = useState<Conversation[]>([]);
   const [activeId, setActiveId] = useState<string | null>(null);
+  const [hasHydrated, setHasHydrated] = useState(false);
 
   // Load from localStorage on mount
   useEffect(() => {
@@ -32,20 +33,31 @@ export function useConversations() {
     if (storedActive) {
       setActiveId(storedActive);
     }
+
+    setHasHydrated(true);
   }, []);
 
   // Save to localStorage on change
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(conversations));
+    const nonEmpty = conversations.filter((conv) => conv.messages.length > 0);
+
+    if (nonEmpty.length === 0) {
+      localStorage.removeItem(STORAGE_KEY);
+      return;
+    }
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(nonEmpty));
   }, [conversations]);
 
   useEffect(() => {
-    if (activeId) {
-      localStorage.setItem(ACTIVE_KEY, activeId);
-    }
-  }, [activeId]);
+    const active = conversations.find((c) => c.id === activeId && c.messages.length > 0);
 
-  const activeConversation = conversations.find((c) => c.id === activeId) || null;
+    if (active) {
+      localStorage.setItem(ACTIVE_KEY, activeId);
+    } else {
+      localStorage.removeItem(ACTIVE_KEY);
+    }
+  }, [activeId, conversations]);
 
   const createConversation = useCallback(() => {
     const newConv: Conversation = {
@@ -59,6 +71,14 @@ export function useConversations() {
     setActiveId(newConv.id);
     return newConv.id;
   }, []);
+
+  useEffect(() => {
+    if (hasHydrated) {
+      createConversation();
+    }
+  }, [hasHydrated, createConversation]);
+
+  const activeConversation = conversations.find((c) => c.id === activeId) || null;
 
   const deleteConversation = useCallback((id: string) => {
     setConversations((prev) => prev.filter((c) => c.id !== id));

@@ -1,65 +1,57 @@
-import { SearchResult } from '@/types/chat';
-import { FileText, ArrowUpRight, Search } from 'lucide-react';
+import { ArrowUpRight, FileText, Search, ChevronLeft, ChevronRight } from 'lucide-react';
 import { detectLanguageDirection } from '@/lib/languageUtils';
-import { HighlightedText } from './HighlightedText';
 import { motion } from 'framer-motion';
 
-interface SearchResultsProps {
-  results: SearchResult[];
-  query: string;
+export interface AdvancedResult {
+  id: string;
+  item_uuid?: string;
+  title: string;
+  abstract?: string;
+  authors: string[];
+  publicationDate?: string;
+  collection?: string;
+  hasFiles?: boolean;
+  type?: string;
+}
+
+interface AdvancedSearchResultsProps {
+  results: AdvancedResult[];
   isLoading: boolean;
+  hasSearched: boolean;
   page: number;
   pageSize: number;
   onPageChange: (page: number) => void;
 }
 
-export function SearchResults({ results, query, isLoading, page, pageSize, onPageChange }: SearchResultsProps) {
+export function AdvancedSearchResults({ results, isLoading, hasSearched, page, pageSize, onPageChange }: AdvancedSearchResultsProps) {
   if (isLoading) {
     return (
-      <div className="mt-8 space-y-3">
-        {[1, 2, 3].map((i) => (
+      <div className="space-y-3 mt-6">
+        {[1, 2, 3, 4].map((i) => (
           <div key={i} className="glass-card rounded-2xl p-5 animate-pulse">
             <div className="h-4 bg-secondary rounded-full w-3/4 mb-3" />
             <div className="h-3 bg-secondary rounded-full w-full mb-2" />
-            <div className="h-3 bg-secondary rounded-full w-2/3" />
+            <div className="h-3 bg-secondary rounded-full w-1/2" />
           </div>
         ))}
       </div>
     );
   }
 
-  if (!query) {
+  if (!hasSearched) return null;
+
+  if (results.length === 0) {
     return (
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="mt-20 text-center"
+        className="mt-12 text-center"
       >
         <div className="w-14 h-14 rounded-2xl glass-card flex items-center justify-center mx-auto mb-4 shadow-sm">
           <Search className="w-6 h-6 text-muted-foreground" />
         </div>
-        <h3 className="text-lg font-medium text-foreground mb-1">
-          Search the repository
-        </h3>
-        <p className="text-muted-foreground text-sm max-w-xs mx-auto">
-          Find research papers, theses, and academic publications
-        </p>
-      </motion.div>
-    );
-  }
-
-  if (results.length === 0) {
-    return (
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="mt-20 text-center"
-      >
-        <div className="w-14 h-14 rounded-2xl glass-card flex items-center justify-center mx-auto mb-4 shadow-sm">
-          <FileText className="w-6 h-6 text-muted-foreground" />
-        </div>
         <h3 className="text-lg font-medium text-foreground mb-1">No results</h3>
-        <p className="text-muted-foreground text-sm max-w-xs mx-auto">Try different keywords</p>
+        <p className="text-muted-foreground text-sm max-w-xs mx-auto">Try refining your query.</p>
       </motion.div>
     );
   }
@@ -75,14 +67,23 @@ export function SearchResults({ results, query, isLoading, page, pageSize, onPag
   };
 
   return (
-    <div className="mt-8">
-      <p className="text-sm text-muted-foreground mb-4">
-        {results.length} results
-      </p>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3, delay: 0.1 }}
+      className="mt-6"
+    >
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-sm font-semibold text-foreground">
+          Documents
+        </h3>
+        <span className="text-xs text-muted-foreground">
+          {results.length} results
+        </span>
+      </div>
       <div className="space-y-2">
         {currentSlice.map((result, index) => {
           const direction = detectLanguageDirection(result.title);
-          
           return (
             <motion.a
               key={result.id}
@@ -93,28 +94,36 @@ export function SearchResults({ results, query, isLoading, page, pageSize, onPag
               className="group block p-4 rounded-2xl glass-card border border-border/60 bg-card/80 hover:bg-card/95 hover:border-primary/40 hover:shadow-lg hover:translate-y-[-1px] active:translate-y-0 transition-all duration-200"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.04, duration: 0.3 }}
+              transition={{ delay: index * 0.03, duration: 0.25 }}
             >
               <div className="flex items-start gap-3">
+                <div className="w-9 h-9 rounded-xl glass-subtle flex items-center justify-center shrink-0 mt-0.5">
+                  <FileText className="w-4 h-4 text-muted-foreground" />
+                </div>
                 <div className="flex-1 min-w-0">
                   <h4 className="text-foreground font-medium group-hover:text-primary transition-colors line-clamp-2 mb-1">
-                    <HighlightedText text={result.title} query={query} />
+                    {result.title}
                   </h4>
-                  {result.snippet && (
+                  {result.abstract && (
                     <p className="text-sm text-muted-foreground line-clamp-2 mb-2">
-                      <HighlightedText text={result.snippet} query={query} />
+                      {result.abstract}
                     </p>
                   )}
                   <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
-                    {result.type && (
-                      <span className="px-2.5 py-0.5 rounded-full glass-input capitalize text-xs font-medium">
-                        {result.type}
+                    {result.authors.length > 0 && (
+                      <span>{result.authors.join(', ')}</span>
+                    )}
+                    {result.publicationDate && (
+                      <span>· {result.publicationDate}</span>
+                    )}
+                    {result.collection && (
+                      <span className="px-2 py-0.5 rounded-full glass-input capitalize text-xs font-medium">
+                        {result.collection}
                       </span>
                     )}
-                    {result.year && <span>{result.year}</span>}
-                    {result.author && (
-                      <span>
-                        <HighlightedText text={result.author} query={query} />
+                    {result.hasFiles && (
+                      <span className="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-medium">
+                        Has files
                       </span>
                     )}
                   </div>
@@ -136,7 +145,7 @@ export function SearchResults({ results, query, isLoading, page, pageSize, onPag
             disabled={currentPage === 1}
             className="flex items-center gap-1 px-3 py-1.5 rounded-full glass-subtle border border-border/50 disabled:opacity-50 disabled:pointer-events-none"
           >
-            Prev
+            <ChevronLeft className="w-4 h-4" /> Prev
           </button>
           <span className="px-3 py-1.5 rounded-full glass-input border border-border/50">
             {currentPage} / {totalPages}
@@ -146,10 +155,10 @@ export function SearchResults({ results, query, isLoading, page, pageSize, onPag
             disabled={currentPage === totalPages}
             className="flex items-center gap-1 px-3 py-1.5 rounded-full glass-subtle border border-border/50 disabled:opacity-50 disabled:pointer-events-none"
           >
-            Next
+            Next <ChevronRight className="w-4 h-4" />
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

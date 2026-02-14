@@ -13,6 +13,8 @@ class AnswerRequest(BaseModel):
     """Request model for generating an answer."""
 
     query: str
+    size: int = Field(default=5, ge=1, le=10)
+    history: list[dict] | None = None
 
 
 class DocumentSource(BaseModel):
@@ -34,6 +36,7 @@ class GenerateQueryRequest(BaseModel):
     """Request model for generating a query."""
 
     prompt: str
+    size: int = Field(default=30, ge=1, le=100)
 
 
 class GenerateQueryResponse(BaseModel):

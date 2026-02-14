@@ -32,13 +32,13 @@ class ABCGenerativeModel(ABC):
         pass
 
     @abstractmethod
-    def formulate_query(self, user_input: str) -> str:
+    def formulate_query(self, user_input: str, history: list[dict]) -> str:
         """
         Formulate a query based on user input.
 
         Args:
             user_input (str): The user's input string.
-
+            history (list[dict]): The conversation history.
         Returns:
             str: The formulated query.
         """
