@@ -145,7 +145,7 @@ export function ChatInterface() {
       {/* Main Chat Area */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* Toggle Button */}
-        <div className="px-4 py-3 flex items-center glass-subtle border-b border-border/30">
+        <div className="px-4 py-3 flex items-center">
           <Button
             variant="ghost"
             size="icon"

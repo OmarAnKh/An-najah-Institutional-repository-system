@@ -34,7 +34,7 @@ export function ChatInput({ onSend, isLoading }: ChatInputProps) {
   };
 
   return (
-    <div className="p-4 glass border-t border-border/30">
+    <div className="mb-3">
       <div className="max-w-2xl mx-auto">
         <div className="relative flex items-center gap-2 glass-subtle rounded-full px-3 py-2 transition-all duration-200 focus-within:ring-2 focus-within:ring-primary/20 focus-within:shadow-md border border-border/60 bg-card/90">
           <textarea

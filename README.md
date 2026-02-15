@@ -1,3 +1,9 @@
+## Demo Video
+
+Watch the walkthrough: [Demo Video](https://example.com/your-demo-link)
+
+---
+
 ## An-Najah Institutional Repository System
 
 A smart information retrieval platform for An-Najah University. The system harvests repository content, enriches it with semantic metadata, and exposes search experiences such as autocomplete, geo-temporal filtering, and RAG-based question answering.

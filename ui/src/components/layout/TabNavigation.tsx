@@ -46,13 +46,13 @@ function TabButton({ active, onClick, icon, label }: TabButtonProps) {
       onClick={onClick}
       className={cn(
         'relative flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-sm font-medium transition-colors duration-200',
-        active ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+        active ? 'text-primary-foreground' : 'text-muted-foreground hover:text-foreground'
       )}
     >
       {active && (
         <motion.div
           layoutId="tab-indicator"
-          className="absolute inset-0 bg-card rounded-full shadow-md"
+          className="absolute inset-0 bg-primary rounded-full shadow-md"
           transition={{ type: 'spring', bounce: 0.15, duration: 0.4 }}
         />
       )}
